@@ -1,0 +1,82 @@
+body {
+  background-color: black;
+  color: white;
+}
+hr {
+  background-color: white;
+  margin-top: 4rem;
+}
+
+.row {
+  margin-top: 6rem;
+  text-align: left;
+}
+.txt {
+  margin-top: 2rem;
+}
+a {
+  color: #5bbb32;
+  font-weight: bold;
+  /* font-size: 20px; */
+}
+a:hover {
+  color: #5bbb32;
+  font-weight: bold;
+  /* font-size: 20px; */
+}
+.doctorContainer {
+  margin: 2%;
+}
+.doctorImage {
+  /* position: relative; */
+  height: 24rem;
+  width: 18rem;
+}
+.closeButton {
+  float: left;
+}
+.imageContainer {
+  position: relative;
+  max-width: 100%;
+  /* margin: 0 auto; */
+}
+.container .doctorDsignation {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+@media screen and (min-width: 481px) {
+  .linkDesktop {
+    display: block;
+  }
+  .linkMobile {
+    display: none;
+  }
+
+  .react-multi-carousel-item {
+    margin-right: 3rem;
+    margin-left: 3rem;
+    /* padding-right: 20%; */
+  }
+}
+@media screen and (max-width: 480px) {
+  .linkDesktop {
+    display: none;
+  }
+  .linkMobile {
+    display: block;
+  }
+  .mobileCarousel {
+    margin-top: 2rem;
+  }
+  .doctorImage {
+    /* position: relative; */
+    height: 16rem;
+    width: 12rem;
+  }
+}
