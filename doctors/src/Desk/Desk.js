@@ -74,7 +74,7 @@ class Desk extends React.Component{
                {!this.state.showDoctors && <div className="row align-items-center">  
                     <div className ="col-12 col-md-6 txt" >
                      <h1>Desk</h1>
-                        <p style={{marginTop:"2rem"}}>
+                        <p className="textPara">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue lacinia pretium. Vivamus sit amet blandit elit. Mauris fringilla lorem et commodo malesuada. Nulla quis pulvinar risus. Nunc tincidunt ante vitae erat facilisis lobortis. Duis sapien nisl, ullamcorper ac accumsan non, eleifend vel purus. Sed pretium tortor diam, vel pharetra augue lobortis quis. Aliquam sed lacinia lectus. Duis finibus leo et nunc dignissim, vitae hendrerit arcu sagittis. Quisque sed augue iaculis, ornare
                         </p>
                         

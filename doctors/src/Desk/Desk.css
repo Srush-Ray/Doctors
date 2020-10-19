@@ -3,6 +3,7 @@ body {
   color: white;
 }
 h1 {
+  font-weight: bold;
   font-family: "Poppins", sans-serif;
 }
 hr {
@@ -17,6 +18,11 @@ hr {
 .doctorName {
   color: #5bbb32;
   line-height: 3rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.textPara {
+  margin-top: 2rem;
   font-family: "Poppins", sans-serif;
 }
 button {
