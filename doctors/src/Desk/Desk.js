@@ -19,7 +19,7 @@ const responsive = {
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 1
+    items: 2
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
@@ -71,7 +71,7 @@ class Desk extends React.Component{
             <div className="container">
                 <hr />
                 
-               {!this.state.showDoctors && <div className="row">  
+               {!this.state.showDoctors && <div className="row align-items-center">  
                     <div className ="col-12 col-md-6 txt" >
                      <h1>Desk</h1>
                         <p style={{marginTop:"2rem"}}>
@@ -89,7 +89,6 @@ class Desk extends React.Component{
                             className="mobileCarousel"
                     swipeable={true}
                     draggable={false}
-                    // showDots={true}
                     responsive={responsive}
                     ssr={true} // means to render carousel on server-side.
                     // infinite={true}
@@ -110,9 +109,9 @@ class Desk extends React.Component{
                                     <div key={index} className="doctorContainer" onClick={this.openModel}>
                                        <div className="imageContainer">
                                        <img src={doctor.image} alt={doctor.name} className="doctorImage" />
-                                       <p className="doctorDsignation">{doctor.designation}</p>
+                                       <p className="doctorDesignation">{doctor.designation}</p>
                                        </div>
-                                        <p>{doctor.name}</p>
+                                        <p className="doctorName">{doctor.name}</p>
                                     </div>
                                 )
                    }
