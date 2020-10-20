@@ -10,11 +10,20 @@ hr {
   background-color: white;
   margin-top: 4rem;
 }
-
-.row {
-  margin-top: 6rem;
-  text-align: left;
+button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
 }
+
+.carousel-container {
+  width: 100%;
+  margin-right: 5%;
+}
+
 .doctorName {
   color: #5bbb32;
   line-height: 3rem;
@@ -25,14 +34,7 @@ hr {
   margin-top: 2rem;
   font-family: "Poppins", sans-serif;
 }
-button {
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
-}
+
 a {
   color: #5bbb32;
   font-weight: bold;
@@ -48,13 +50,11 @@ a:hover {
   width: 100%;
 }
 .doctorImage {
-  /* position: relative; */
+  position: relative;
+  width: 100%;
   height: 24rem;
-  width: 18rem;
 }
-.closeButton {
-  float: left;
-}
+
 .imageContainer {
   position: relative;
   max-width: 100%;
@@ -68,8 +68,9 @@ a:hover {
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
+  margin-bottom: 0;
 }
-
+/*desktop*/
 @media screen and (min-width: 481px) {
   .linkDesktop {
     display: block;
@@ -77,13 +78,37 @@ a:hover {
   .linkMobile {
     display: none;
   }
-
+  .row {
+    margin-top: 6rem;
+    text-align: left;
+  }
+  .selectedDoctorImage {
+    position: relative;
+    height: 24rem;
+    width: 18rem;
+    margin-left: 169px;
+  }
+  .selectedDoctorDesignation {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    margin-bottom: 0;
+    margin-left: 169px;
+    padding: 20px;
+  }
   .react-multi-carousel-item {
     margin-right: 3rem;
     margin-left: 3rem;
     /* padding-right: 20%; */
   }
+  .closeButton {
+    float: left;
+  }
 }
+/*mobile*/
 @media screen and (max-width: 480px) {
   .linkDesktop {
     display: none;
@@ -91,12 +116,42 @@ a:hover {
   .linkMobile {
     display: block;
   }
-  .mobileCarousel {
+  .row {
     margin-top: 2rem;
+    text-align: left;
   }
+  /* .mobileCarousel {
+    margin-top: 2rem;
+  } */
   .doctorImage {
     /* position: relative; */
     height: 16rem;
     width: 12rem;
+  }
+  .selectedDoctorImage {
+    position: relative;
+    height: 24rem;
+    width: 18rem;
+  }
+  .selectedDoctorDesignation {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 20px;
+  }
+  .closeButton {
+    float: right;
+  }
+
+  .rowText {
+    width: 100%;
+  }
+  h1 {
+    margin: 0;
+    display: inline-block;
   }
 }
