@@ -23,7 +23,7 @@ const responsive = {
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
-    items: 1
+      items: 1.5,
   }
 };
 class Desk extends React.Component{
@@ -75,7 +75,7 @@ class Desk extends React.Component{
     }
     render()
     {
-        
+        console.log(this.state.doctors);
         return(
             <div className="container">
             
@@ -102,7 +102,8 @@ class Desk extends React.Component{
                         swipeable={true}
                         draggable={false}
                         responsive={responsive}
-                        ssr={true} // means to render carousel on server-side.
+                        showArrows={false}
+                        ssr={false} // means to render carousel on server-side.
                         // infinite={true}
                         // autoPlay={this.props.deviceType !== "mobile" ? true : false}
                         // autoPlaySpeed={1000}
@@ -110,10 +111,9 @@ class Desk extends React.Component{
                         // customTransition="all .5"
                         // transitionDuration={500}
                         containerClass="carousel-container"
-                        removeArrowOnDeviceType={["tablet", "mobile"]}
+                        removeArrowOnDeviceType={["desktop","tablet", "mobile"]}
                         deviceType={this.props.deviceType}
                     itemClass="carousel-item-padding-40-px"
-                    
                     >
                     
                     {
@@ -140,11 +140,7 @@ class Desk extends React.Component{
                             this.state.showDoctors && 
                             //   <Doctor />
                     <Fragment>
-                    <div className="linkDesktop">
-                    <div className="">
-                        
-                    </div>
-                    
+                    <div className="linkDesktop container">
                     <div className="row align-items-center">
                     <div className="col-md-6">
                     <button type="btn" className="closeButton"><img src={cross} alt="close" onClick={this.closeModel} /></button> 

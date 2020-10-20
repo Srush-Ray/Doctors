@@ -9,6 +9,7 @@ h1 {
 hr {
   background-color: white;
   margin-top: 4rem;
+  margin-right: 5rem;
 }
 button {
   background-color: Transparent;
@@ -67,8 +68,11 @@ a:hover {
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
 }
 /*desktop*/
 @media screen and (min-width: 481px) {
@@ -98,15 +102,34 @@ a:hover {
     margin-bottom: 0;
     margin-left: 169px;
     padding: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
   }
   .react-multi-carousel-item {
     margin-right: 3rem;
     margin-left: 3rem;
+
     /* padding-right: 20%; */
   }
   .closeButton {
     float: left;
   }
+  .react-multi-carousel-list {
+    margin-right: 140px;
+    display: flex;
+    align-items: center;
+    overflow: scroll !important;
+    position: relative;
+  }
+  ::-webkit-scrollbar {
+    width: 0px; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+  }
+  /* .container {
+    margin-left: 3rem;
+    margin-right: 2rem;
+  } */
 }
 /*mobile*/
 @media screen and (max-width: 480px) {
@@ -142,6 +165,9 @@ a:hover {
     width: 100%;
     margin-bottom: 0;
     padding: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
   }
   .closeButton {
     float: right;
@@ -153,5 +179,16 @@ a:hover {
   h1 {
     margin: 0;
     display: inline-block;
+  }
+  .react-multi-carousel-list {
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    overflow: scroll !important;
+    position: relative;
+  }
+  ::-webkit-scrollbar {
+    width: 0px; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
   }
 }
