@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import './Desk.css';
+import  styles from './Desk.css';
 import president from '../Images/Rectangle 204.png';
 import arrow from '../Images/bi_arrow-right.svg';
 import Carousel from "react-multi-carousel";

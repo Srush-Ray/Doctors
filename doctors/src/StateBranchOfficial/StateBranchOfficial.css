@@ -1,0 +1,202 @@
+.firstdiv {
+  background-color: floralwhite;
+  color: black;
+  margin-top: 0;
+}
+.container {
+  margin-top: 2rem;
+  margin-left: 6rem;
+  /* margin-right: 5rem; */
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.para {
+  margin-left: 2rem;
+}
+.row1 {
+  text-align: left;
+  align-items: center;
+}
+.navbar {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.row3 {
+  margin-top: 55px;
+  text-align: start;
+}
+.row4 {
+  margin-top: 40px;
+}
+.carousel-container {
+  width: 100%;
+  margin-right: 5%;
+}
+
+.doctorName {
+  color: darkblue;
+  line-height: 3rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+.doctorContainer {
+  margin: 2%;
+  width: 100%;
+}
+.doctorImage {
+  position: relative;
+  width: 15rem;
+  height: 20rem;
+  border-radius: 20px;
+}
+
+.imageContainer {
+  position: relative;
+  max-width: 100%;
+  /* margin: 0 auto; */
+}
+.imageContainer .doctorDesignation {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.react-multi-carousel-list {
+  margin-right: 140px;
+  display: flex;
+  align-items: center;
+  overflow: scroll !important;
+  position: relative;
+}
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+.doctorState {
+  line-height: 0;
+}
+.hr1 {
+  border-top: 1px solid black;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 3rem;
+}
+.hr2 {
+  width: 30px;
+  border-top: 0.5px solid black;
+}
+.h2,
+h2 {
+  font-style: bold;
+  color: darkblue;
+  align-self: top;
+}
+
+.nav-container {
+  margin: auto 0;
+  overflow-x: scroll !important;
+  /* word-wrap: break-word; */
+  /* flex-wrap: wrap; */
+}
+.nav-style {
+  font-size: 20px;
+  margin-right: 5px;
+  padding: 5px;
+  color: rgb(146, 142, 142);
+}
+.nav-style:hover {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+.active {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav-container {
+  scrollbar-color: white;
+}
+.react-multi-carousel-item {
+  width: max-content !important;
+  margin-right: 4rem;
+}
+/* @media screen and (max-width: 480px) {
+  .illustrate {
+    height: 369px;
+    width: 289px;
+  }
+} */
+
+/* desktop */
+@media only screen and (min-width: 768px) {
+  .para {
+    margin-left: 5rem;
+  }
+  .illustration {
+    width: 45rem;
+    height: 35rem;
+  }
+  .stateName {
+    margin-left: 5rem;
+  }
+  .react-multi-carousel-item {
+    margin-right: 3rem;
+    margin-left: 3rem;
+
+    /* padding-right: 20%; */
+  }
+}
+/* tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .illustration {
+    width: 22rem;
+    height: 30rem;
+  }
+  .para {
+    margin-left: 2rem;
+  }
+  .stateName {
+    margin-left: 5rem;
+  }
+  .react-multi-carousel-item {
+    margin-right: 3rem;
+    margin-left: 3rem;
+
+    /* padding-right: 20%; */
+  }
+}
+/* mobile */
+@media only screen and (max-width: 480px) {
+  .illustration {
+    width: 22rem;
+    height: 20rem;
+  }
+  .para {
+    margin-left: 1rem;
+  }
+  .stateName {
+    /* margin-left: 5rem; */
+  }
+  .react-multi-carousel-item {
+    margin-right: 3rem;
+  }
+}

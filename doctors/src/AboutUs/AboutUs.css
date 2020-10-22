@@ -1,0 +1,114 @@
+.firstdiv {
+  background-color: rgb(252, 222, 227);
+}
+hr {
+  background-color: black;
+  margin-top: 4rem;
+  margin-right: 10rem;
+  margin-left: 6rem;
+}
+.row {
+  text-align: left;
+  /* margin-top: 4rem; */
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.doctorImage {
+  position: relative;
+  width: 15rem;
+  height: 20rem;
+  border-radius: 20px;
+}
+.doctorName {
+  color: rgb(2, 2, 223);
+  font-weight: bold;
+  line-height: 2.5;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.imageContainer {
+  position: relative;
+  max-width: 100%;
+  /* margin: 0 auto; */
+}
+.imageContainer .doctorDesignation {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 15rem;
+  padding: 8px;
+  margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.react-multi-carousel-list {
+  margin-top: 3rem;
+  /* margin-right: 140px; */
+  display: flex;
+  align-items: center;
+  overflow: scroll !important;
+  position: relative;
+}
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+.react-multi-carousel-item {
+  width: max-content !important;
+  margin-right: 4rem;
+}
+/* desktop */
+@media only screen and (min-width: 768px) {
+  .para {
+    margin-left: 5rem;
+  }
+  .illustration {
+    width: 40rem;
+    height: 25rem;
+  }
+  h3 {
+    color: rgb(2, 2, 223);
+    text-align: left;
+    margin-left: 4rem;
+    margin-top: 5rem;
+  }
+}
+/* tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .illustration {
+    width: 23rem;
+    height: 35rem;
+  }
+  .para {
+    margin-left: 2rem;
+  }
+  h3 {
+    color: rgb(2, 2, 223);
+    text-align: left;
+    margin-left: 4rem;
+    margin-top: 5rem;
+  }
+}
+/* mobile */
+@media only screen and (max-width: 480px) {
+  .illustration {
+    width: 22rem;
+    height: 20rem;
+  }
+  .para {
+    margin-left: 1rem;
+  }
+  h3 {
+    color: rgb(2, 2, 223);
+    margin-left: 0;
+    margin-top: 2rem;
+    font-size: 30px;
+  }
+}
