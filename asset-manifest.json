@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Doctors/static/css/main.8e4a78a7.chunk.css",
+    "main.js": "/Doctors/static/js/main.362f012b.chunk.js",
+    "main.js.map": "/Doctors/static/js/main.362f012b.chunk.js.map",
+    "runtime-main.js": "/Doctors/static/js/runtime-main.d71072b4.js",
+    "runtime-main.js.map": "/Doctors/static/js/runtime-main.d71072b4.js.map",
+    "static/js/2.1db27ad2.chunk.js": "/Doctors/static/js/2.1db27ad2.chunk.js",
+    "static/js/2.1db27ad2.chunk.js.map": "/Doctors/static/js/2.1db27ad2.chunk.js.map",
+    "index.html": "/Doctors/index.html",
+    "precache-manifest.e3d7c6feb6dac030b48f948591714064.js": "/Doctors/precache-manifest.e3d7c6feb6dac030b48f948591714064.js",
+    "service-worker.js": "/Doctors/service-worker.js",
+    "static/css/main.8e4a78a7.chunk.css.map": "/Doctors/static/css/main.8e4a78a7.chunk.css.map",
+    "static/js/2.1db27ad2.chunk.js.LICENSE.txt": "/Doctors/static/js/2.1db27ad2.chunk.js.LICENSE.txt",
+    "static/media/About us.svg": "/Doctors/static/media/About us.e9369e7b.svg",
+    "static/media/logo.svg": "/Doctors/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d71072b4.js",
+    "static/js/2.1db27ad2.chunk.js",
+    "static/css/main.8e4a78a7.chunk.css",
+    "static/js/main.362f012b.chunk.js"
+  ]
+}
