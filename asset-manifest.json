@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Doctors/static/css/main.7399aeb2.chunk.css",
+    "main.css": "/Doctors/static/css/main.e0bcecb4.chunk.css",
     "main.js": "/Doctors/static/js/main.ee0edee3.chunk.js",
     "main.js.map": "/Doctors/static/js/main.ee0edee3.chunk.js.map",
     "runtime-main.js": "/Doctors/static/js/runtime-main.d71072b4.js",
@@ -9,10 +9,10 @@
     "static/js/2.f3a4a947.chunk.js": "/Doctors/static/js/2.f3a4a947.chunk.js",
     "static/js/2.f3a4a947.chunk.js.map": "/Doctors/static/js/2.f3a4a947.chunk.js.map",
     "index.html": "/Doctors/index.html",
-    "precache-manifest.5966d8c8b15ee5d92a0120804e4eef6d.js": "/Doctors/precache-manifest.5966d8c8b15ee5d92a0120804e4eef6d.js",
+    "precache-manifest.f076f60da630fff701dcda97e00e2709.js": "/Doctors/precache-manifest.f076f60da630fff701dcda97e00e2709.js",
     "service-worker.js": "/Doctors/service-worker.js",
     "static/css/2.715bf72b.chunk.css.map": "/Doctors/static/css/2.715bf72b.chunk.css.map",
-    "static/css/main.7399aeb2.chunk.css.map": "/Doctors/static/css/main.7399aeb2.chunk.css.map",
+    "static/css/main.e0bcecb4.chunk.css.map": "/Doctors/static/css/main.e0bcecb4.chunk.css.map",
     "static/js/2.f3a4a947.chunk.js.LICENSE.txt": "/Doctors/static/js/2.f3a4a947.chunk.js.LICENSE.txt",
     "static/media/Rectangle 204.png": "/Doctors/static/media/Rectangle 204.2b86399c.png",
     "static/media/Vector.svg": "/Doctors/static/media/Vector.2f4576ee.svg",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.d71072b4.js",
     "static/css/2.715bf72b.chunk.css",
     "static/js/2.f3a4a947.chunk.js",
-    "static/css/main.7399aeb2.chunk.css",
+    "static/css/main.e0bcecb4.chunk.css",
     "static/js/main.ee0edee3.chunk.js"
   ]
 }
