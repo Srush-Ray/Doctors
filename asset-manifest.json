@@ -1,24 +1,30 @@
 {
   "files": {
-    "main.css": "/Doctors/static/css/main.8e4a78a7.chunk.css",
-    "main.js": "/Doctors/static/js/main.362f012b.chunk.js",
-    "main.js.map": "/Doctors/static/js/main.362f012b.chunk.js.map",
+    "main.css": "/Doctors/static/css/main.7399aeb2.chunk.css",
+    "main.js": "/Doctors/static/js/main.ee0edee3.chunk.js",
+    "main.js.map": "/Doctors/static/js/main.ee0edee3.chunk.js.map",
     "runtime-main.js": "/Doctors/static/js/runtime-main.d71072b4.js",
     "runtime-main.js.map": "/Doctors/static/js/runtime-main.d71072b4.js.map",
-    "static/js/2.1db27ad2.chunk.js": "/Doctors/static/js/2.1db27ad2.chunk.js",
-    "static/js/2.1db27ad2.chunk.js.map": "/Doctors/static/js/2.1db27ad2.chunk.js.map",
+    "static/css/2.715bf72b.chunk.css": "/Doctors/static/css/2.715bf72b.chunk.css",
+    "static/js/2.f3a4a947.chunk.js": "/Doctors/static/js/2.f3a4a947.chunk.js",
+    "static/js/2.f3a4a947.chunk.js.map": "/Doctors/static/js/2.f3a4a947.chunk.js.map",
     "index.html": "/Doctors/index.html",
-    "precache-manifest.e3d7c6feb6dac030b48f948591714064.js": "/Doctors/precache-manifest.e3d7c6feb6dac030b48f948591714064.js",
+    "precache-manifest.5966d8c8b15ee5d92a0120804e4eef6d.js": "/Doctors/precache-manifest.5966d8c8b15ee5d92a0120804e4eef6d.js",
     "service-worker.js": "/Doctors/service-worker.js",
-    "static/css/main.8e4a78a7.chunk.css.map": "/Doctors/static/css/main.8e4a78a7.chunk.css.map",
-    "static/js/2.1db27ad2.chunk.js.LICENSE.txt": "/Doctors/static/js/2.1db27ad2.chunk.js.LICENSE.txt",
-    "static/media/About us.svg": "/Doctors/static/media/About us.e9369e7b.svg",
-    "static/media/logo.svg": "/Doctors/static/media/logo.5d5d9eef.svg"
+    "static/css/2.715bf72b.chunk.css.map": "/Doctors/static/css/2.715bf72b.chunk.css.map",
+    "static/css/main.7399aeb2.chunk.css.map": "/Doctors/static/css/main.7399aeb2.chunk.css.map",
+    "static/js/2.f3a4a947.chunk.js.LICENSE.txt": "/Doctors/static/js/2.f3a4a947.chunk.js.LICENSE.txt",
+    "static/media/Rectangle 204.png": "/Doctors/static/media/Rectangle 204.2b86399c.png",
+    "static/media/Vector.svg": "/Doctors/static/media/Vector.2f4576ee.svg",
+    "static/media/bi_arrow-right.svg": "/Doctors/static/media/bi_arrow-right.062c3e42.svg",
+    "static/media/logo.svg": "/Doctors/static/media/logo.5d5d9eef.svg",
+    "static/media/styles.css": "/Doctors/static/media/revicons.2feb69cc.eot"
   },
   "entrypoints": [
     "static/js/runtime-main.d71072b4.js",
-    "static/js/2.1db27ad2.chunk.js",
-    "static/css/main.8e4a78a7.chunk.css",
-    "static/js/main.362f012b.chunk.js"
+    "static/css/2.715bf72b.chunk.css",
+    "static/js/2.f3a4a947.chunk.js",
+    "static/css/main.7399aeb2.chunk.css",
+    "static/js/main.ee0edee3.chunk.js"
   ]
 }
