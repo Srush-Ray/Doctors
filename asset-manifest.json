@@ -1,30 +1,41 @@
 {
   "files": {
-    "main.css": "/Doctors/static/css/main.e0bcecb4.chunk.css",
-    "main.js": "/Doctors/static/js/main.ee0edee3.chunk.js",
-    "main.js.map": "/Doctors/static/js/main.ee0edee3.chunk.js.map",
+    "main.css": "/Doctors/static/css/main.002081c9.chunk.css",
+    "main.js": "/Doctors/static/js/main.85c37b7e.chunk.js",
+    "main.js.map": "/Doctors/static/js/main.85c37b7e.chunk.js.map",
     "runtime-main.js": "/Doctors/static/js/runtime-main.d71072b4.js",
     "runtime-main.js.map": "/Doctors/static/js/runtime-main.d71072b4.js.map",
     "static/css/2.715bf72b.chunk.css": "/Doctors/static/css/2.715bf72b.chunk.css",
-    "static/js/2.f3a4a947.chunk.js": "/Doctors/static/js/2.f3a4a947.chunk.js",
-    "static/js/2.f3a4a947.chunk.js.map": "/Doctors/static/js/2.f3a4a947.chunk.js.map",
+    "static/js/2.20e0dfe1.chunk.js": "/Doctors/static/js/2.20e0dfe1.chunk.js",
+    "static/js/2.20e0dfe1.chunk.js.map": "/Doctors/static/js/2.20e0dfe1.chunk.js.map",
     "index.html": "/Doctors/index.html",
-    "precache-manifest.f076f60da630fff701dcda97e00e2709.js": "/Doctors/precache-manifest.f076f60da630fff701dcda97e00e2709.js",
+    "precache-manifest.ff6e3946a13c7fcfd274d963f506aa67.js": "/Doctors/precache-manifest.ff6e3946a13c7fcfd274d963f506aa67.js",
     "service-worker.js": "/Doctors/service-worker.js",
     "static/css/2.715bf72b.chunk.css.map": "/Doctors/static/css/2.715bf72b.chunk.css.map",
-    "static/css/main.e0bcecb4.chunk.css.map": "/Doctors/static/css/main.e0bcecb4.chunk.css.map",
-    "static/js/2.f3a4a947.chunk.js.LICENSE.txt": "/Doctors/static/js/2.f3a4a947.chunk.js.LICENSE.txt",
+    "static/css/main.002081c9.chunk.css.map": "/Doctors/static/css/main.002081c9.chunk.css.map",
+    "static/js/2.20e0dfe1.chunk.js.LICENSE.txt": "/Doctors/static/js/2.20e0dfe1.chunk.js.LICENSE.txt",
+    "static/media/About us.svg": "/Doctors/static/media/About us.e9369e7b.svg",
+    "static/media/Analytic 1.png": "/Doctors/static/media/Analytic 1.f04e5569.png",
+    "static/media/Fisrt illustration.svg": "/Doctors/static/media/Fisrt illustration.bafa0986.svg",
     "static/media/Rectangle 204.png": "/Doctors/static/media/Rectangle 204.2b86399c.png",
+    "static/media/State branch official.svg": "/Doctors/static/media/State branch official.a6342cc7.svg",
     "static/media/Vector.svg": "/Doctors/static/media/Vector.2f4576ee.svg",
+    "static/media/avatar-placeholder.png": "/Doctors/static/media/avatar-placeholder.018fdbf0.png",
     "static/media/bi_arrow-right.svg": "/Doctors/static/media/bi_arrow-right.062c3e42.svg",
+    "static/media/contemplative-doctor-in-uniform-reading-clinical-records-4173239.png": "/Doctors/static/media/contemplative-doctor-in-uniform-reading-clinical-records-4173239.f734a7f7.png",
+    "static/media/doctor-sitting-in-front-of-his-desk-2182979 (1).png": "/Doctors/static/media/doctor-sitting-in-front-of-his-desk-2182979 (1).302cc9ed.png",
     "static/media/logo.svg": "/Doctors/static/media/logo.5d5d9eef.svg",
-    "static/media/styles.css": "/Doctors/static/media/revicons.2feb69cc.eot"
+    "static/media/man-in-blue-scrubs-3934615.png": "/Doctors/static/media/man-in-blue-scrubs-3934615.f1241585.png",
+    "static/media/person-with-a-face-mask-and-latex-gloves-holding-a-globe-4167541.png": "/Doctors/static/media/person-with-a-face-mask-and-latex-gloves-holding-a-globe-4167541.74a4f6d9.png",
+    "static/media/styles.css": "/Doctors/static/media/revicons.2feb69cc.eot",
+    "static/media/two-men-standing-inside-a-room-2182976.png": "/Doctors/static/media/two-men-standing-inside-a-room-2182976.96fa93ea.png",
+    "static/media/woman-in-white-medical-robe-3714743.png": "/Doctors/static/media/woman-in-white-medical-robe-3714743.8e35a5d5.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d71072b4.js",
     "static/css/2.715bf72b.chunk.css",
-    "static/js/2.f3a4a947.chunk.js",
-    "static/css/main.e0bcecb4.chunk.css",
-    "static/js/main.ee0edee3.chunk.js"
+    "static/js/2.20e0dfe1.chunk.js",
+    "static/css/main.002081c9.chunk.css",
+    "static/js/main.85c37b7e.chunk.js"
   ]
 }
