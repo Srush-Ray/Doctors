@@ -1,37 +1,37 @@
-.firstdiv {
+.AboutUs_firstdiv {
   background-color: rgb(252, 222, 227);
 }
-hr {
+.AboutUs_hr {
   background-color: black;
   margin-top: 4rem;
   margin-right: 10rem;
   margin-left: 6rem;
 }
-.row {
+.AboutUs_row {
   text-align: left;
   /* margin-top: 4rem; */
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
-.doctorImage {
+.AboutUs_doctorImage {
   position: relative;
   width: 15rem;
   height: 20rem;
   border-radius: 20px;
 }
-.doctorName {
+.AboutUs_doctorName {
   color: rgb(2, 2, 223);
   font-weight: bold;
   line-height: 2.5;
   font-size: 20px;
   text-transform: uppercase;
 }
-.imageContainer {
+.AboutUs_imageContainer {
   position: relative;
   max-width: 100%;
   /* margin: 0 auto; */
 }
-.imageContainer .doctorDesignation {
+.AboutUs_imageContainer .AboutUs_doctorDesignation {
   position: absolute;
   bottom: 0;
   background: rgb(0, 0, 0);
@@ -66,49 +66,67 @@ hr {
 }
 /* desktop */
 @media only screen and (min-width: 768px) {
-  .para {
+  .AboutUs_para {
     margin-left: 5rem;
   }
-  .illustration {
+  .AboutUs_illustration {
     width: 40rem;
     height: 25rem;
   }
-  h3 {
+  .AboutUs_h3 {
     color: rgb(2, 2, 223);
     text-align: left;
     margin-left: 4rem;
     margin-top: 5rem;
+  }
+  .AboutUs_mobileview {
+    display: none;
   }
 }
 /* tablet */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  .illustration {
+  .AboutUs_illustration {
     width: 23rem;
     height: 35rem;
   }
-  .para {
+  .AboutUs_para {
     margin-left: 2rem;
   }
-  h3 {
+  .AboutUs_h3 {
     color: rgb(2, 2, 223);
     text-align: left;
     margin-left: 4rem;
     margin-top: 5rem;
   }
+  .AboutUs_mobileview {
+    display: none;
+  }
 }
 /* mobile */
 @media only screen and (max-width: 480px) {
-  .illustration {
+  .AboutUs_illustration {
     width: 22rem;
     height: 20rem;
   }
-  .para {
+  .AboutUs_para {
     margin-left: 1rem;
   }
-  h3 {
+  .AboutUs_h3 {
     color: rgb(2, 2, 223);
     margin-left: 0;
     margin-top: 2rem;
     font-size: 30px;
   }
+  .AboutUs_firstdiv {
+    display: none;
+  }
+}
+
+.AboutUs_mobileview {
+  background-color: pink;
+}
+.AboutUs_lastdiv {
+  margin-top: 100px;
+  height: 15rem;
+  background-color: pink;
 }

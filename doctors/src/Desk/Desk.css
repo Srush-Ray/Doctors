@@ -1,17 +1,14 @@
-body {
-  background-color: black;
-  color: white;
-}
-h1 {
+.Desk__h1 {
   font-weight: bold;
   font-family: "Poppins", sans-serif;
 }
-hr {
+.Desk__hr {
   background-color: white;
   margin-top: 4rem;
   margin-right: 5rem;
+  margin-left: 5rem;
 }
-button {
+.Desk__button {
   background-color: Transparent;
   background-repeat: no-repeat;
   border: none;
@@ -19,49 +16,52 @@ button {
   overflow: hidden;
   outline: none;
 }
-
+.Desk__container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
 .carousel-container {
   width: 100%;
   margin-right: 5%;
 }
 
-.doctorName {
+.Desk__doctorName {
   color: #5bbb32;
   line-height: 3rem;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
 }
-.textPara {
+.Desk__textPara {
   margin-top: 2rem;
   font-family: "Poppins", sans-serif;
 }
 
-a {
-  color: #5bbb32;
-  font-weight: bold;
+a .Desk__link {
+  color: #5bbb32 !important;
+  font-weight: bold !important;
   /* font-size: 20px; */
 }
-a:hover {
-  color: #5bbb32;
-  font-weight: bold;
+a .Desk__link:hover {
+  color: #5bbb32 !important;
+  font-weight: bold !important;
   /* font-size: 20px; */
 }
-.doctorContainer {
+.Desk__doctorContainer {
   margin: 2%;
   width: 100%;
 }
-.doctorImage {
+.Desk__doctorImage {
   position: relative;
-  width: 100%;
   height: 24rem;
+  border-radius: 20px;
 }
 
-.imageContainer {
+.Desk__imageContainer {
   position: relative;
   max-width: 100%;
   /* margin: 0 auto; */
 }
-.container .doctorDesignation {
+.Desk__doctorDesignation {
   position: absolute;
   bottom: 0;
   background: rgb(0, 0, 0);
@@ -76,25 +76,32 @@ a:hover {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }
+.Desk__margin {
+  margin-left: 7rem;
+}
+.Desk__marginR {
+  margin-right: 7rem;
+}
 /*desktop*/
 @media screen and (min-width: 481px) {
-  .linkDesktop {
+  .Desk__linkDesktop {
     display: block;
   }
-  .linkMobile {
+  .Desk__linkMobile {
     display: none;
   }
-  .row {
-    margin-top: 6rem;
+  .Desk__row {
+    margin-top: 4rem;
     text-align: left;
   }
-  .selectedDoctorImage {
+  .Desk__selectedDoctorImage {
     position: relative;
     height: 24rem;
     width: 18rem;
     margin-left: 169px;
+    border-radius: 20px;
   }
-  .selectedDoctorDesignation {
+  .Desk__selectedDoctorDesignation {
     position: absolute;
     bottom: 0;
     background: rgb(0, 0, 0);
@@ -116,7 +123,7 @@ a:hover {
 
     /* padding-right: 20%; */
   }
-  .closeButton {
+  .Desk__closeButton {
     float: left;
   }
   .react-multi-carousel-list {
@@ -137,30 +144,32 @@ a:hover {
 }
 /*mobile*/
 @media screen and (max-width: 480px) {
-  .linkDesktop {
+  .Desk__linkDesktop {
     display: none;
   }
-  .linkMobile {
+  .Desk__linkMobile {
     display: block;
   }
-  .row {
+  .Desk__row {
     margin-top: 2rem;
     text-align: left;
   }
   /* .mobileCarousel {
     margin-top: 2rem;
   } */
-  .doctorImage {
+  .Desk__doctorImage {
     /* position: relative; */
     height: 16rem;
     width: 12rem;
+    border-radius: 20px;
   }
-  .selectedDoctorImage {
+  .Desk__selectedDoctorImage {
     position: relative;
     height: 24rem;
     width: 18rem;
+    border-radius: 20px;
   }
-  .selectedDoctorDesignation {
+  .Desk__selectedDoctorDesignation {
     position: absolute;
     bottom: 0;
     background: rgb(0, 0, 0);
@@ -175,14 +184,14 @@ a:hover {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
   }
-  .closeButton {
+  .Desk__closeButton {
     float: right;
   }
 
-  .rowText {
+  .Desk__rowText {
     width: 100%;
   }
-  h1 {
+  .Desk__h1 {
     margin: 0;
     display: inline-block;
   }

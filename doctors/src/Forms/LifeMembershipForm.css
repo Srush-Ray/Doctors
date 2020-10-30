@@ -1,0 +1,46 @@
+.Forms_avatar {
+  vertical-align: middle;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+}
+
+.Forms_first {
+  text-align: left;
+}
+.textarea {
+  resize: none;
+}
+.button {
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+
+.form-control::placeholder {
+  color: black;
+  opacity: 1; /* Firefox */
+}
+.button1 {
+  border-radius: 25px;
+  background-color: #d6d4e0;
+  color: black;
+}
+.button2 {
+  border-radius: 25px;
+  background-color: #4caf50;
+  color: white;
+}
+@media (max-width: 500px) {
+  .Forms_pic {
+    display: none;
+  }
+  .Forms_title {
+    margin-top: 100px;
+  }
+}
