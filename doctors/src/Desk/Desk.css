@@ -76,12 +76,7 @@ a .Desk__link:hover {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }
-.Desk__margin {
-  margin-left: 7rem;
-}
-.Desk__marginR {
-  margin-right: 7rem;
-}
+
 /*desktop*/
 @media screen and (min-width: 481px) {
   .Desk__linkDesktop {
@@ -130,12 +125,18 @@ a .Desk__link:hover {
     margin-right: 140px;
     display: flex;
     align-items: center;
-    overflow: scroll !important;
+    overflow-x: scroll !important;
     position: relative;
   }
   ::-webkit-scrollbar {
     width: 0px; /* Remove scrollbar space */
     background: transparent; /* Optional: just make scrollbar invisible */
+  }
+  .Desk__margin {
+    margin-left: 7rem;
+  }
+  .Desk__marginR {
+    margin-right: 7rem;
   }
   /* .container {
     margin-left: 3rem;
@@ -199,7 +200,7 @@ a .Desk__link:hover {
     margin-right: 0;
     display: flex;
     align-items: center;
-    overflow: scroll !important;
+    overflow-x: scroll !important;
     position: relative;
   }
   ::-webkit-scrollbar {
