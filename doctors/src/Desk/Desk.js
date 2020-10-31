@@ -74,16 +74,7 @@ class Desk extends React.Component {
   render() {
     console.log(this.state.doctors);
     return (
-      <div
-        style={{
-          backgroundColor: "black",
-          color: "white",
-          marginLeft: "0",
-          marginRight: "0",
-          width: "100%",
-          position: "fixed",
-        }}
-      >
+      <div className="Desk__main">
         {!this.state.showDoctors && (
           <Fragment>
             <hr className="Desk__hr" />
