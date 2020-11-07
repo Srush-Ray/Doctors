@@ -1,0 +1,190 @@
+.Table__table {
+  text-align: center;
+  padding-left: 2% !important;
+  padding-right: 2% !important;
+  width: 100% !important;
+  border-spacing: 0px 10px !important;
+  border-collapse: separate !important;
+}
+
+.Table__a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: black;
+}
+.Table__aContainer {
+  border-radius: 25px;
+  border: 2px solid blue;
+  width: 120px;
+  height: 30px;
+  vertical-align: middle;
+  text-align: center;
+}
+.Table__tableHeadingRow {
+  background-color: white !important;
+}
+
+.Table__tableDataRow:nth-child(2n + 0) {
+  background-color: #d6f3fa;
+}
+
+.Table__tableDataRow:nth-child(2n + 1) {
+  background-color: #d7e0f1;
+}
+
+.srNo {
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.srNo:nth-child(2n + 0) {
+  color: #007399;
+}
+
+.srNo:nth-child(2n + 1) {
+  color: #003399;
+}
+
+.Table__tableComponents {
+  padding: 15px;
+}
+
+.Table__tableComponents:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.Table__tableComponents:last-child {
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.Table__records {
+  border-collapse: collapse;
+  color: rgb(26, 26, 173);
+  width: 400px;
+  margin-left: 3%;
+  /* margin-right: 25%; */
+}
+
+.Table__recordCount {
+  font-weight: bolder;
+  background-color: #b8ccf1;
+  border: 2px solid #b8ccf1;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+}
+
+.Table__totalRecords {
+  border: 2px solid #b8ccf1;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: none;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .Table__table {
+    display: none;
+  }
+
+  .Table__aContainer {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 15px;
+    width: 40%;
+  }
+  .Table__cardRow {
+    margin-bottom: 1rem;
+  }
+  .Table__cards {
+    overflow-x: hidden;
+    /* padding: 20px; */
+  }
+
+  .Table__cardContainer {
+    position: relative;
+    border-radius: 25px;
+    /* background-color:  #e6ffff; */
+    margin: 30px 20px;
+    padding: 20px !important;
+    border-radius: 25px;
+  }
+
+  .Table__records {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .Table__cardContainer:nth-child(2n + 0) {
+    background-color: #d6f3fa !important;
+    border: 1px solid #d6f3fa;
+    color: rgb(31, 63, 78);
+  }
+
+  .Table__cardContainer:nth-child(2n + 1) {
+    background-color: #d7e0f1 !important;
+    border: 1px solid #d7e0f1;
+    color: rgb(26, 26, 173);
+  }
+  select {
+    border: 2px solid rgb(26, 26, 173);
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 60%;
+    color: rgb(26, 26, 173);
+    background-color: white;
+    font-size: 16px;
+  }
+  .Table__totalRecordsText {
+    margin: 0;
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  .Table__recordCountText {
+    margin: 0;
+    font-size: 16px;
+    padding: 5px;
+  }
+  .Table__cardNumber {
+    position: absolute;
+    top: -2.5rem;
+    font-size: 50px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .Table__cards {
+    display: none;
+  }
+  select {
+    border: 2px solid rgb(26, 26, 173);
+    border-radius: 20px;
+    padding: 10px;
+    /* margin-top: 10px; */
+    width: 40%;
+    float: right;
+    margin-right: 3%;
+    color: rgb(26, 26, 173);
+    background-color: white;
+  }
+  .Table__totalRecordsText {
+    margin: 0;
+    padding: 5px;
+    font-size: 20px;
+  }
+
+  .Table__recordCountText {
+    margin: 0;
+    font-size: 20px;
+    padding: 5px;
+  }
+}

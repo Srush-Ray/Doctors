@@ -16,7 +16,7 @@ import {
 import HomePage from "./HomePage/HomePage";
 import Covid from "./Covid/Covid";
 import LifeMemberShipForm from "./Forms/LifeMembershipForm";
-
+import Table from "./Covid/Table";
 function App() {
   return (
     <div className="App">
@@ -28,6 +28,7 @@ function App() {
     */}
       <BrowserRouter>
         <Switch>
+          <Route path="/" component={Table} exact />
           <Route path="/Doctors" component={HomePage} exact />
           <Route path="/aboutUs" component={Aboutus} />
           <Route path="/desk" component={Desk} />

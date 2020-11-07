@@ -2,6 +2,7 @@ import React from "react";
 import "./Covid.css";
 import pic from "../Images/Analytic 1.png";
 import firstIllustration from "../Images/Fisrt illustration.svg";
+import Table from "./Table";
 class Covid extends React.Component {
   upload() {
     document.getElementById("selectImage").click();
@@ -136,6 +137,7 @@ class Covid extends React.Component {
             </div>
           </div>
         </div>
+        <Table />
       </div>
     );
   }

@@ -43,4 +43,10 @@
   .Forms_title {
     margin-top: 100px;
   }
+  .form-control {
+    margin-bottom: 10px;
+  }
+  .custom-select {
+    margin-bottom: 10px;
+  }
 }
