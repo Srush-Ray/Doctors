@@ -51,6 +51,13 @@ function HomePage() {
             </Link>
           </button>
         </div>
+        <div className="col-md-3 col-12">
+          <button type="button" className="btn btn-light HomePage__Btn">
+            <Link to="/covid" className="HomePage__link">
+              Covid
+            </Link>
+          </button>
+        </div>
       </div>
     </nav>
   );
