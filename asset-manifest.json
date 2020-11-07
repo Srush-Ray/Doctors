@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Doctors/static/css/main.de3af5fe.chunk.css",
-    "main.js": "/Doctors/static/js/main.50429350.chunk.js",
-    "main.js.map": "/Doctors/static/js/main.50429350.chunk.js.map",
+    "main.css": "/Doctors/static/css/main.720d8903.chunk.css",
+    "main.js": "/Doctors/static/js/main.14a55560.chunk.js",
+    "main.js.map": "/Doctors/static/js/main.14a55560.chunk.js.map",
     "runtime-main.js": "/Doctors/static/js/runtime-main.d71072b4.js",
     "runtime-main.js.map": "/Doctors/static/js/runtime-main.d71072b4.js.map",
     "static/css/2.715bf72b.chunk.css": "/Doctors/static/css/2.715bf72b.chunk.css",
-    "static/js/2.20e0dfe1.chunk.js": "/Doctors/static/js/2.20e0dfe1.chunk.js",
-    "static/js/2.20e0dfe1.chunk.js.map": "/Doctors/static/js/2.20e0dfe1.chunk.js.map",
+    "static/js/2.b81a875b.chunk.js": "/Doctors/static/js/2.b81a875b.chunk.js",
+    "static/js/2.b81a875b.chunk.js.map": "/Doctors/static/js/2.b81a875b.chunk.js.map",
     "index.html": "/Doctors/index.html",
-    "precache-manifest.78862ca393a494be792522890b223f2b.js": "/Doctors/precache-manifest.78862ca393a494be792522890b223f2b.js",
+    "precache-manifest.db855518677ad9fd85da94a32fcd560f.js": "/Doctors/precache-manifest.db855518677ad9fd85da94a32fcd560f.js",
     "service-worker.js": "/Doctors/service-worker.js",
     "static/css/2.715bf72b.chunk.css.map": "/Doctors/static/css/2.715bf72b.chunk.css.map",
-    "static/css/main.de3af5fe.chunk.css.map": "/Doctors/static/css/main.de3af5fe.chunk.css.map",
-    "static/js/2.20e0dfe1.chunk.js.LICENSE.txt": "/Doctors/static/js/2.20e0dfe1.chunk.js.LICENSE.txt",
+    "static/css/main.720d8903.chunk.css.map": "/Doctors/static/css/main.720d8903.chunk.css.map",
+    "static/js/2.b81a875b.chunk.js.LICENSE.txt": "/Doctors/static/js/2.b81a875b.chunk.js.LICENSE.txt",
     "static/media/About us.svg": "/Doctors/static/media/About us.e9369e7b.svg",
     "static/media/Analytic 1.png": "/Doctors/static/media/Analytic 1.f04e5569.png",
     "static/media/Fisrt illustration.svg": "/Doctors/static/media/Fisrt illustration.bafa0986.svg",
@@ -34,8 +34,8 @@
   "entrypoints": [
     "static/js/runtime-main.d71072b4.js",
     "static/css/2.715bf72b.chunk.css",
-    "static/js/2.20e0dfe1.chunk.js",
-    "static/css/main.de3af5fe.chunk.css",
-    "static/js/main.50429350.chunk.js"
+    "static/js/2.b81a875b.chunk.js",
+    "static/css/main.720d8903.chunk.css",
+    "static/js/main.14a55560.chunk.js"
   ]
 }
