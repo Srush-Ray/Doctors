@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Doctors/static/css/main.c23f63d7.chunk.css",
-    "main.js": "/Doctors/static/js/main.21d1017f.chunk.js",
-    "main.js.map": "/Doctors/static/js/main.21d1017f.chunk.js.map",
+    "main.js": "/Doctors/static/js/main.2fb595d9.chunk.js",
+    "main.js.map": "/Doctors/static/js/main.2fb595d9.chunk.js.map",
     "runtime-main.js": "/Doctors/static/js/runtime-main.d71072b4.js",
     "runtime-main.js.map": "/Doctors/static/js/runtime-main.d71072b4.js.map",
     "static/css/2.715bf72b.chunk.css": "/Doctors/static/css/2.715bf72b.chunk.css",
     "static/js/2.39e6cac8.chunk.js": "/Doctors/static/js/2.39e6cac8.chunk.js",
     "static/js/2.39e6cac8.chunk.js.map": "/Doctors/static/js/2.39e6cac8.chunk.js.map",
     "index.html": "/Doctors/index.html",
-    "precache-manifest.74c1370f18e747de5028c3da8628dfb5.js": "/Doctors/precache-manifest.74c1370f18e747de5028c3da8628dfb5.js",
+    "precache-manifest.3f4f96a08f607a1bd366fff4a2d8442e.js": "/Doctors/precache-manifest.3f4f96a08f607a1bd366fff4a2d8442e.js",
     "service-worker.js": "/Doctors/service-worker.js",
     "static/css/2.715bf72b.chunk.css.map": "/Doctors/static/css/2.715bf72b.chunk.css.map",
     "static/css/main.c23f63d7.chunk.css.map": "/Doctors/static/css/main.c23f63d7.chunk.css.map",
@@ -38,6 +38,6 @@
     "static/css/2.715bf72b.chunk.css",
     "static/js/2.39e6cac8.chunk.js",
     "static/css/main.c23f63d7.chunk.css",
-    "static/js/main.21d1017f.chunk.js"
+    "static/js/main.2fb595d9.chunk.js"
   ]
 }
