@@ -4,7 +4,9 @@
   height: 90%;
   border-radius: 50%;
 }
-
+.Forms_titleText {
+  color: rgb(62, 6, 62);
+}
 .Forms_first {
   text-align: left;
 }
@@ -23,7 +25,7 @@
 }
 
 .form-control::placeholder {
-  color: black;
+  color: rgb(62, 6, 62);
   opacity: 1; /* Firefox */
 }
 .button1 {

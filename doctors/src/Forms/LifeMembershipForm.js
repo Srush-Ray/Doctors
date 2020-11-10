@@ -2,6 +2,17 @@ import React from "react";
 import "./LifeMembershipForm.css";
 import avatar from "../Images/avatar-placeholder.png";
 class LifeMemberShipForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      firstName: "",
+      middleName: "",
+      lastName: "",
+      gender: null,
+      dob: "",
+      bloodGroup: null,
+    };
+  }
   render() {
     return (
       <div class="Forms_first mr-5 ml-5">
@@ -21,13 +32,14 @@ class LifeMemberShipForm extends React.Component {
           </div>
         </div>
         <form>
-          <h4 className="Forms_title mb-4">Personal details</h4>
+          <h4 className="Forms_title Forms_titleText mb-4">Personal details</h4>
           <div class="form-row mb-3">
             <div class="col-sm-2">
               <input
                 class="form-control"
                 type="text"
                 placeholder="First Name"
+                required
               ></input>
             </div>
             <div class="col-sm-2">
@@ -35,6 +47,7 @@ class LifeMemberShipForm extends React.Component {
                 class="form-control"
                 type="text"
                 placeholder="Middle Name"
+                required
               ></input>
             </div>
             <div class="col-sm-2">
@@ -42,6 +55,7 @@ class LifeMemberShipForm extends React.Component {
                 class="form-control"
                 type="text"
                 placeholder="Last Name"
+                required
               ></input>
             </div>
             <div class="col-sm-1">
@@ -81,29 +95,32 @@ class LifeMemberShipForm extends React.Component {
                 class="form-control"
                 type="text"
                 placeholder="Alternate Number"
+                required
               ></input>
             </div>
           </div>
           <div class="form-row">
-            <div class="col-sm-6">
+            <div class="col-sm-10">
               <textarea
                 class="form-control"
                 id="exampleFormControlTextarea1"
                 placeholder="Residential Address"
                 rows="3"
+                required
               ></textarea>
             </div>
-            <div className="col-sm-3">
+            <div className="col-sm-2">
               <input
                 class="form-control"
                 type="text"
                 placeholder="Alternate Number"
+                required
               ></input>
             </div>
           </div>
 
           <br />
-          <h5>Qualification Details</h5>
+          <h5 className="Forms_titleText">Qualification Details</h5>
           <br />
           <div class="form-row">
             <div class="col-sm-5">
@@ -112,6 +129,7 @@ class LifeMemberShipForm extends React.Component {
                 class="form-control form-control-sm"
                 placeholder="Academic Qualification"
                 name="Academic Qualification"
+                required
               ></input>
             </div>
             <div class="col-sm-5">
@@ -120,6 +138,7 @@ class LifeMemberShipForm extends React.Component {
                 class="form-control form-control-sm"
                 placeholder="Examining Body"
                 name="Examining Body"
+                required
               ></input>
             </div>
             <div class="col-sm-2">
@@ -128,12 +147,13 @@ class LifeMemberShipForm extends React.Component {
                 class="form-control form-control-sm"
                 placeholder="Year of Passing"
                 name="Year of Passing"
+                required
               ></input>
             </div>
           </div>
 
           <br />
-          <h5>Registration Details</h5>
+          <h5 className="Forms_titleText">Registration Details</h5>
           <br />
           <div class="form-row">
             <div class="col-sm-2">
@@ -142,6 +162,7 @@ class LifeMemberShipForm extends React.Component {
                 class="form-control form-control-sm"
                 placeholder="Registration Number"
                 name="Registration Number"
+                required
               ></input>
             </div>
             <div class="col-sm-2">
@@ -150,6 +171,7 @@ class LifeMemberShipForm extends React.Component {
                 class="form-control form-control-sm"
                 placeholder="Date of Registration"
                 name="Date of Registration"
+                required
               ></input>
             </div>
             <div class="col-sm-5">
@@ -158,6 +180,7 @@ class LifeMemberShipForm extends React.Component {
                 class="form-control form-control-sm"
                 placeholder="Name of the Board/Council of Registration"
                 name="Name of the Board"
+                required
               >
                 {/* </input> */}
               </input>
@@ -165,7 +188,7 @@ class LifeMemberShipForm extends React.Component {
             <br />
           </div>
           <br />
-          <h5>Professional Status</h5>
+          <h5 className="Forms_titleText">Professional Status</h5>
           <br />
           <div class="form-row">
             <div class="col-sm-2">
@@ -183,6 +206,7 @@ class LifeMemberShipForm extends React.Component {
                 class="form-control form-control-sm"
                 placeholder="Hospital Attachment to"
                 name="Hospital Attachment to"
+                required
               ></input>
             </div>
             <div class="col-sm-2.5">
@@ -191,6 +215,7 @@ class LifeMemberShipForm extends React.Component {
                 class="form-control form-control-sm"
                 placeholder="In what capacity"
                 name="In what capacity"
+                required
               ></input>
             </div>
           </div>
@@ -213,6 +238,7 @@ class LifeMemberShipForm extends React.Component {
                 class="form-control form-control-sm"
                 placeholder="Title of Paper"
                 name="Title of Paper"
+                required
               ></input>
             </div>
             <button
@@ -250,6 +276,7 @@ class LifeMemberShipForm extends React.Component {
                 placeholder="Reason for Discontinue"
                 rows="2"
                 id="comment"
+                required
               ></textarea>
             </div>
           </div>

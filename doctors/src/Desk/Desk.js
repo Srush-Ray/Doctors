@@ -18,7 +18,7 @@ const responsive = {
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 2,
+    items: 1.5,
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
@@ -36,7 +36,7 @@ class Desk extends React.Component {
           designation: "President",
           name: "Dr. V.B. Themburnikar",
           description:
-            " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue lacinia pretium. Vivamus sit amet blandit elit. Mauris fringilla lorem et commodo malesuada. Nulla quis pulvinar risus. Nunc tincidunt ante vitae erat facilisis lobortis. Duis sapien nisl, ullamcorper ac accumsan non, eleifend vel purus. Sed pretium tortor diam, vel pharetra augue lobortis quis. Aliquam sed lacinia lectus. Duis finibus leo et nunc dignissim, vitae hendrerit arcu sagittis. Quisque sed augue iaculis, ornare",
+            " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue lacinia pretium. Vivamus sit amet blandit elit. Mauris fringilla lorem et commodo malesuada. Nulla quis pulvinar risus. Nunc tincidunt ante vitae erat facilisis lobortis.  Nunc tincidunt ante vitae erat facilisis lobortis. Nunc tincidunt ante vitae erat facilisis lobortis. Nunc tincidunt ante vitae erat facilisis lobortis. Nunc tincidunt ante vitae erat facilisis lobortis. Duis sapien nisl, ullamcorper ac accumsan non, eleifend vel purus. Sed pretium tortor diam, vel pharetra augue lobortis quis. Aliquam sed lacinia lectus. Duis finibus leo et nunc dignissim, vitae hendrerit arcu sagittis. Quisque sed augue iaculis, ornare",
         },
         {
           image: president,
@@ -77,10 +77,11 @@ class Desk extends React.Component {
       <div className="Desk__main">
         {!this.state.showDoctors && (
           <Fragment>
-            <hr className="Desk__hr" />
-
-            <div className="Desk__row row align-items-center">
-              <div className="col-12 col-md-6 txt ">
+            <div className="Desk__row h-100 row align-items-center">
+              {/* <div className="col-12">
+                <hr className="Desk__hr" />
+        </div>*/}
+              <div className="col-12 col-md-6 ">
                 <h1 className="Desk__h1 Desk__margin">Desk</h1>
                 <p className="Desk__textPara Desk__margin">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -94,16 +95,16 @@ class Desk extends React.Component {
                   sed augue iaculis, ornare
                 </p>
 
-                <span className="Desk__linkDesktop Desk__margin">
+                <span className="Desk__linkDesktop Desk__margin align-self-end">
                   <a href="#">
                     {" "}
                     <span className="Desk__link"> Click to know more</span>
+                    <img
+                      src={arrow}
+                      alt="Right Arrow"
+                      style={{ marginLeft: "1rem" }}
+                    />
                   </a>
-                  <img
-                    src={arrow}
-                    alt="Right Arrow"
-                    style={{ marginLeft: "1rem" }}
-                  />
                 </span>
               </div>
               <div className="col-12 col-md-6">
@@ -165,7 +166,7 @@ class Desk extends React.Component {
           //   <Doctor />
           <Fragment>
             <div className="Desk__linkDesktop Desk__container container">
-              <div className="row Desk__row align-items-center">
+              <div className="row h-100 Desk__row align-items-center">
                 <div className="col-md-6">
                   <button type="btn" className="Desk__closeButton Desk__button">
                     <img src={cross} alt="close" onClick={this.closeModel} />
@@ -179,7 +180,7 @@ class Desk extends React.Component {
                   >
                     {this.state.selectedDoctor.name}
                   </p>
-                  <p style={{ marginTop: "50px", fontSize: "14px" }}>
+                  <p style={{ marginTop: "60px", fontSize: "14px" }}>
                     {this.state.selectedDoctor.description}
                   </p>
                 </div>
@@ -196,13 +197,37 @@ class Desk extends React.Component {
               </div>
             </div>
             <div className="Desk__linkMobile">
-              <div className="row Desk__row align-items-center">
-                <div className="col-12">
-                  <div className="rowText">
-                    <h1>{this.state.selectedDoctor.designation}</h1>
-                    <button type="btn" className="closeButton Desk__button">
-                      <img src={cross} alt="close" onClick={this.closeModel} />
-                    </button>
+              <div
+                className="row Desk__row align-items-center"
+                style={{ margin: "1rem" }}
+              >
+                <div className="col-12" style={{ padding: 0 }}>
+                  <div
+                    className="row align-items-center"
+                    style={{ padding: "0", margin: "0" }}
+                  >
+                    <div
+                      className="col-6"
+                      style={{ padding: "0", margin: "0" }}
+                    >
+                      <h1>{this.state.selectedDoctor.designation}</h1>
+                    </div>
+                    <div
+                      className="col-6"
+                      // style={{ padding: "0", margin: "0" }}
+                    >
+                      <button
+                        type="btn"
+                        className="closeButton Desk__button"
+                        style={{ float: "right" }}
+                      >
+                        <img
+                          src={cross}
+                          alt="close"
+                          onClick={this.closeModel}
+                        />
+                      </button>
+                    </div>
                   </div>
                   <p
                     className="Desk__doctorName"
@@ -219,8 +244,8 @@ class Desk extends React.Component {
                     {this.state.selectedDoctor.designation}
                   </p>
                 </div>
-                <div className="col-12">
-                  <p style={{ marginTop: "50px", fontSize: "14px" }}>
+                <div className="col-12" style={{ padding: 0 }}>
+                  <p style={{ marginTop: "35px", fontSize: "14px" }}>
                     {this.state.selectedDoctor.description}
                   </p>
                 </div>
