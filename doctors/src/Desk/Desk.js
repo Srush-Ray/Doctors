@@ -95,7 +95,7 @@ class Desk extends React.Component {
                   sed augue iaculis, ornare
                 </p>
 
-                <span className="Desk__linkDesktop Desk__margin align-self-end">
+                <span className="Desk__linkDesktop Desk__margin">
                   <a href="#">
                     {" "}
                     <span className="Desk__link"> Click to know more</span>
