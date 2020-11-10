@@ -100,8 +100,8 @@ a .Desk__link:hover {
 /*desktop*/
 @media screen and (min-width: 481px) {
   .Desk__linkDesktop {
-    display: block flex;
-    justify-content: flex-end;
+    display: block;
+    /* justify-content: flex-end; */
   }
   .Desk__linkMobile {
     display: none;
