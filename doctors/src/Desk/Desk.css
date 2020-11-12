@@ -42,24 +42,42 @@
 }
 
 .Desk__doctorName {
-  color: #5bbb32;
+  color: #51b239;
+  /* font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; */
   line-height: 3rem;
   font-weight: bold;
+  font-size: 18px;
   font-family: "Poppins", sans-serif;
 }
 .Desk__textPara {
-  margin-top: 2rem;
+  margin-top: 31px;
+  margin-right: 3rem;
   font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px;
 }
 
 a .Desk__link {
-  color: #5bbb32 !important;
-  font-weight: bold !important;
+  color: #51b239 !important;
+  font-size: 20px;
+  font-weight: 600 !important;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
   /* font-size: 20px; */
 }
 a .Desk__link:hover {
-  color: #5bbb32 !important;
-  font-weight: bold !important;
+  color: #51b239 !important;
+  font-size: 20px;
+  font-weight: 600 !important;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
   /* font-size: 20px; */
 }
 .Desk__doctorContainer {
@@ -83,7 +101,7 @@ a .Desk__link:hover {
   position: absolute;
   bottom: 0;
   /* background: rgb(0, 0, 0); */
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.25);
   color: #f1f1f1;
   width: 100%;
   padding-left: 15px;
@@ -98,7 +116,7 @@ a .Desk__link:hover {
 }
 
 /*desktop*/
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .Desk__linkDesktop {
     display: block;
   }
@@ -124,7 +142,7 @@ a .Desk__link:hover {
     position: absolute;
     bottom: 0;
     /* background: rgb(0, 0, 0); */
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.25);
     color: #f1f1f1;
     width: 100%;
     margin-bottom: 0;
@@ -169,16 +187,34 @@ a .Desk__link:hover {
     margin-right: 2rem;
   } */
 }
+/*tablet*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .Desk__margin {
+    margin-right: 5rem;
+  }
+}
 /*mobile*/
 @media screen and (max-width: 480px) {
   .Desk__linkDesktop {
     display: none;
   }
+
   .Desk__linkMobile {
     display: block;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
+  }
+  .Desk__textPara {
+    margin-right: 0;
+    margin-top: 20px;
+    line-height: 19px;
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+  .Desk__mobileMargin {
+    margin-top: -90px;
   }
   .Desk__row {
+    margin-top: 40px;
     text-align: left;
   }
   /* .mobileCarousel {
@@ -189,6 +225,9 @@ a .Desk__link:hover {
     height: 16rem;
     width: 12rem;
     border-radius: 20px;
+  }
+  .Desk__doctorName {
+    font-size: 15px;
   }
   .Desk__selectedDoctorImage {
     position: relative;
@@ -201,7 +240,7 @@ a .Desk__link:hover {
     position: absolute;
     bottom: 0;
     margin-bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.25);
     color: #f1f1f1;
     width: 100%;
     padding-left: 15px;

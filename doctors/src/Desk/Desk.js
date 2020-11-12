@@ -81,18 +81,19 @@ class Desk extends React.Component {
               {/* <div className="col-12">
                 <hr className="Desk__hr" />
         </div>*/}
-              <div className="col-12 col-md-6 ">
+              <div className="col-12 col-md-6">
                 <h1 className="Desk__h1 Desk__margin">Desk</h1>
                 <p className="Desk__textPara Desk__margin">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur congue lacinia pretium. Vivamus sit amet blandit
-                  elit. Mauris fringilla lorem et commodo malesuada. Nulla quis
-                  pulvinar risus. Nunc tincidunt ante vitae erat facilisis
-                  lobortis. Duis sapien nisl, ullamcorper ac accumsan non,
-                  eleifend vel purus. Sed pretium tortor diam, vel pharetra
-                  augue lobortis quis. Aliquam sed lacinia lectus. Duis finibus
-                  leo et nunc dignissim, vitae hendrerit arcu sagittis. Quisque
-                  sed augue iaculis, ornare
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                  ea commodo consequat. Duis aut
                 </p>
 
                 <span className="Desk__linkDesktop Desk__margin">
@@ -108,7 +109,7 @@ class Desk extends React.Component {
                 </span>
               </div>
               <div className="col-12 col-md-6">
-                <div className="Desk__marginR">
+                <div className="Desk__marginR Desk__mobileMargin">
                   <Carousel
                     swipeable={true}
                     draggable={false}
@@ -148,7 +149,7 @@ class Desk extends React.Component {
                   </Carousel>
                 </div>
 
-                <div className="Desk__linkMobile">
+                <div className="Desk__linkMobile ">
                   <a href="#" style={{ color: "#5bbb32", fontWeight: "bold" }}>
                     <span className="Desk__link"> Click to know more</span>
                   </a>
@@ -180,7 +181,7 @@ class Desk extends React.Component {
                   >
                     {this.state.selectedDoctor.name}
                   </p>
-                  <p style={{ marginTop: "60px", fontSize: "14px" }}>
+                  <p style={{ marginTop: "60px", fontSize: "17px" }}>
                     {this.state.selectedDoctor.description}
                   </p>
                 </div>
