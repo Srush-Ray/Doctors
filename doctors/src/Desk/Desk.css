@@ -132,11 +132,11 @@ a .Desk__link:hover {
   }
   .Desk__selectedDoctorImage {
     position: relative;
-    height: 22rem;
-    width: 17rem;
+    height: 24rem;
+    width: 18rem;
     margin-left: 169px;
     border-radius: 20px;
-    margin-top: 21px;
+    margin-top: 15px;
   }
   .Desk__selectedDoctorDesignation {
     position: absolute;
