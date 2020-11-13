@@ -5,6 +5,8 @@
   width: 100% !important;
   border-spacing: 0px 10px !important;
   border-collapse: separate !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .Table__a {
@@ -28,11 +30,11 @@
 }
 
 .Table__tableDataRow:nth-child(2n + 0) {
-  background-color: #d6f3fa;
+  background-color: #e8ecf8;
 }
 
 .Table__tableDataRow:nth-child(2n + 1) {
-  background-color: #d7e0f1;
+  background-color: #e6faff;
 }
 
 .srNo {
@@ -41,15 +43,16 @@
 }
 
 .srNo:nth-child(2n + 0) {
-  color: #007399;
+  color: #1b3686;
 }
 
 .srNo:nth-child(2n + 1) {
-  color: #003399;
+  color: #01677d;
 }
 
 .Table__tableComponents {
   padding: 15px;
+  font-weight: bold;
 }
 
 .Table__tableComponents:first-child {
@@ -121,15 +124,15 @@
   }
 
   .Table__cardContainer:nth-child(2n + 0) {
-    background-color: #d6f3fa !important;
-    border: 1px solid #d6f3fa;
-    color: rgb(31, 63, 78);
+    background-color: #e8ecf8 !important;
+    border: 1px solid #e8ecf8;
+    color: #1b3686;
   }
 
   .Table__cardContainer:nth-child(2n + 1) {
-    background-color: #d7e0f1 !important;
-    border: 1px solid #d7e0f1;
-    color: rgb(26, 26, 173);
+    background-color: #e6faff !important;
+    border: 1px solid #e6faff;
+    color: #01677d;
   }
   select {
     border: 2px solid rgb(26, 26, 173);

@@ -49,8 +49,8 @@ class Covid extends React.Component {
 
         <div className="Covid__div2">
           <div
-            className="row Covid__row align-items-center"
-            style={{ paddingTop: "30px" }}
+            className="row align-items-center"
+            style={{ paddingTop: "50px" }}
           >
             <div className="col-md-5 col-12">
               <p
@@ -96,7 +96,7 @@ class Covid extends React.Component {
                 <p />
               </p>
             </div>
-            <div className="offset-lg-2 offset-md-1 col-md-2">
+            <div className="offset-lg-2 offset-md-1 col-md-2 Covid__CenterDiv">
               <img
                 src={pic}
                 alt="picture"
@@ -104,15 +104,6 @@ class Covid extends React.Component {
               ></img>
               <button
                 type="button"
-                style={{
-                  marginTop: "2rem",
-                  padding: "10px",
-                  fontSize: "22px",
-                  fontWeight: "bold",
-                  borderRadius: "10px",
-                  border: "solid 2px blue",
-                  color: "blue",
-                }}
                 className="btn btn-outline-primary Covid__button"
               >
                 Training for current outbreak
@@ -121,15 +112,7 @@ class Covid extends React.Component {
           </div>
           <div className="row">
             <div className="col-12">
-              <p
-                className="Covid__marginDesktop"
-                style={{
-                  textAlign: "left",
-                  marginTop: "2rem",
-                  marginBottom: "3rem",
-                  fontSize: "20px",
-                }}
-              >
+              <p className="Covid__marginDesktop Covid__text">
                 This is to inform you that there is a misprint in the nomination
                 form send to you by me with the Notice of the 61st Annual
                 Central
@@ -137,7 +120,13 @@ class Covid extends React.Component {
             </div>
           </div>
         </div>
-        <Table />
+        <div
+          style={{
+            margin: "auto",
+          }}
+        >
+          <Table />
+        </div>
       </div>
     );
   }
