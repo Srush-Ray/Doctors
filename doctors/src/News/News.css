@@ -1,0 +1,28 @@
+.News_line {
+  width: 5%;
+  height: 10%;
+  background-color: blue;
+}
+.News_img1 {
+  width: 100%;
+  filter: brightness(50%);
+}
+.h2 .News__heading {
+  float: left;
+}
+.News_sutitle {
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: rgb(102, 97, 97);
+}
+@media (max-width: 500px) {
+  .News_b {
+    visibility: hidden;
+  }
+}

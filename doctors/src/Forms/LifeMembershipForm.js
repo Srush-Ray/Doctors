@@ -1,22 +1,101 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./LifeMembershipForm.css";
 import avatar from "../Images/avatar-placeholder.png";
 class LifeMemberShipForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      firstName: "",
-      middleName: "",
-      lastName: "",
-      gender: null,
-      dob: "",
-      bloodGroup: null,
+      data: {
+        firstName: "",
+        middleName: "",
+        lastName: "",
+        gender: null,
+        dob: "",
+        bloodGroup: null,
+        altNum: "",
+        altNum1: "",
+        resAdd: "",
+        acadQual: "",
+        examBody: "",
+        yearPass: "",
+        regNum: "",
+        dateReg: "",
+        nameofBoard: "",
+        practitioner: null,
+        scientificPub: null,
+        titleofPaper: "",
+        nimaBefore: null,
+        branch: null,
+        reasonDiscontinue: "",
+      },
+      practitioner: false,
     };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+  handleChange(e) {
+    this.setState({ [e.target.name]: e.target.value });
+    if (e.target.name === "professionalStatus") {
+      if (e.target.value === "practitioner") {
+        this.setState({ practitioner: true });
+      }
+    }
+  }
+  handleSubmit(e) {
+    e.preventDefault();
+    console.log(this.state);
+    const {
+      firstName,
+      middleName,
+      lastName,
+      gender,
+      dob,
+      bloodGroup,
+      altNum,
+      altNum1,
+      resAdd,
+      acadQual,
+      examBody,
+      yearPass,
+      regNum,
+      dateReg,
+      nameofBoard,
+      practitioner,
+      scientificPub,
+      titleofPaper,
+      nimaBefore,
+      branch,
+      reasonDiscontinue,
+    } = this.state.data;
+    if (isNaN(firstName)) {
+      alert("Firstname contains number");
+    }
+    if (isNaN(middleName)) {
+      alert("Middle name contains number");
+    }
+    if (isNaN(lastName)) {
+      alert("Lastname contains number");
+    }
+    console.log(altNum);
+    console.log(altNum1.type);
+    console.log(yearPass.length);
+
+    // if (altNum.length < 10) {
+    //   alert("Number should have 10 characters");
+    // }
+    // if (altNum1.length < 10) {
+    //   alert("Number should have 10 characters");
+    // }
+    // if (yearPass.length < 4) {
+    //   alert("Passing Year should have 4 characters");
+    // }
+
+    // console.log(this.state);
   }
   render() {
     return (
-      <div class="Forms_first mr-5 ml-5">
-        <div class="Forms_pic mb-1">
+      <div className="Forms_first mr-5 ml-5">
+        <div className="Forms_pic mb-1">
           <div className="form-row mt-4">
             <div className="col-md-2  no-gutters">
               <img src={avatar} alt="Avatar" className="Forms_avatar"></img>
@@ -31,35 +110,50 @@ class LifeMemberShipForm extends React.Component {
             </div>
           </div>
         </div>
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <h4 className="Forms_title Forms_titleText mb-4">Personal details</h4>
-          <div class="form-row mb-3">
-            <div class="col-sm-2">
+          <div className="form-row mb-3">
+            <div className="col-md-2 col-12">
               <input
-                class="form-control"
+                name="firstName"
+                onChange={this.handleChange}
+                className="form-control"
                 type="text"
-                placeholder="First Name"
+                placeholder=" "
                 required
               ></input>
+              <span>First Name</span>
             </div>
-            <div class="col-sm-2">
+            <div className="col-sm-2">
               <input
-                class="form-control"
+                name="middleName"
+                onChange={this.handleChange}
+                className="form-control"
                 type="text"
-                placeholder="Middle Name"
+                placeholder=" "
                 required
               ></input>
+              <span>Middle Name</span>
             </div>
-            <div class="col-sm-2">
+            <div className="col-sm-2">
               <input
-                class="form-control"
+                name="lastName"
+                onChange={this.handleChange}
+                className="form-control"
                 type="text"
-                placeholder="Last Name"
+                placeholder=" "
                 required
               ></input>
+              <span>Last Name</span>
             </div>
-            <div class="col-sm-1">
-              <select class="custom-select " id="inlineFormCustomSelectPref">
+            <div className="col-sm-1">
+              <select
+                className="custom-select "
+                id="inlineFormCustomSelectPref"
+                name="gender"
+                onChange={this.handleChange}
+                required
+              >
                 <option value="" disabled selected>
                   Gender
                 </option>
@@ -68,15 +162,25 @@ class LifeMemberShipForm extends React.Component {
                 <option value="o">Others</option>
               </select>
             </div>
-            <div class="col-sm-1">
+            <div className="col-sm-2 mt-2 mt-md-0">
               <input
-                class="form-control"
-                type="text"
-                placeholder="dd/mm/yyyy"
-              ></input>
+                required
+                type="date"
+                name="dob"
+                onChange={this.handleChange}
+                className="form-control"
+                placeholder=" "
+              />
+              <span>Date of birth</span>
             </div>
-            <div class="col-sm-2">
-              <select class="custom-select " id="inlineFormCustomSelectPref">
+            <div className="col-sm-1">
+              <select
+                className="custom-select "
+                id="inlineFormCustomSelectPref"
+                name="bloodGroup"
+                required
+                onChange={this.handleChange}
+              >
                 <option value="" disabled selected>
                   Blood Group
                 </option>
@@ -90,140 +194,184 @@ class LifeMemberShipForm extends React.Component {
                 <option value="o">O-</option>
               </select>
             </div>
-            <div class="col-sm-2">
+            <div className="col-sm-2">
               <input
-                class="form-control"
+                name="altNum"
+                onChange={this.handleChange}
+                className="form-control"
                 type="text"
-                placeholder="Alternate Number"
+                id="mobilenum"
+                placeholder=" "
+                min="0"
                 required
               ></input>
+              <span>Alternate Number</span>
             </div>
           </div>
-          <div class="form-row">
-            <div class="col-sm-10">
+          <div className="form-row">
+            <div className="col-sm-10">
               <textarea
-                class="form-control"
+                className="form-control"
+                name="resAdd"
+                onChange={this.handleChange}
                 id="exampleFormControlTextarea1"
-                placeholder="Residential Address"
+                placeholder=" "
                 rows="3"
                 required
               ></textarea>
+              <span>Residential Address</span>
             </div>
             <div className="col-sm-2">
               <input
-                class="form-control"
-                type="text"
-                placeholder="Alternate Number"
+                name="altNum1"
+                onChange={this.handleChange}
+                className="form-control"
+                type="number"
+                min="0"
+                placeholder=" "
                 required
               ></input>
+              <span>Alternate Number</span>
             </div>
           </div>
 
           <br />
           <h5 className="Forms_titleText">Qualification Details</h5>
           <br />
-          <div class="form-row">
-            <div class="col-sm-5">
+          <div className="form-row">
+            <div className="col-sm-5">
               <input
                 type="text"
-                class="form-control form-control-sm"
-                placeholder="Academic Qualification"
-                name="Academic Qualification"
+                name="acadQual"
+                onChange={this.handleChange}
+                className="form-control form-control-sm"
+                placeholder=" "
                 required
               ></input>
+              <span>Academic Qualification</span>
             </div>
-            <div class="col-sm-5">
+            <div className="col-sm-5">
               <input
                 type="text"
-                class="form-control form-control-sm"
-                placeholder="Examining Body"
-                name="Examining Body"
+                name="examBody"
+                className="form-control form-control-sm"
+                placeholder=" "
+                onChange={this.handleChange}
                 required
               ></input>
+              <span>Examining Body</span>
             </div>
-            <div class="col-sm-2">
+            <div className="col-sm-2">
               <input
-                type="text"
-                class="form-control form-control-sm"
-                placeholder="Year of Passing"
-                name="Year of Passing"
+                type="number"
+                name="yearPass"
+                className="form-control form-control-sm"
+                placeholder=" "
+                onChange={this.handleChange}
                 required
+                min="0"
               ></input>
+              <span>Year of Passing</span>
             </div>
           </div>
 
           <br />
-          <h5 className="Forms_titleText">Registration Details</h5>
+          <h5 className="Forms_titleText">Membership Details</h5>
           <br />
-          <div class="form-row">
-            <div class="col-sm-2">
+          <div className="form-row">
+            <div className="col-sm-2">
               <input
                 type="text"
-                class="form-control form-control-sm"
-                placeholder="Registration Number"
-                name="Registration Number"
+                name="regNum"
+                className="form-control form-control-sm"
+                placeholder=" "
+                onChange={this.handleChange}
                 required
               ></input>
+              <span>Registration Number</span>
             </div>
-            <div class="col-sm-2">
+            <div className="col-sm-2  mt-2 mt-md-0">
               <input
-                type="text"
-                class="form-control form-control-sm"
-                placeholder="Date of Registration"
-                name="Date of Registration"
+                type="date"
+                name="dateReg"
+                onChange={this.handleChange}
+                className="form-control"
+                placeholder=" "
                 required
-              ></input>
+              />
+              <span>Date Of Registration</span>
             </div>
-            <div class="col-sm-5">
+            <div className="col-sm-5">
               <input
                 type="text"
-                class="form-control form-control-sm"
-                placeholder="Name of the Board/Council of Registration"
-                name="Name of the Board"
+                name="nameofBoard"
+                className="form-control form-control-sm"
+                placeholder=" "
+                onChange={this.handleChange}
                 required
               >
                 {/* </input> */}
               </input>
+              <span>Name of the Board/Council of Registration</span>
             </div>
             <br />
           </div>
           <br />
           <h5 className="Forms_titleText">Professional Status</h5>
           <br />
-          <div class="form-row">
-            <div class="col-sm-2">
-              <select class="custom-select " id="inlineFormCustomSelectPref">
+          <div className="form-row">
+            <div className="col-sm-2">
+              <select
+                className="custom-select "
+                id="inlineFormCustomSelectPref"
+                name="professionalStatus"
+                required
+                onChange={this.handleChange}
+              >
                 <option value="" disabled selected>
-                  Practitioner
+                  Professional Status
                 </option>
-                <option value="a">A</option>
-                <option value="b">B</option>
+                <option value="practitioner">Practitioner</option>
               </select>
             </div>
-            <div class="col-sm-2.5">
-              <input
-                type="text"
-                class="form-control form-control-sm"
-                placeholder="Hospital Attachment to"
-                name="Hospital Attachment to"
-                required
-              ></input>
-            </div>
-            <div class="col-sm-2.5">
-              <input
-                type="text"
-                class="form-control form-control-sm"
-                placeholder="In what capacity"
-                name="In what capacity"
-                required
-              ></input>
-            </div>
+            {this.state.practitioner && (
+              <Fragment>
+                <div className="col-md-4 col-12">
+                  <input
+                    name="hospitalAttached"
+                    onChange={this.handleChange}
+                    className="form-control"
+                    type="text"
+                    placeholder=" "
+                    required
+                  ></input>
+                  <span>Hospital Attached</span>
+                </div>
+                <div className="col-sm-4">
+                  <input
+                    name="inWhatCapacity"
+                    onChange={this.handleChange}
+                    className="form-control"
+                    type="text"
+                    placeholder=" "
+                    required
+                  ></input>
+                  <span>In What Capacity</span>
+                </div>
+              </Fragment>
+            )}
           </div>
 
           <br />
-          <div class="form-row">
-            <div class="col-sm-2">
-              <select class="custom-select " id="inlineFormCustomSelectPref">
+          <div className="form-row">
+            <div className="col-sm-2">
+              <select
+                className="custom-select "
+                id="inlineFormCustomSelectPref"
+                name="scientificPub"
+                required
+                onChange={this.handleChange}
+              >
                 <option value="" disabled selected>
                   Scientific Papers Published
                 </option>
@@ -232,36 +380,50 @@ class LifeMemberShipForm extends React.Component {
               </select>
             </div>
 
-            <div class="col-sm-5">
+            <div className="col-sm-5">
               <input
                 type="text"
-                class="form-control form-control-sm"
-                placeholder="Title of Paper"
-                name="Title of Paper"
+                name="titleofPaper"
+                className="form-control form-control-sm"
+                placeholder=" "
+                onChange={this.handleChange}
                 required
               ></input>
+              <span>Title of Paper</span>
             </div>
             <button
               type="button"
-              class="btn btn-link"
+              className="btn btn-link"
               style={{ color: "black" }}
             >
               + Add Another
             </button>
           </div>
           <br />
-          <div class="form-row">
-            <div class="col-sm-2">
-              <select class="custom-select " id="inlineFormCustomSelectPref">
+          <div className="form-row">
+            <div className="col-sm-2">
+              <select
+                className="custom-select "
+                id="inlineFormCustomSelectPref"
+                name="nimaBefore"
+                onChange={this.handleChange}
+                required
+              >
                 <option value="" disabled selected>
-                  NIMA Member Before ?
+                  NIMA Member Before?
                 </option>
                 <option value="y">Yes</option>
                 <option value="n">No</option>
               </select>
             </div>
-            <div class="col-sm-2">
-              <select class="custom-select " id="inlineFormCustomSelectPref">
+            <div className="col-sm-2">
+              <select
+                className="custom-select "
+                id="inlineFormCustomSelectPref"
+                name="branch"
+                onChange={this.handleChange}
+                required
+              >
                 <option value="" disabled selected>
                   Branch
                 </option>
@@ -270,25 +432,30 @@ class LifeMemberShipForm extends React.Component {
               </select>
             </div>
 
-            <div class="col-sm-5">
+            <div className="col-sm-5">
               <textarea
-                class="form-control"
-                placeholder="Reason for Discontinue"
+                className="form-control"
+                name="reasonDiscontinue"
+                placeholder=" "
+                onChange={this.handleChange}
                 rows="2"
                 id="comment"
                 required
               ></textarea>
+              <span>Reason for Discontinue</span>
             </div>
           </div>
 
           <br />
 
-          <div class="container">
-            <div class="row">
-              <div class="col text-center">
-                <button class="button button1">View form</button>
+          <div className="container">
+            <div className="row">
+              <div className="col text-center">
+                <button className="button button1">View form</button>
 
-                <button class="button button2">Submit form</button>
+                <button className="button button2" type="submit">
+                  Submit form
+                </button>
               </div>
             </div>
           </div>

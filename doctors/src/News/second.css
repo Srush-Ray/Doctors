@@ -1,0 +1,51 @@
+.TwoNews__container{
+    width: 90vw;
+    max-height: 60vh;
+	margin: auto;
+	margin-top: 25px;
+    margin-bottom: 50px;
+    position: relative;
+
+}
+.TwoNews__box:hover{
+    background-color: cornsilk;}
+.TwoNews__box{
+    padding: 10px;
+}
+
+
+.TwoNews__content{
+    padding: 10px;
+}
+
+.TwoNews__newsTimeline{
+    font-size: 10px;
+    font-weight: bold;
+    color: grey;
+}
+
+.TwoNews__newsTitle{
+    font-size: 16px;
+    font-weight: bolder;
+}
+.TwoNews__newsContent{
+    font-size: 12px;
+}
+
+@media screen and (min-width: 451px){
+    .TwoNews__mainImage{
+        /* width: 45vw;
+        height: 45vh; */
+        padding: 10px;
+        border-radius: 25px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .TwoNews__mainImage{
+        /* width: 78vw;
+        height: 60vh; */
+        padding: 10px;
+        border-radius: 25px;
+    }
+}

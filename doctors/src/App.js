@@ -18,6 +18,7 @@ import Covid from "./Covid/Covid";
 import LifeMemberShipForm from "./Forms/LifeMembershipForm";
 import Table from "./Covid/Table";
 import MultiNews from "./News/MultiNews";
+import News from "./News/News";
 function App() {
   return (
     <div className="App">
@@ -29,7 +30,7 @@ function App() {
     */}
       <BrowserRouter>
         <Switch>
-          <Route path="/" component={MultiNews} exact />
+          <Route path="/" component={News} exact />
           <Route path="/Doctors" component={HomePage} exact />
           <Route path="/aboutUs" component={Aboutus} />
           <Route path="/desk" component={Desk} />
