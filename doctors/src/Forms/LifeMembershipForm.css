@@ -1,61 +1,3 @@
-.Forms_avatar {
-  vertical-align: middle;
-  width: 90%;
-  height: 90%;
-  border-radius: 50%;
-}
-.Forms_titleText {
-  color: rgb(62, 6, 62);
-}
-.Forms_first {
-  text-align: left;
-}
-.textarea {
-  resize: none;
-}
-.button {
-  border: none;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 2px 2px;
-  cursor: pointer;
-}
-
-.form-control::placeholder {
-  color: rgb(62, 6, 62);
-  opacity: 1; /* Firefox */
-}
-.button1 {
-  border-radius: 25px;
-  background-color: #d6d4e0;
-  color: black;
-}
-.button2 {
-  border-radius: 25px;
-  background-color: #4caf50;
-  color: white;
-}
-@media (max-width: 500px) {
-  .Forms_pic {
-    display: none;
-  }
-  .Forms_title {
-    margin-top: 100px;
-  }
-  .form-control {
-    margin-bottom: 10px;
-  }
-  .custom-select {
-    margin-bottom: 10px;
-  }
-  select {
-    margin-left: 0;
-  }
-}
-
 .form-control {
   display: block;
   width: 100%;
@@ -82,7 +24,7 @@
   transition-timing-function: ease;
   transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
   opacity: 0.8;
-} */
+}
 input:focus + span,
 input:not(:placeholder-shown) + span {
   opacity: 1;
@@ -90,7 +32,7 @@ input:not(:placeholder-shown) + span {
   background-color: white;
   color: #495057;
   padding: 0.175rem 0.5rem;
-}
+} */
 textarea:focus + span,
 textarea:not(:placeholder-shown) + span {
   opacity: 1;
@@ -98,4 +40,66 @@ textarea:not(:placeholder-shown) + span {
   background-color: white;
   color: #495057;
   padding: 0.175rem 0.5rem;
+}
+
+.Forms_avatar {
+  vertical-align: middle;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+}
+.Forms_titleText {
+  color: rgb(62, 6, 62);
+}
+.Forms_first {
+  text-align: left;
+}
+.textarea {
+  resize: none;
+}
+/* .button {
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+} */
+
+.form-control::placeholder {
+  color: rgb(62, 6, 62);
+  opacity: 1; /* Firefox */
+}
+.button1 {
+  border-radius: 25px;
+  background-color: #d6d4e0;
+  color: black;
+}
+.button2 {
+  border-radius: 25px;
+  background-color: #4caf50;
+  color: white;
+}
+@media (max-width: 500px) {
+  .Forms_pic {
+    display: none;
+  }
+  .Forms_title {
+    margin-top: 100px;
+  }
+  .form-control {
+    margin-bottom: 15px;
+  }
+  .custom-select {
+    margin-bottom: 10px;
+  }
+  .Form__select {
+    margin-left: 0;
+    font-size: 13px;
+  }
+  .Form__span {
+    font-size: 13px;
+  }
 }

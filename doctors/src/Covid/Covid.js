@@ -9,8 +9,8 @@ class Covid extends React.Component {
   }
   render() {
     return (
-      <div>
-        <div className="col-12">
+      <div className="" style={{ textAlign: "center" }}>
+        <div>
           <hr className="Covid__hr" />
         </div>
         <div className="row Covid__row align-items-center">

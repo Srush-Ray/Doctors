@@ -131,6 +131,11 @@ a .Desk__link:hover {
     display: flex;
     margin: auto;
     text-align: left;
+    position: relative;
+  }
+  .Desk__link {
+    position: absolute;
+    bottom: 0;
   }
   .Desk__selectedDoctorImage {
     position: relative;
@@ -139,6 +144,9 @@ a .Desk__link:hover {
     margin-left: 169px;
     border-radius: 14px;
     margin-top: 15px;
+  }
+  .Desk__col {
+    height: 24rem;
   }
   .Desk__selectedDoctorDesignation {
     position: absolute;
@@ -166,14 +174,14 @@ a .Desk__link:hover {
   .Desk__closeButton {
     float: left;
   }
-  .react-multi-carousel-list {
+  /* .react-multi-carousel-list {
     margin-right: 140px !important;
     display: flex;
     align-items: center;
     overflow-x: scroll !important;
     position: relative;
     margin-top: 0 !important;
-  }
+  } */
   ::-webkit-scrollbar {
     width: 0px; /* Remove scrollbar space */
     background: transparent; /* Optional: just make scrollbar invisible */
@@ -195,6 +203,9 @@ a .Desk__link:hover {
 }
 /*tablet*/
 @media only screen and (min-width: 481px) and (max-width: 800px) {
+  .Desk__col {
+    height: 20rem;
+  }
   .Desk__margin {
     margin-right: 3rem;
   }
@@ -203,6 +214,11 @@ a .Desk__link:hover {
   }
   .Desk__row {
     margin-left: 5% !important;
+    position: relative;
+  }
+  .Desk__link {
+    position: absolute;
+    bottom: 0;
   }
   .Desk__linkMobile {
     display: none;
@@ -306,11 +322,17 @@ a .Desk__link:hover {
 }
 /*bigger tablets*/
 @media (min-width: 800px) and (max-width: 1200px) {
-  /* .Desk__linkDesktop {
-    display: block;
-  }*/
+  .Desk__col {
+    height: 22rem;
+  }
   .Desk__row {
     margin-left: 5% !important;
+    position: relative;
+  }
+
+  .Desk__link {
+    position: absolute;
+    bottom: 0;
   }
   .Desk__linkMobile {
     display: none;

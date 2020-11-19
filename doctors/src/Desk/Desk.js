@@ -82,30 +82,30 @@ class Desk extends React.Component {
               {/* <div className="col-12">
                 <hr className="Desk__hr" />
         </div>*/}
-              <div className="col-6 col-md-6">
+              <div className="col-6 col-md-6 Desk__col">
                 <h1 className="Desk__h1 Desk__margin">Desk</h1>
-                <p className="Desk__textPara Desk__margin">
+                <br />
+                <p className="Desk__textPara Desk__margin ">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
                   laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                   irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat. Duis aut
+                  dolore eu fugiat nulla pariatur.
                 </p>
 
-                <span className="Desk__margin Desk__link">
+                <span className="Desk__margin">
                   <a href="#">
                     {" "}
-                    <span className="Desk__link"> Click to know more</span>
-                    <img
-                      src={arrow}
-                      alt="Right Arrow"
-                      style={{ marginLeft: "1rem" }}
-                    />
+                    <span className="Desk__link">
+                      {" "}
+                      Click to know more
+                      <img
+                        src={arrow}
+                        alt="Right Arrow"
+                        style={{ marginLeft: "1rem" }}
+                      />
+                    </span>
                   </a>
                 </span>
               </div>
