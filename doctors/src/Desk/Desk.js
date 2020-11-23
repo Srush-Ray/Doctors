@@ -209,7 +209,7 @@ class Desk extends React.Component {
                     ))}
                   </Carousel>
 
-                  <div className="Desk__mobileMargin mb-3">
+                  <div className="Desk__mobileMargin mb-3 mt-1">
                     <a href="#">
                       <span
                         style={{

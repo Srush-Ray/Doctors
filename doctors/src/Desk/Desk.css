@@ -81,7 +81,7 @@ a .Desk__link:hover {
 }
 .Desk__doctorImage {
   position: relative;
-  height: 22rem;
+  height: 24rem;
   border-radius: 14px;
 }
 .Desk__doctorContainer:hover {
@@ -146,7 +146,7 @@ a .Desk__link:hover {
     margin-top: 15px;
   }
   .Desk__col {
-    height: 24rem;
+    height: 25rem;
   }
   .Desk__selectedDoctorDesignation {
     position: absolute;

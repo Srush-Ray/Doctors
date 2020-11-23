@@ -3,30 +3,28 @@ import "./Covid.css";
 import pic from "../Images/Analytic 1.png";
 import firstIllustration from "../Images/Fisrt illustration.svg";
 import Table from "./Table";
+import { MdMenu } from "react-icons/md";
+
 class Covid extends React.Component {
   upload() {
     document.getElementById("selectImage").click();
   }
   render() {
     return (
-      <div className="" style={{ textAlign: "center" }}>
+      <div className="Covid__div">
         <div>
           <hr className="Covid__hr" />
         </div>
-        <div className="row Covid__row align-items-center">
+        <div className="row Covid__buttonNav align-items-start">
+          <MdMenu size={32} className="" />
+        </div>
+        <div className="row Covid__row align-items-center  mt-5">
           <div className="col-md-5 col-12">
             <h3 className="Covid__heading Covid__marginDesktop">Covid-19</h3>
             <div className="Covid__heading1 Covid__marginDesktop">
               News & Centers
             </div>
-            <p
-              style={{
-                marginTop: "40px",
-                fontSize: "16px",
-                textAlign: "left",
-              }}
-              className="Covid__marginDesktop"
-            >
+            <p className="Covid__marginDesktop Covid__para">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -44,7 +42,7 @@ class Covid extends React.Component {
               src={firstIllustration}
             ></img>
           </div>
-          <div className="Covid__end">Latest news (Branches)</div>
+          <div className="Covid__end row">Latest news (Branches)</div>
         </div>
 
         <div className="Covid__div2">
@@ -52,46 +50,19 @@ class Covid extends React.Component {
             className="row align-items-center"
             style={{ paddingTop: "50px" }}
           >
-            <div className="col-md-5 col-12">
-              <p
-                className="Covid__heading Covid__marginDesktop"
-                style={{
-                  textAlign: "left",
-                  fontSize: "30px",
-                  color: " blue",
-                  fontWeight: "bold",
-                }}
-              >
+            <div className="col-md-5 col-12 Covid__col">
+              <p className="Covid__heading3 Covid__marginDesktop">
                 Recommendation
               </p>
-              <p
-                style={{
-                  color: " blue",
-                  fontSize: "30px",
-                  textAlign: "left",
-                }}
-                className="Covid__marginDesktop"
-              >
-                NIMA CC
-              </p>
-              <p
-                style={{
-                  marginTop: "45px",
-                  fontSize: "20px",
-                  textAlign: "left",
-                }}
-                className="Covid__marginDesktop"
-              >
+              <p className="Covid__marginDesktop Covid__heading4">by NIMA CC</p>
+              <p className="Covid__marginDesktop Covid__para2">
                 Real-time training during global emergencies is critical for
-                effective preparedness and response.The COVID-19 channel
+                effective preparedness and response. The COVID-19 channel
                 provides learning resources for health professionals,
                 decision-makers and the public for the outbreak of coronavirus
                 disease (COVID-19).
               </p>
-              <p
-                style={{ fontSize: "20px", textAlign: "left" }}
-                className="Covid__marginDesktop"
-              >
+              <p className="Covid__marginDesktop Covid__txt">
                 Get Certificate for these Free Online Courses.
                 <p />
               </p>
@@ -112,7 +83,7 @@ class Covid extends React.Component {
           </div>
           <div className="row">
             <div className="col-12">
-              <p className="Covid__marginDesktop Covid__text">
+              <p className="Covid__text">
                 This is to inform you that there is a misprint in the nomination
                 form send to you by me with the Notice of the 61st Annual
                 Central
@@ -125,7 +96,7 @@ class Covid extends React.Component {
             margin: "auto",
           }}
         >
-          <Table />
+          {/*  <Table />*/}
         </div>
       </div>
     );
