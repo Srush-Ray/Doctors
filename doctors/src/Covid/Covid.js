@@ -96,7 +96,7 @@ class Covid extends React.Component {
             margin: "auto",
           }}
         >
-          {/*  <Table />*/}
+          <Table />
         </div>
       </div>
     );

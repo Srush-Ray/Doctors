@@ -1,6 +1,6 @@
 export const doctorDetails = [
   {
-    state: "bihar",
+    state: "Bihar",
     district: "gaya",
     place: "gaya",
     name: "Dr. V. R. Tembhukarnikar",
