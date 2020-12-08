@@ -146,48 +146,6 @@ class StateBranchOfficials extends React.Component {
                   {state}
                 </button>
               ))}
-              <button
-                type="button"
-                class="btn btn-link StateBranchOfficials__btn"
-                onClick={this.changeState}
-              >
-                ddddd
-              </button>
-              <button
-                type="button"
-                class="btn btn-link StateBranchOfficials__btn"
-                onClick={this.changeState}
-              >
-                ddddd
-              </button>
-              <button
-                type="button"
-                class="btn btn-link StateBranchOfficials__btn"
-                onClick={this.changeState}
-              >
-                ddddd
-              </button>
-              <button
-                type="button"
-                class="btn btn-link StateBranchOfficials__btn"
-                onClick={this.changeState}
-              >
-                ddddd
-              </button>
-              <button
-                type="button"
-                class="btn btn-link StateBranchOfficials__btn"
-                onClick={this.changeState}
-              >
-                ddddd
-              </button>
-              <button
-                type="button"
-                class="btn btn-link StateBranchOfficials__btn"
-                onClick={this.changeState}
-              >
-                ddddd
-              </button>
             </div>
             {/* <BrowserRouter>
                 <div
