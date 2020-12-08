@@ -52,16 +52,15 @@ class Table extends React.Component {
               </div>
             </div>
             <div className="col-md-6 col-sm-12 Table_headerCol">
-              <div className="Table__SelectMenu">
-                <select
-                  className="Table__states"
-                  onChange={this.handleChangePlace}
-                  id="state"
-                >
-                  <option value="" disabled selected>
-                    Select State
-                  </option>
-                  {/* <optgroup label="Maharashtra">
+              <select
+                className="Table__states"
+                onChange={this.handleChangePlace}
+                id="state"
+              >
+                <option value="" disabled selected>
+                  Select State
+                </option>
+                {/* <optgroup label="Maharashtra">
                     <option value="Pune">Pune</option>
                     <option value="Mumbai">Mumbai</option>
                     <option value="Nagpur">Nagpur</option>
@@ -70,13 +69,12 @@ class Table extends React.Component {
                     <option value="Gandhinagar">Gandhinagar</option>
                     <option value="Ahmedabad">Ahmedabad</option>
     </optgroup>*/}
-                  {this.filterPlace().map((doctor, index) => (
-                    <option value={doctor} key={index}>
-                      {doctor}
-                    </option>
-                  ))}
-                </select>
-              </div>
+                {this.filterPlace().map((doctor, index) => (
+                  <option value={doctor} key={index}>
+                    {doctor}
+                  </option>
+                ))}
+              </select>
             </div>
           </div>
         </div>
@@ -94,25 +92,46 @@ class Table extends React.Component {
               </tr>
               {this.state.selectedDoctorDetails.map((doctor, index) => (
                 <tr className="Table__tableDataRow" key={index}>
-                  <td className="Table__tableComponents Table__srNo">
-                    {index + 1}
-                  </td>
+                  {index % 2 == 0 ? (
+                    <td
+                      className="Table__tableComponents Table__srNo"
+                      style={{ color: "#1b3686" }}
+                    >
+                      {index + 1}
+                    </td>
+                  ) : (
+                    <td
+                      className="Table__tableComponents Table__srNo"
+                      style={{ color: "#01677d" }}
+                    >
+                      {index + 1}
+                    </td>
+                  )}
                   <td className="Table__tableComponents">{doctor.state}</td>
                   <td className="Table__tableComponents">{doctor.district}</td>
                   <td className="Table__tableComponents">{doctor.place}</td>
                   <td className="Table__tableComponents">{doctor.name}</td>
                   <td className="Table__tableComponents">{doctor.contact}</td>
                   <td className="Table__tableComponents">
-                    <button className="Table__button">
-                      <a className="Table__a" href="#">
-                        Read More
-                      </a>
-                    </button>
-                    {/* <div className="Table__aContainer">
-                    <a className="Table__a" href="#">
-                      Read More
-                    </a>
-            </div>*/}
+                    {index % 2 == 0 ? (
+                      <button
+                        className="Table__button"
+                        style={{ border: "2px solid #1B3686" }}
+                      >
+                        <a className="Table__a" href="#">
+                          Read More
+                        </a>
+                      </button>
+                    ) : (
+                      <button
+                        className="Table__button"
+                        style={{ border: "2px solid #01677D" }}
+                      >
+                        <a className="Table__a" href="#">
+                          Read More
+                        </a>
+                      </button>
+                    )}
                   </td>
                 </tr>
               ))}
@@ -120,7 +139,7 @@ class Table extends React.Component {
           </table>
         </div>
         <div className="Table__cards">
-          {this.state.doctorDetails.map((doctor, index) => (
+          {this.state.selectedDoctorDetails.map((doctor, index) => (
             <div className="Table__cardContainer" key={index}>
               <p className="Table__cardNumber" style={{ marginBottom: "0" }}>
                 {index + 1}

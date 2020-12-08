@@ -26,9 +26,11 @@ const responsive = {
     items: 1.5,
   },
 };
+
 class Desk extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       showDoctors: false,
       doctors: [
@@ -37,21 +39,21 @@ class Desk extends React.Component {
           designation: "President",
           name: "Dr. V.B. Themburnikar",
           description:
-            " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue lacinia pretium. Vivamus sit amet blandit elit. Mauris fringilla lorem et commodo malesuada. Nulla quis pulvinar risus. Nunc tincidunt ante vitae erat facilisis lobortis.  Nunc tincidunt ante vitae erat facilisis lobortis. Nunc tincidunt ante vitae erat facilisis lobortis. Nunc tincidunt ante vitae erat facilisis lobortis. Nunc tincidunt ante vitae erat facilisis lobortis. Duis sapien nisl, ullamcorper ac accumsan non, eleifend vel purus. Sed pretium tortor diam, vel pharetra augue lobortis quis. Aliquam sed lacinia lectus. Duis finibus leo et nunc dignissim, vitae hendrerit arcu sagittis. Quisque sed augue iaculis, ornare",
+            "Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis autLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis autLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidiDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis autLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi",
         },
         {
           image: president,
           designation: "General Secretry",
           name: "Dr. U.S.Pandey ",
           description:
-            " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue lacinia pretium. Vivamus sit amet blandit elit. Mauris fringilla lorem et commodo malesuada. Nulla quis pulvinar risus. Nunc tincidunt ante vitae erat facilisis lobortis. Duis sapien nisl, ullamcorper ac accumsan non, eleifend vel purus. Sed pretium tortor diam, vel pharetra augue lobortis quis. Aliquam sed lacinia lectus. Duis finibus leo et nunc dignissim, vitae hendrerit arcu sagittis. Quisque sed augue iaculis, ornare",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis autLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis autLorem",
         },
         {
           image: president,
           designation: "Treasurer",
           name: "Dr. Ashutosh Kulakrni",
           description:
-            " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue lacinia pretium. Vivamus sit amet blandit elit. Mauris fringilla lorem et commodo malesuada. Nulla quis pulvinar risus. Nunc tincidunt ante vitae erat facilisis lobortis. Duis sapien nisl, ullamcorper ac accumsan non, eleifend vel purus. Sed pretium tortor diam, vel pharetra augue lobortis quis. Aliquam sed lacinia lectus. Duis finibus leo et nunc dignissim, vitae hendrerit arcu sagittis. Quisque sed augue iaculis, ornare",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis autLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis autLorem ",
         },
       ],
       selectedDoctor: {
@@ -63,17 +65,31 @@ class Desk extends React.Component {
     };
     // this.openModel = this.openModel.bind(this);
   }
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   openModel = (doctor) => {
+    // window.scrollTo(0, 0);
     this.setState({ showDoctors: true });
     this.setState({ selectedDoctor: doctor });
+    // window.scrollTo(0, 0);
+    // setTimeout(() => {
+    //   window.scroll ({
+    //     top: 0,
+    //     left: 0,
+    //     behavior: "smooth",
+    //   });
+    // }, 1000);
+
     // console.log(event.currentTarget.dataset)
+
     // console.log(doctor);
   };
   closeModel = () => {
     this.setState({ showDoctors: false });
   };
+
   render() {
-    console.log(this.state.doctors);
     return (
       <div className="Desk__main">
         {!this.state.showDoctors && (
@@ -120,18 +136,27 @@ class Desk extends React.Component {
                   // autoPlay={this.props.deviceType !== "mobile" ? true : false}
                   // autoPlaySpeed={1000}
                   keyBoardControl={true}
+                  // customRightArrow={<CustomDot />}
                   // customTransition="all .5"
                   // transitionDuration={500}
+                  // customButtonGroup={
+                  //   <ButtonGroup
+                  //     next={this.props.next}
+                  //     previous={this.props.previous}
+                  //     rest={this.props.rest}
+                  //   />
+                  // }
                   containerClass="carousel-container"
                   removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
                   deviceType={this.props.deviceType}
+                  // customDot={<CustomDot />}
                   itemClass="carousel-item-padding-40-px"
                 >
                   {this.state.doctors.map((doctor, index) => (
                     <div
                       key={index}
                       className="Desk__doctorContainer"
-                      onClick={(e) => this.openModel(doctor)}
+                      onClick={() => this.openModel(doctor)}
                     >
                       <div className="Desk__imageContainer">
                         <img
@@ -151,7 +176,7 @@ class Desk extends React.Component {
             </div>
 
             <div className="Desk__linkMobile">
-              <div className="Desk__row h-100 row align-items-center">
+              <div className="Desk__row h-100 row align-items-center ">
                 <div className="mt-3">
                   <MdMenu size={32} className="Desk__buttonNav" />
                 </div>
@@ -238,8 +263,8 @@ class Desk extends React.Component {
           //   <Doctor />
           <Fragment>
             <div className="Desk__linkDesktop Desk__container container">
-              <div className="row h-100 Desk__row align-items-center">
-                <div className="col-md-6">
+              <div className="row h-100 Desk__rowSelected align-items-start">
+                <div className="col-md-6 Desk__marginTop">
                   <button type="btn" className="Desk__closeButton Desk__button">
                     <img src={cross} alt="close" onClick={this.closeModel} />
                   </button>

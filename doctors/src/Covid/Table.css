@@ -22,20 +22,6 @@
   border-radius: 20px;
 }
 
-select {
-  border: 2px solid rgb(26, 26, 173);
-  border-radius: 20px;
-  padding: 10px;
-  margin-top: 10px;
-  width: 40%;
-  float: right;
-  margin-right: 3%;
-  color: rgb(26, 26, 173);
-  background-color: white;
-}
-.Table__button:nth-child(2n + 1) {
-  border: 2px solid #1b3686;
-}
 .Table__a {
   text-decoration: none;
   color: black;
@@ -74,15 +60,6 @@ select {
   font-size: 30px;
   line-height: 45px;
 }
-
-.Table__srNo:nth-child(2n + 0) {
-  color: #1b3686;
-}
-
-.Table__srNo:nth-child(2n + 1) {
-  color: #01677d;
-}
-
 .Table__tableComponents {
   padding: 15px;
   font-weight: bold;
@@ -146,10 +123,34 @@ select {
   .Table__cards {
     display: none;
   }
+
+  .Table__states {
+    border: 2px solid rgb(26, 26, 173);
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 40%;
+    float: right;
+    margin-right: 3%;
+    color: rgb(26, 26, 173);
+    background-color: white;
+  }
 }
 @media (min-width: 800px) and (max-width: 1200px) {
   .Table__cards {
     display: none;
+  }
+
+  .Table__states {
+    border: 2px solid rgb(26, 26, 173);
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 40%;
+    float: right;
+    margin-right: 3%;
+    color: rgb(26, 26, 173);
+    background-color: white;
   }
 }
 /*tablet*/
@@ -166,9 +167,7 @@ select {
     padding-right: 25px;
     border-radius: 20px;
   }
-  .Table__button:nth-child(2n + 1) {
-    border: 2px solid #1b3686;
-  }
+
 
   .Table__a {
     text-decoration: none;
@@ -237,6 +236,18 @@ select {
     text-align: center;
     color: #2541b2;
   }
+
+  .Table__states {
+    border: 2px solid rgb(26, 26, 173);
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 40%;
+    float: right;
+    margin-right: 3%;
+    color: rgb(26, 26, 173);
+    background-color: white;
+  }
 }
 /*mobile*/
 @media screen and (max-width: 480px) {
@@ -262,9 +273,17 @@ select {
     margin-right: 2rem;
     margin-top: 1.5rem;
   }
-  .Table__cards {
-    /* overflow-x: hidden; */
-    /* padding: 20px; */
+
+  .Table__states {
+    border: 2px solid #2541b2;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 5px;
+    width: 50%;
+    float: left;
+    margin-right: 3%;
+    color: rgb(26, 26, 173);
+    background-color: white;
   }
   .Table__a {
     font-weight: 600;
@@ -294,8 +313,9 @@ select {
   }
 
   .Table__records {
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .Table__cardContainer:nth-child(2n + 0) {
@@ -341,4 +361,19 @@ select {
     font-size: 15px;
     padding: 5px;
   }
+}
+@media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
+  /* @media {
+    select {
+      border: 2px solid rgb(26, 26, 173);
+      border-radius: 20px;
+      padding: 10px;
+      margin-top: 10px;
+      width: 40%;
+      float: right;
+      margin-right: 3%;
+      color: rgb(26, 26, 173);
+      background-color: white;
+    }
+  } */
 }
