@@ -36,31 +36,27 @@ class StateBranchOfficials extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      showDoctors: false,
       doctors: [
         {
           image: president,
           designation: "President",
           name: "Dr. V.B. Themburnikar",
           place: "solapur (M.S)",
-          description:
-            " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue lacinia pretium. Vivamus sit amet blandit elit. Mauris fringilla lorem et commodo malesuada. Nulla quis pulvinar risus. Nunc tincidunt ante vitae erat facilisis lobortis. Duis sapien nisl, ullamcorper ac accumsan non, eleifend vel purus. Sed pretium tortor diam, vel pharetra augue lobortis quis. Aliquam sed lacinia lectus. Duis finibus leo et nunc dignissim, vitae hendrerit arcu sagittis. Quisque sed augue iaculis, ornare",
+          mobile: "+91 1234567890",
         },
         {
           image: president,
           designation: "Gen. Secretry",
           name: "Dr. U.S.Pandey ",
           place: "Akola (M.S)",
-          description:
-            " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue lacinia pretium. Vivamus sit amet blandit elit. Mauris fringilla lorem et commodo malesuada. Nulla quis pulvinar risus. Nunc tincidunt ante vitae erat facilisis lobortis. Duis sapien nisl, ullamcorper ac accumsan non, eleifend vel purus. Sed pretium tortor diam, vel pharetra augue lobortis quis. Aliquam sed lacinia lectus. Duis finibus leo et nunc dignissim, vitae hendrerit arcu sagittis. Quisque sed augue iaculis, ornare",
+          mobile: "Mob. :9969026062",
         },
         {
           image: president,
           designation: "Treasurer",
           name: "Dr. Ashutosh Kulakrni",
           place: "Varansi (U.P)",
-          description:
-            " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue lacinia pretium. Vivamus sit amet blandit elit. Mauris fringilla lorem et commodo malesuada. Nulla quis pulvinar risus. Nunc tincidunt ante vitae erat facilisis lobortis. Duis sapien nisl, ullamcorper ac accumsan non, eleifend vel purus. Sed pretium tortor diam, vel pharetra augue lobortis quis. Aliquam sed lacinia lectus. Duis finibus leo et nunc dignissim, vitae hendrerit arcu sagittis. Quisque sed augue iaculis, ornare",
+          mobile: "Mob. :9890631051",
         },
       ],
       selectedDoctor: {
@@ -326,6 +322,7 @@ class StateBranchOfficials extends React.Component {
                   <p className="StateBranchOfficials__doctorName">
                     {doctor.name}
                   </p>
+                  {doctor.mobile}
                   <p className="StateBranchOfficials__doctorState">
                     {doctor.place}
                   </p>

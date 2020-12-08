@@ -95,14 +95,14 @@ class Table extends React.Component {
                   {index % 2 == 0 ? (
                     <td
                       className="Table__tableComponents Table__srNo"
-                      style={{ color: "#1b3686" }}
+                      style={{ color: "#1b3686", fontSize: "30px" }}
                     >
                       {index + 1}
                     </td>
                   ) : (
                     <td
                       className="Table__tableComponents Table__srNo"
-                      style={{ color: "#01677d" }}
+                      style={{ color: "#01677d", fontSize: "30px" }}
                     >
                       {index + 1}
                     </td>

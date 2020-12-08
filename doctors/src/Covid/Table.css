@@ -7,27 +7,12 @@
   padding-left: 2% !important;
   padding-right: 2% !important;
   width: 100% !important;
-  border-spacing: 0px 10px !important;
+  border-spacing: 0px 15px !important;
   border-collapse: separate !important;
   margin-left: auto !important;
   margin-right: auto !important;
 }
-.Table__button {
-  background-color: transparent;
-  outline: none;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 30px;
-  padding-right: 30px;
-  border-radius: 20px;
-}
 
-.Table__a {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-  font-size: 16px;
-}
 .Table__aContainer {
   width: 120px;
   height: 30px;
@@ -62,7 +47,10 @@
 }
 .Table__tableComponents {
   padding: 15px;
+  font-size: 18px;
   font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  word-wrap: break-word;
 }
 
 .Table__tableComponents:first-child {
@@ -75,7 +63,9 @@
   border-top-right-radius: 20px;
   text-align: center;
 }
-
+.Table__btn {
+  word-wrap: nowrap !important;
+}
 .Table__records {
   border-collapse: collapse;
   width: 400px;
@@ -135,6 +125,23 @@
     color: rgb(26, 26, 173);
     background-color: white;
   }
+  .Table__button {
+    background-color: transparent;
+    outline: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+
+  .Table__a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+  }
 }
 @media (min-width: 800px) and (max-width: 1200px) {
   .Table__cards {
@@ -152,28 +159,47 @@
     color: rgb(26, 26, 173);
     background-color: white;
   }
+  .Table__button {
+    background-color: transparent;
+    outline: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+
+  .Table__a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+  }
 }
 /*tablet*/
 @media only screen and (min-width: 481px) and (max-width: 800px) {
   .Table__cards {
     display: none;
   }
+
   .Table__button {
     background-color: transparent;
     outline: none;
     padding-top: 7px;
     padding-bottom: 7px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 20px;
+    white-space: nowrap;
   }
-
 
   .Table__a {
     text-decoration: none;
     color: black;
     font-weight: 600;
     font-size: 12px;
+    word-wrap: normal;
   }
   .Table__tableComponents {
     padding: 10px;

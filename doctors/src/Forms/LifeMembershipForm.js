@@ -134,34 +134,34 @@ class LifeMemberShipForm extends React.Component {
               <input
                 name="firstName"
                 onChange={this.handleChange}
-                className="form-control"
+                className="Forms_form-control"
                 type="text"
                 placeholder=" "
                 required
               ></input>
-              <span className="Form__span">First Name</span>
+              <span className="Forms_span">First Name</span>
             </div>
             <div className="col-md-2 col-12">
               <input
                 name="middleName"
                 onChange={this.handleChange}
-                className="form-control"
+                className="Forms_form-control"
                 type="text"
                 placeholder=" "
                 required
               ></input>
-              <span className="Form__span">Middle Name</span>
+              <span className="Forms_span">Middle Name</span>
             </div>
             <div className="col-md-2 col-12">
               <input
                 name="lastName"
                 onChange={this.handleChange}
-                className="form-control"
+                className="Forms_form-control"
                 type="text"
                 placeholder=" "
                 required
               ></input>
-              <span className="Form__span">Last Name</span>
+              <span className="Forms_span">Last Name</span>
             </div>
             <div className="col-md-1 col-12">
               <select
@@ -185,10 +185,10 @@ class LifeMemberShipForm extends React.Component {
                 type="date"
                 name="dob"
                 onChange={this.handleChange}
-                className="form-control"
+                className="Forms_form-control"
                 placeholder=" "
               />
-              <span className="Form__span">Date of birth</span>
+              <span className="Forms_span">Date of birth</span>
             </div>
             <div className="col-md-1 col-12">
               <select
@@ -215,20 +215,20 @@ class LifeMemberShipForm extends React.Component {
               <input
                 name="altNum"
                 onChange={this.handleChange}
-                className="form-control"
+                className="Forms_form-control"
                 type="text"
                 id="mobilenum"
                 placeholder=" "
                 min="0"
                 required
               ></input>
-              <span className="Form__span">Alternate Number</span>
+              <span className="Forms_span">Alternate Number</span>
             </div>
           </div>
           <div className="form-row">
             <div className="col-md-10 col-12">
               <textarea
-                className="form-control"
+                className="Forms_form-control"
                 name="resAdd"
                 onChange={this.handleChange}
                 id="exampleFormControlTextarea1"
@@ -236,36 +236,36 @@ class LifeMemberShipForm extends React.Component {
                 rows="3"
                 required
               ></textarea>
-              <span className="Form__span">Residential Address</span>
+              <span className="Forms_span">Residential Address</span>
             </div>
             <div className="col-md-2 col-12">
               <input
                 name="altNum1"
                 onChange={this.handleChange}
-                className="form-control"
+                className="Forms_form-control"
                 type="number"
                 min="0"
                 placeholder=" "
                 required
               ></input>
-              <span className="Form__span">Alternate Number</span>
+              <span className="Forms_span">Alternate Number</span>
             </div>
           </div>
 
           <br />
           <h5 className="Forms_titleText">Qualification Details</h5>
           <br />
-          <div className="form-row">
+          <div className="Forms_form-row">
             <div className="col-md-5 col-12">
               <input
                 type="text"
                 name="acadQual"
                 onChange={this.handleChange}
-                className="form-control form-control-sm"
+                className="Forms_form-control form-control-sm"
                 placeholder=" "
                 required
               ></input>
-              <span className="Form__span">Academic Qualification</span>
+              <span className="Forms_span">Academic Qualification</span>
             </div>
             <div className="col-md-5 col-12">
               <input
@@ -276,19 +276,19 @@ class LifeMemberShipForm extends React.Component {
                 onChange={this.handleChange}
                 required
               ></input>
-              <span className="Form__span">Examining Body</span>
+              <span className="Forms_span">Examining Body</span>
             </div>
             <div className="col-md-2 col-12">
               <input
                 type="number"
                 name="yearPass"
-                className="form-control form-control-sm"
+                className="Forms_form-control form-control-sm"
                 placeholder=" "
                 onChange={this.handleChange}
                 required
                 min="0"
               ></input>
-              <span className="Form__span">Year of Passing</span>
+              <span className="Forms_span">Year of Passing</span>
             </div>
           </div>
 
@@ -300,36 +300,36 @@ class LifeMemberShipForm extends React.Component {
               <input
                 type="text"
                 name="regNum"
-                className="form-control form-control-sm"
+                className="Forms_form-control form-control-sm"
                 placeholder=" "
                 onChange={this.handleChange}
                 required
               ></input>
-              <span className="Form__span">Registration Number</span>
+              <span className="Forms_span">Registration Number</span>
             </div>
             <div className="col-md-2 col-12 mt-2 mt-md-0">
               <input
                 type="date"
                 name="dateReg"
                 onChange={this.handleChange}
-                className="form-control"
+                className="Forms_form-control"
                 placeholder=" "
                 required
               />
-              <span className="Form__span">Date Of Registration</span>
+              <span className="Forms_span">Date Of Registration</span>
             </div>
             <div className="col-md-5 col-12">
               <input
                 type="text"
                 name="nameofBoard"
-                className="form-control form-control-sm"
+                className="Forms_form-control form-control-sm"
                 placeholder=" "
                 onChange={this.handleChange}
                 required
               >
                 {/* </input> */}
               </input>
-              <span className="Form__span">
+              <span className="Forms_span">
                 Name of the Board/Council of Registration
               </span>
             </div>
@@ -368,7 +368,7 @@ class LifeMemberShipForm extends React.Component {
                     placeholder=" "
                     required
                   ></input>
-                  <span className="Form__span">Hospital Attached</span>
+                  <span className="Forms_span">Hospital Attached</span>
                 </div>
                 <div className="col-md-2 col-12">
                   <input
@@ -379,7 +379,7 @@ class LifeMemberShipForm extends React.Component {
                     placeholder=" "
                     required
                   ></input>
-                  <span className="Form__span">In What Capacity</span>
+                  <span className="Forms_span">In What Capacity</span>
                 </div>
               </Fragment>
             )}
@@ -390,23 +390,23 @@ class LifeMemberShipForm extends React.Component {
                   <input
                     name="nameOfInstitution"
                     onChange={this.handleChange}
-                    className="form-control"
+                    className="Forms_form-control"
                     type="text"
                     placeholder=" "
                     required
                   ></input>
-                  <span className="Form__span">Name of the Institution</span>
+                  <span className="Forms_span">Name of the Institution</span>
                 </div>
                 <div className="col-md-2 col-12">
                   <input
                     name="designation0"
                     onChange={this.handleChange}
-                    className="form-control"
+                    className="Forms_form-control"
                     type="text"
                     placeholder=" "
                     required
                   ></input>
-                  <span className="Form__span">Designation</span>
+                  <span className="Forms_span">Designation</span>
                 </div>
               </Fragment>
             )}
@@ -416,23 +416,23 @@ class LifeMemberShipForm extends React.Component {
                   <input
                     name="designation1"
                     onChange={this.handleChange}
-                    className="form-control"
+                    className="Forms_form-control"
                     type="text"
                     placeholder=" "
                     required
                   ></input>
-                  <span className="Form__span">Designation</span>
+                  <span className="Forms_span">Designation</span>
                 </div>
                 <div className="col-md-2 col-12">
                   <input
                     name="nameOfEmployee"
                     onChange={this.handleChange}
-                    className="form-control"
+                    className="Forms_form-control"
                     type="text"
                     placeholder=" "
                     required
                   ></input>
-                  <span className="Form__span">Name of the Employee</span>
+                  <span className="Forms_span">Name of the Employee</span>
                 </div>
               </Fragment>
             )}
@@ -442,18 +442,18 @@ class LifeMemberShipForm extends React.Component {
                   <input
                     name="designation2"
                     onChange={this.handleChange}
-                    className="form-control"
+                    className="Forms_form-control"
                     type="text"
                     placeholder=" "
                     required
                   ></input>
-                  <span className="Form__span">Designation</span>
+                  <span className="Forms_span">Designation</span>
                 </div>
                 <div className="col-md-5 col-12">
                   <input
                     name="nameOfInstitution"
                     onChange={this.handleChange}
-                    className="form-control"
+                    className="Forms_form-control"
                     type="text"
                     placeholder=" "
                     required
@@ -485,12 +485,12 @@ class LifeMemberShipForm extends React.Component {
               <input
                 type="text"
                 name="titleofPaper"
-                className="form-control form-control-sm"
+                className="Forms_form-control form-control-sm"
                 placeholder=" "
                 onChange={this.handleChange}
                 required
               ></input>
-              <span className="Form__span">Title of Paper</span>
+              <span className="Forms_span">Title of Paper</span>
             </div>
             <button
               type="button"
@@ -540,7 +540,7 @@ class LifeMemberShipForm extends React.Component {
 
             <div className="col-md-5 col-12">
               <textarea
-                className="form-control"
+                className="Forms_form-control"
                 name="reasonDiscontinue"
                 placeholder=" "
                 onChange={this.handleChange}
@@ -548,7 +548,7 @@ class LifeMemberShipForm extends React.Component {
                 id="comment"
                 required
               ></textarea>
-              <span className="Form__span">Reason for Discontinue</span>
+              <span className="Forms_span">Reason for Discontinue</span>
             </div>
           </div>
 
@@ -557,9 +557,11 @@ class LifeMemberShipForm extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col text-center">
-                <button className="button button1">View form</button>
+                <button className="Forms_button Forms_button1">
+                  View form
+                </button>
 
-                <button className="button button2" type="submit">
+                <button className="Forms_button Forms_button2" type="submit">
                   Submit form
                 </button>
               </div>

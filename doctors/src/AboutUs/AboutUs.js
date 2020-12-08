@@ -13,7 +13,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "react-multi-carousel/lib/styles.css";
 import "react-multi-carousel/lib/styles.css";
-
+import { MdMenu } from "react-icons/md";
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -33,7 +33,7 @@ const responsive = {
     items: 1,
   },
 };
-class Aboutus extends React.Component {
+class AboutUs extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -49,7 +49,7 @@ class Aboutus extends React.Component {
         },
         {
           image: president,
-          designation: "Gen. Secretry",
+          designation: "Gen. Secretary",
           name: "Dr. U.S.Pandey ",
           place: "Varanasi (U.P)",
           description:
@@ -58,7 +58,7 @@ class Aboutus extends React.Component {
         {
           image: treasurer,
           designation: "Treasurer",
-          name: "Dr. Ashutosh Kulakrni",
+          name: "Dr. Ashutosh Kulkarni",
           place: "Akola (M.S)",
           description:
             " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue lacinia pretium. Vivamus sit amet blandit elit. Mauris fringilla lorem et commodo malesuada. Nulla quis pulvinar risus. Nunc tincidunt ante vitae erat facilisis lobortis. Duis sapien nisl, ullamcorper ac accumsan non, eleifend vel purus. Sed pretium tortor diam, vel pharetra augue lobortis quis. Aliquam sed lacinia lectus. Duis finibus leo et nunc dignissim, vitae hendrerit arcu sagittis. Quisque sed augue iaculis, ornare",
@@ -66,7 +66,7 @@ class Aboutus extends React.Component {
         {
           image: organiser,
           designation: "Organiser",
-          name: "Dr. Ashutosh Kulakrni",
+          name: "Dr. Pravin Dangore",
           place: "solapur (M.S)",
           description:
             " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue lacinia pretium. Vivamus sit amet blandit elit. Mauris fringilla lorem et commodo malesuada. Nulla quis pulvinar risus. Nunc tincidunt ante vitae erat facilisis lobortis. Duis sapien nisl, ullamcorper ac accumsan non, eleifend vel purus. Sed pretium tortor diam, vel pharetra augue lobortis quis. Aliquam sed lacinia lectus. Duis finibus leo et nunc dignissim, vitae hendrerit arcu sagittis. Quisque sed augue iaculis, ornare",
@@ -76,35 +76,40 @@ class Aboutus extends React.Component {
         {
           image: woman,
           designation: "President",
-          name: "Dr. V.B. Themburnikar",
+          name: "Dr. Anil Patil",
+          place: "Kalyan (M.S)",
           description:
             " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue lacinia pretium. Vivamus sit amet blandit elit. Mauris fringilla lorem et commodo malesuada. Nulla quis pulvinar risus. Nunc tincidunt ante vitae erat facilisis lobortis. Duis sapien nisl, ullamcorper ac accumsan non, eleifend vel purus. Sed pretium tortor diam, vel pharetra augue lobortis quis. Aliquam sed lacinia lectus. Duis finibus leo et nunc dignissim, vitae hendrerit arcu sagittis. Quisque sed augue iaculis, ornare",
         },
         {
           image: organiser,
-          designation: "Gen. Secretry",
-          name: "Dr. U.S.Pandey ",
+          designation: "Genv. Secretary",
+          name: "Dr. Sanjay Karwa",
+          place: "Nanded (M.S)",
           description:
             " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue lacinia pretium. Vivamus sit amet blandit elit. Mauris fringilla lorem et commodo malesuada. Nulla quis pulvinar risus. Nunc tincidunt ante vitae erat facilisis lobortis. Duis sapien nisl, ullamcorper ac accumsan non, eleifend vel purus. Sed pretium tortor diam, vel pharetra augue lobortis quis. Aliquam sed lacinia lectus. Duis finibus leo et nunc dignissim, vitae hendrerit arcu sagittis. Quisque sed augue iaculis, ornare",
         },
         {
           image: globe,
           designation: "Treasurer",
-          name: "Dr. Ashutosh Kulakrni",
+          name: "Dr. S.N Pandey",
+          place: "Varanasi (U.P)",
           description:
             " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue lacinia pretium. Vivamus sit amet blandit elit. Mauris fringilla lorem et commodo malesuada. Nulla quis pulvinar risus. Nunc tincidunt ante vitae erat facilisis lobortis. Duis sapien nisl, ullamcorper ac accumsan non, eleifend vel purus. Sed pretium tortor diam, vel pharetra augue lobortis quis. Aliquam sed lacinia lectus. Duis finibus leo et nunc dignissim, vitae hendrerit arcu sagittis. Quisque sed augue iaculis, ornare",
         },
         {
           image: drs,
           designation: "Treasurer",
-          name: "Dr. Ashutosh Kulakrni",
+          name: "Dr. Vikas Sirshat",
+          place: "Nagpur (M.S)",
           description:
             " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue lacinia pretium. Vivamus sit amet blandit elit. Mauris fringilla lorem et commodo malesuada. Nulla quis pulvinar risus. Nunc tincidunt ante vitae erat facilisis lobortis. Duis sapien nisl, ullamcorper ac accumsan non, eleifend vel purus. Sed pretium tortor diam, vel pharetra augue lobortis quis. Aliquam sed lacinia lectus. Duis finibus leo et nunc dignissim, vitae hendrerit arcu sagittis. Quisque sed augue iaculis, ornare",
         },
         {
           image: blue,
           designation: "Treasurer",
-          name: "Dr. Ashutosh Kulakrni",
+          name: "Dr. Anil Patki",
+          place: "Solapur (M.S)",
           description:
             " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue lacinia pretium. Vivamus sit amet blandit elit. Mauris fringilla lorem et commodo malesuada. Nulla quis pulvinar risus. Nunc tincidunt ante vitae erat facilisis lobortis. Duis sapien nisl, ullamcorper ac accumsan non, eleifend vel purus. Sed pretium tortor diam, vel pharetra augue lobortis quis. Aliquam sed lacinia lectus. Duis finibus leo et nunc dignissim, vitae hendrerit arcu sagittis. Quisque sed augue iaculis, ornare",
         },
@@ -113,28 +118,32 @@ class Aboutus extends React.Component {
         {
           image: blue,
           designation: "President",
-          name: "Dr. V.B. Themburnikar",
+          name: "Dr. Ashokkumar Jaiswal",
+          place: "Nagpur (M.S)",
           description:
             " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue lacinia pretium. Vivamus sit amet blandit elit. Mauris fringilla lorem et commodo malesuada. Nulla quis pulvinar risus. Nunc tincidunt ante vitae erat facilisis lobortis. Duis sapien nisl, ullamcorper ac accumsan non, eleifend vel purus. Sed pretium tortor diam, vel pharetra augue lobortis quis. Aliquam sed lacinia lectus. Duis finibus leo et nunc dignissim, vitae hendrerit arcu sagittis. Quisque sed augue iaculis, ornare",
         },
         {
           image: globe,
           designation: "Gen. Secretry",
-          name: "Dr. U.S.Pandey ",
+          name: "Dr. Nandkumar Malshiraskar",
+          place: "Pimpri Cinch (M.S)",
           description:
             " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue lacinia pretium. Vivamus sit amet blandit elit. Mauris fringilla lorem et commodo malesuada. Nulla quis pulvinar risus. Nunc tincidunt ante vitae erat facilisis lobortis. Duis sapien nisl, ullamcorper ac accumsan non, eleifend vel purus. Sed pretium tortor diam, vel pharetra augue lobortis quis. Aliquam sed lacinia lectus. Duis finibus leo et nunc dignissim, vitae hendrerit arcu sagittis. Quisque sed augue iaculis, ornare",
         },
         {
           image: drs,
           designation: "Treasurer",
-          name: "Dr. Ashutosh Kulakrni",
+          name: "Dr. S.L. Rathi",
+          place: "Aurangabad (M.S)",
           description:
             " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue lacinia pretium. Vivamus sit amet blandit elit. Mauris fringilla lorem et commodo malesuada. Nulla quis pulvinar risus. Nunc tincidunt ante vitae erat facilisis lobortis. Duis sapien nisl, ullamcorper ac accumsan non, eleifend vel purus. Sed pretium tortor diam, vel pharetra augue lobortis quis. Aliquam sed lacinia lectus. Duis finibus leo et nunc dignissim, vitae hendrerit arcu sagittis. Quisque sed augue iaculis, ornare",
         },
         {
           image: woman,
           designation: "Treasurer",
-          name: "Dr. Ashutosh Kulakrni",
+          name: "Dr. Subhash Bagle",
+          place: "Ahmednagar (M.S)",
           description:
             " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue lacinia pretium. Vivamus sit amet blandit elit. Mauris fringilla lorem et commodo malesuada. Nulla quis pulvinar risus. Nunc tincidunt ante vitae erat facilisis lobortis. Duis sapien nisl, ullamcorper ac accumsan non, eleifend vel purus. Sed pretium tortor diam, vel pharetra augue lobortis quis. Aliquam sed lacinia lectus. Duis finibus leo et nunc dignissim, vitae hendrerit arcu sagittis. Quisque sed augue iaculis, ornare",
         },
@@ -144,113 +153,169 @@ class Aboutus extends React.Component {
   }
   render() {
     return (
-      <div>
-        <div className="AboutUs_firstdiv" style={{ marginBottom: "88px" }}>
-          <div className="row AboutUs_row align-items-center mr-5">
-            <div className="col-12">
-              <hr className="AboutUs_hr" />
-            </div>
-            <div className="col-12 col-md-6">
-              <div className="AboutUs_para">
-                <h1 style={{ fontWeight: "bold" }}>About Us</h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer pellentesque augue viverra bibendum sollicitudin.
-                  Quisque auctor in dui non blandit. Suspendisse pulvinar tellus
-                  nulla, sit amet aliquet risus ultrices suscipit. Nunc
-                  fringilla consequat leo venenatis luctus. Maecenas interdum
-                  luctus fringilla. Nullam viverra ligula eget finibus egestas.
-                  Fusce felis purus, sagittis a neque quis, dignissim aliquet
-                  turpis. Nulla facilisi. Nam eget massa eget augue euismod
-                  tempor eget vitae lorem. Pellentesque vel libero sed orci
-                  bibendum venenatis fermentum in libero. In suscipit tellus id
-                  diam sagittis eleifend. Curabitur hendrerit risus sit amet
-                  tortor tincidunt, id faucibus lacus rutrum.
-                </p>
+      <>
+        <div>
+          <div
+            className="AboutUs_firstdiv"
+            style={{ marginBottom: "10%", width: "100%" }}
+          >
+            <div
+              className="row align-items-center ml-5"
+              style={{ marginLeft: "10%" }}
+            >
+              <div className="col-12">
+                <hr className="AboutUs_hr" />
+              </div>
+              <div className=" col-md-5 ml-lg-5 ">
+                <div className="para">
+                  <h1
+                    className="AboutUs_h1"
+                    style={{ fontWeight: "bold", paddingBottom: "31px" }}
+                  >
+                    About Us
+                  </h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer pellentesque augue viverra bibendum sollicitudin.
+                    Quisque auctor in dui non blandit. Suspendisse pulvinar
+                    tellus nulla, sit amet aliquet risus ultrices suscipit. Nunc
+                    fringilla consequat leo venenatis luctus. Maecenas interdum
+                    luctus fringilla. Nullam viverra ligula eget finibus
+                    egestas. Fusce felis purus, sagittis a neque quis, dignissim
+                    aliquet turpis. Nulla facilisi. Nam eget massa eget augue
+                    euismod tempor eget vitae lorem. Pellentesque vel libero sed
+                    orci bibendum venenatis fermentum in libero. In suscipit
+                    tellus id diam sagittis eleifend. Curabitur hendrerit risus
+                    sit amet tortor tincidunt, id faucibus lacus rutrum.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <img className="AboutUs_illustration" src={pic} alt="" />
               </div>
             </div>
-            <div className="col-12 col-md-6">
-              <img className="AboutUs_illustration" src={pic} alt="" />
+          </div>
+          <div
+            className="AboutUs_mobileview"
+            style={{ height: "100%", marginBottom: "5%" }}
+          >
+            <div>
+              <MdMenu size={32} className="AboutUs_buttonNav" />
+            </div>
+            <h1 className="AboutUs_h1">About Us</h1>
+            <p
+              style={{
+                marginTop: "2rem",
+                marginLeft: "30px",
+                marginRight: "30px",
+                textAlign: "left",
+              }}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              pellentesque augue viverra bibendum sollicitudin. Quisque auctor
+              in dui non blandit. Suspendisse pulvinar tellus nulla, sit amet
+              aliquet risus ultrices suscipit. Nunc fringilla consequat leo
+              venenatis luctus. Maecenas interdum luctus fringilla. Nullam
+              viverra ligula eget finibus egestas. Fusce felis purus, sagittis a
+              neque quis, dignissim aliquet turpis. Nulla facilisi. Nam eget
+              massa eget augue euismod tempor eget vitae lorem. Pellentesque vel
+              libero sed orci bibendum venenatis{" "}
+            </p>
+            <img
+              style={{ width: "100%", height: "282px;", marginBottom: "" }}
+              src={pic}
+              alt=""
+            />
+          </div>
+          <h3 className="AboutUs_h3">NIMA CC.(India) 19-21</h3>
+          <div className="AboutUs_row row">
+            <div
+              className="AboutUs_col col-md-9 offset-md-3"
+              style={{ paddingRight: "0" }}
+            >
+              <Carousel
+                className="caro"
+                swipeable={true}
+                draggable={false}
+                responsive={responsive}
+                showArrows={true}
+                ssr={false} // means to render carousel on server-side.
+                // infinite={true}
+                // autoPlay={this.props.deviceType !== "mobile" ? true : false}
+                // autoPlaySpeed={1000}
+                keyBoardControl={true}
+                // customTransition="all .5"
+                // transitionDuration={500}
+                containerClass="carousel-container"
+                removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
+                deviceType={this.props.deviceType}
+                itemClass="carousel-item-padding-40-px"
+              >
+                {this.state.doctors.map((doctor, index) => (
+                  <div key={index} className="AboutUs_doctorContainer">
+                    <div className="AboutUs_cont">
+                      <div className="AboutUs_imageContainer">
+                        <img
+                          src={doctor.image}
+                          alt={doctor.name}
+                          className="AboutUs_doctorImage"
+                        />
+                        <p className="AboutUs_doctorDesignation">
+                          {doctor.designation}
+                        </p>
+                      </div>
+                      <span className="AboutUs_doctorName">{doctor.name}</span>
+                      <br />
+                      <span className="AboutUs_doctorPlace">
+                        {doctor.place}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </Carousel>
             </div>
           </div>
         </div>
-        <div className="AboutUs_mobileview">
-          <h1
-            style={{
-              fontWeight: "bold",
-              paddingTop: "10rem",
-              textAlign: "left",
-              marginLeft: "30px",
-            }}
-          >
-            About Us
-          </h1>
-          <p
-            style={{
-              marginTop: "2rem",
-              marginLeft: "30px",
-              marginRight: "30px",
-              textAlign: "left",
-            }}
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            pellentesque augue viverra bibendum sollicitudin. Quisque auctor in
-            dui non blandit. Suspendisse pulvinar tellus nulla, sit amet aliquet
-            risus ultrices suscipit. Nunc fringilla consequat leo venenatis
-            luctus. Maecenas interdum luctus fringilla. Nullam viverra ligula
-            eget finibus egestas. Fusce felis purus, sagittis a neque quis,
-            dignissim aliquet turpis. Nulla facilisi. Nam eget massa eget augue
-            euismod tempor eget vitae lorem. Pellentesque vel libero sed orci
-            bibendum venenatis fermentum in libero. In suscipit tellus id diam
-            sagittis eleifend. Curabitur hendrerit risus sit amet tortor
-            tincidunt, id faucibus lacus rutrum.
-          </p>
-          <img style={{ width: "100%", height: "100%" }} src={pic} alt="" />
+        {/* <h3 >SECRETARY</h3>
+        <div className="row">
+        <div className="col-md-9 offset-md-3">
+        <Carousel className="caro"
+        swipeable={true}
+        draggable={false}
+        responsive={responsive}
+        showArrows={true}
+        ssr={false} // means to render carousel on server-side.
+        // infinite={true}
+        // autoPlay={this.props.deviceType !== "mobile" ? true : false}
+        // autoPlaySpeed={1000}
+        keyBoardControl={true}
+        // customTransition="all .5"
+        // transitionDuration={500}
+        containerClass="carousel-container"
+        removeArrowOnDeviceType={["desktop","tablet", "mobile"]}
+        deviceType={this.props.deviceType}
+    itemClass="carousel-item-padding-40-px"
+    >
+    
+    {
+        this.state.joint.map((joint,index) =>
+        <div key={index} className="AboutUs_doctorContainer" >
+        <div className="AboutUs_imageContainer">
+        <img src={joint.image} alt={joint.name} className="AboutUs_doctorImage" />
+        <p className="AboutUs_doctorDesignation">{joint.designation}</p>
         </div>
-        <h3 className="AboutUs_h3">NIMA CC.(India) 19-21</h3>
-        <div className="row AboutUs_row">
-          <div className="col-md-9 offset-md-3">
-            <Carousel
-              swipeable={true}
-              draggable={false}
-              responsive={responsive}
-              showArrows={true}
-              ssr={false} // means to render carousel on server-side.
-              // infinite={true}
-              // autoPlay={this.props.deviceType !== "mobile" ? true : false}
-              // autoPlaySpeed={1000}
-              keyBoardControl={true}
-              // customTransition="all .5"
-              // transitionDuration={500}
-              containerClass="carousel-container"
-              removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
-              deviceType={this.props.deviceType}
-              itemClass="carousel-item-padding-40-px"
-            >
-              {this.state.doctors.map((doctor, index) => (
-                <div key={index} className="AboutUs_doctorContainer">
-                  <div className="AboutUs_imageContainer">
-                    <img
-                      src={doctor.image}
-                      alt={doctor.name}
-                      className="AboutUs_doctorImage"
-                    />
-                    <p className="AboutUs_doctorDesignation">
-                      {doctor.designation}
-                    </p>
-                  </div>
-                  <p className="AboutUs_doctorName">{doctor.name}</p>
-                  <p>{doctor.place}</p>
-                </div>
-              ))}
-            </Carousel>
-          </div>
+        <p className="AboutUs_doctorName">{joint.name}</p>
         </div>
-
+        )
+    }
+    </Carousel>
+    </div>
+    </div> */}
         <h3 className="AboutUs_h3">JOINT SECRETARY</h3>
         <div className="row AboutUs_row">
-          <div className="col-md-9 offset-md-3">
+          <div className="AboutUs_col col-md-9 offset-md-3">
             <Carousel
+              className="caro"
               swipeable={true}
               draggable={false}
               responsive={responsive}
@@ -269,17 +334,21 @@ class Aboutus extends React.Component {
             >
               {this.state.joint.map((joint, index) => (
                 <div key={index} className="AboutUs_doctorContainer">
-                  <div className="AboutUs_imageContainer">
-                    <img
-                      src={joint.image}
-                      alt={joint.name}
-                      className="AboutUs_doctorImage"
-                    />
-                    <p className="AboutUs_doctorDesignation">
-                      {joint.designation}
-                    </p>
+                  <div className="AboutUs_cont">
+                    <div className="AboutUs_imageContainer">
+                      <img
+                        src={joint.image}
+                        alt={joint.name}
+                        className="AboutUs_doctorImage"
+                      />
+                      <p className="AboutUs_doctorDesignation">
+                        {joint.designation}
+                      </p>
+                    </div>
+                    <span className="AboutUs_doctorName">{joint.name}</span>
+                    <br />
+                    <span className="AboutUs_doctorPlace">{joint.place}</span>
                   </div>
-                  <p className="AboutUs_doctorName">{joint.name}</p>
                 </div>
               ))}
             </Carousel>
@@ -287,9 +356,10 @@ class Aboutus extends React.Component {
         </div>
 
         <h3 className="AboutUs_h3">ASSISTANT SECRETARY</h3>
-        <div className="row AboutUs_row">
-          <div className="col-md-9 offset-md-3">
+        <div className="AboutUs_row row">
+          <div className="AboutUs_col col-md-9 offset-md-3">
             <Carousel
+              className="caro"
               swipeable={true}
               draggable={false}
               responsive={responsive}
@@ -308,26 +378,32 @@ class Aboutus extends React.Component {
             >
               {this.state.assistant.map((assistant, index) => (
                 <div key={index} className="AboutUs_doctorContainer">
-                  <div className="AboutUs_imageContainer">
-                    <img
-                      src={assistant.image}
-                      alt={assistant.name}
-                      className="AboutUs_doctorImage"
-                    />
-                    <p className="AboutUs_doctorDesignation">
-                      {assistant.designation}
-                    </p>
+                  <div className="AboutUs_cont">
+                    <div className="AboutUs_imageContainer">
+                      <img
+                        src={assistant.image}
+                        alt={assistant.name}
+                        className="AboutUs_doctorImage"
+                      />
+                      <p className="AboutUs_doctorDesignation">
+                        {assistant.designation}
+                      </p>
+                    </div>
+                    <span className="AboutUs_doctorName">{assistant.name}</span>
+                    <br />
+                    <span className="AboutUs_doctorPlace">
+                      {assistant.place}
+                    </span>
                   </div>
-                  <p className="AboutUs_doctorName">{assistant.name}</p>
                 </div>
               ))}
             </Carousel>
           </div>
         </div>
         <div class="AboutUs_lastdiv"></div>
-      </div>
+      </>
     );
   }
 }
 
-export default Aboutus;
+export default AboutUs;

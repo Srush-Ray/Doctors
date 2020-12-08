@@ -41,13 +41,16 @@
   margin-right: 5%;
 }
 
-/* .doctorName {
-  color: darkblue;
-  line-height: 3rem;
-  font-weight: bold;
+.StateBranchOfficials__doctorName {
   font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
-} */
+  margin-top: 5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #2541b2;
+}
 
 .StateBranchOfficials__doctorContainer {
   margin: 2%;
@@ -56,8 +59,10 @@
 .StateBranchOfficials__doctorImage {
   position: relative;
   /* width: 15rem; */
-  height: 20rem;
-  border-radius: 20px;
+  /* height: 20rem; */
+  width: 238.95px;
+  height: 323.87px;
+  border-radius: 13px;
 }
 
 .StateBranchOfficials__imageContainer {
@@ -68,17 +73,18 @@
 .StateBranchOfficials__doctorDesignation {
   position: absolute;
   bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
+  background-color: rgba(0, 0, 0, 0.25);
   width: 100%;
-  padding: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   margin-bottom: 0;
+  font-size: 25px;
+  padding-left: 12px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-  font-size: 20px;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  color: white;
+  border-bottom-right-radius: 13px;
+  border-bottom-left-radius: 13px;
 }
 
 .react-multi-carousel-list {
