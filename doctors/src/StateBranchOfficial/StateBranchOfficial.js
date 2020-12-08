@@ -3,7 +3,9 @@ import "./StateBranchOfficial.css";
 import president from "../Images/Rectangle 204.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { MdMenu } from "react-icons/md";
 import illustrate from "../Images/State branch official.svg";
+import { doctors } from "./DoctorDetails";
 import {
   Route,
   Switch,
@@ -35,46 +37,57 @@ const responsive = {
 class StateBranchOfficials extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
-      doctors: [
-        {
-          image: president,
-          designation: "President",
-          name: "Dr. V.B. Themburnikar",
-          place: "solapur (M.S)",
-          mobile: "+91 1234567890",
-        },
-        {
-          image: president,
-          designation: "Gen. Secretry",
-          name: "Dr. U.S.Pandey ",
-          place: "Akola (M.S)",
-          mobile: "Mob. :9969026062",
-        },
-        {
-          image: president,
-          designation: "Treasurer",
-          name: "Dr. Ashutosh Kulakrni",
-          place: "Varansi (U.P)",
-          mobile: "Mob. :9890631051",
-        },
-      ],
-      selectedDoctor: {
-        image: null,
-        designation: "",
-        name: "",
-        description: "",
-      },
+      doctorDetails: doctors,
+      selectedState: "Maharashtra",
+      selectedDoctors: [],
+      distinctStates: [],
     };
     // this.openModel = this.openModel.bind(this);
   }
 
+  changeState = (event) => {
+    event.preventDefault();
+    this.setState({ selectedState: event.target.name });
+    let state = event.target.name;
+    const temp = this.state.doctorDetails.filter((o) => {
+      if (o.state === state) {
+        return o;
+      }
+      return 0;
+    });
+    this.setState({
+      selectedDoctors: temp,
+    });
+  };
+  componentDidMount() {
+    this.setState({ doctorDetails: doctors });
+    let state = this.state.selectedState;
+    const temp = this.state.doctorDetails.filter((o) => {
+      if (o.state === state) {
+        return o;
+      }
+      return 0;
+    });
+
+    this.setState({ selectedDoctors: temp });
+  }
+  filterPlace = () => {
+    let distinctPlace = [];
+    this.state.doctorDetails.map((obj) => distinctPlace.push(obj.state));
+    distinctPlace = [...new Set(distinctPlace)];
+    return distinctPlace;
+  };
+
   render() {
-    console.log(this.state.doctors);
     return (
-      <Fragment>
+      <div className="StateBranchOfficials">
         <div className="StateBranchOfficials__firstdiv">
           <Fragment>
+            <div className="StateBranchOfficials__mobileBtn">
+              <MdMenu size={32} className="StateBranchOfficials__buttonNav" />
+            </div>
             <div
               className="row StateBranchOfficials__row1"
               style={{ marginLeft: "0", marginRight: "0" }}
@@ -84,7 +97,7 @@ class StateBranchOfficials extends React.Component {
               </div>
               <div className="col-sm-12 col-md-6 txt">
                 <div className="StateBranchOfficials__para">
-                  <h1>
+                  <h1 className="StateBranchOfficials__h1">
                     State Branch <br />
                     Officials
                   </h1>
@@ -105,14 +118,78 @@ class StateBranchOfficials extends React.Component {
                 <img
                   src={illustrate}
                   alt="illustration"
-                  className="StateBranchOfficials__illustration"
+                  className="StateBranchOfficials__illustration img-fluid"
                 />
               </div>
             </div>
           </Fragment>
           <Fragment>
-            <div className="StateBranchOfficials__row navbar">
-              <BrowserRouter>
+            <div
+              className="StateBranchOfficials__nav-container"
+              style={{
+                overflowX: "scroll",
+                overflowY: "hidden",
+                scrollbarColor: "transparent",
+              }}
+            >
+              {this.filterPlace().map((state, index) => (
+                <button
+                  type="button"
+                  class={
+                    this.state.selectedState === state
+                      ? "btn btn-link StateBranchOfficials__btn StateBranchOfficials__active"
+                      : "btn btn-link StateBranchOfficials__btn "
+                  }
+                  name={state}
+                  onClick={this.changeState}
+                >
+                  {state}
+                </button>
+              ))}
+              <button
+                type="button"
+                class="btn btn-link StateBranchOfficials__btn"
+                onClick={this.changeState}
+              >
+                ddddd
+              </button>
+              <button
+                type="button"
+                class="btn btn-link StateBranchOfficials__btn"
+                onClick={this.changeState}
+              >
+                ddddd
+              </button>
+              <button
+                type="button"
+                class="btn btn-link StateBranchOfficials__btn"
+                onClick={this.changeState}
+              >
+                ddddd
+              </button>
+              <button
+                type="button"
+                class="btn btn-link StateBranchOfficials__btn"
+                onClick={this.changeState}
+              >
+                ddddd
+              </button>
+              <button
+                type="button"
+                class="btn btn-link StateBranchOfficials__btn"
+                onClick={this.changeState}
+              >
+                ddddd
+              </button>
+              <button
+                type="button"
+                class="btn btn-link StateBranchOfficials__btn"
+                onClick={this.changeState}
+              >
+                ddddd
+              </button>
+            </div>
+            {/* <BrowserRouter>
                 <div
                   className="col-sm-12 StateBranchOfficials__nav-container"
                   style={{
@@ -121,8 +198,8 @@ class StateBranchOfficials extends React.Component {
                     scrollbarColor: "transparent",
                   }}
                 >
-                  {/*<Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">*/}
+                  {<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">}
 
                   <NavLink
                     to="/Gujarat"
@@ -265,7 +342,7 @@ class StateBranchOfficials extends React.Component {
                     Punjab
                   </NavLink>
                 </div>
-                {/* <Switch>
+                { <Switch>
         <Route exact path="/Gujarat" component={Gujarat} />
         <Route exact path="/">
           <Redirect to="/Gujarat" />
@@ -274,16 +351,17 @@ class StateBranchOfficials extends React.Component {
         <Route exact path="/Karnataka" component={} />
         <Route exact path="/Punjab" component={} />
         <Route exact path="/Maharashtra" component={} />
-      </Switch> */}
-              </BrowserRouter>
-            </div>
+      </Switch> }
+    </BrowserRouter>*/}
           </Fragment>
           <hr align="center" className="StateBranchOfficials__hr2" />
         </div>
 
         <div className="row StateBranchOfficials__row3">
           <div className="col-12 col-md-3">
-            <h2 className="StateBranchOfficials__stateName">MAHARASHTRA</h2>
+            <h2 className="StateBranchOfficials__stateName">
+              {this.state.selectedState.toUpperCase()}
+            </h2>
           </div>
           <div className="col-12 col-md-9 StateBranchOfficials__row4">
             <Carousel
@@ -304,7 +382,7 @@ class StateBranchOfficials extends React.Component {
               deviceType={this.props.deviceType}
               itemClass="carousel-item-padding-40-px"
             >
-              {this.state.doctors.map((doctor, index) => (
+              {this.state.selectedDoctors.map((doctor, index) => (
                 <div
                   key={index}
                   className="StateBranchOfficials__doctorContainer"
@@ -322,16 +400,20 @@ class StateBranchOfficials extends React.Component {
                   <p className="StateBranchOfficials__doctorName">
                     {doctor.name}
                   </p>
-                  {doctor.mobile}
-                  <p className="StateBranchOfficials__doctorState">
-                    {doctor.place}
+                  {!!doctor.place.length && (
+                    <p className="StateBranchOfficials__doctorState">
+                      ( {doctor.place} )
+                    </p>
+                  )}
+                  <p className="StateBranchOfficials__doctorMobile">
+                    Mob. :{doctor.mobile}
                   </p>
                 </div>
               ))}
             </Carousel>
           </div>
         </div>
-      </Fragment>
+      </div>
     );
   }
 }

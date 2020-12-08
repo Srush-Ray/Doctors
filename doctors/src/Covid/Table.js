@@ -69,9 +69,9 @@ class Table extends React.Component {
                     <option value="Gandhinagar">Gandhinagar</option>
                     <option value="Ahmedabad">Ahmedabad</option>
     </optgroup>*/}
-                {this.filterPlace().map((doctor, index) => (
-                  <option value={doctor} key={index}>
-                    {doctor}
+                {this.filterPlace().map((state, index) => (
+                  <option value={state} key={index}>
+                    {state}
                   </option>
                 ))}
               </select>
