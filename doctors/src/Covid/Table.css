@@ -143,6 +143,12 @@
     font-size: 16px;
   }
 }
+.Table__states {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
 @media (min-width: 800px) and (max-width: 1200px) {
   .Table__cards {
     display: none;
@@ -314,6 +320,8 @@
   .Table__a {
     font-weight: 600;
     font-size: 16px;
+    text-decoration: none;
+    color: black;
   }
   .Table__btnDiv {
     display: flex;

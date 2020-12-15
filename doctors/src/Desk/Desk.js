@@ -72,6 +72,17 @@ class Desk extends React.Component {
     // window.scrollTo(0, 0);
     this.setState({ showDoctors: true });
     this.setState({ selectedDoctor: doctor });
+    // // document.body.scrollTop = 0; // For Safari
+    // // document.documentElement.scrollTop = 0;
+    // console.log("her");
+    // var el = document.getElementsByClassName("Desk__linkMobile");
+
+    // // myDiv.innerHTML = variableLongText;
+    // el.scrollTop = el.scrollHeight;
+
+    // setTimeout(function () {
+    //   el.scrollTop = 0;
+    // }, 500);
     // window.scrollTo(0, 0);
     // setTimeout(() => {
     //   window.scroll ({

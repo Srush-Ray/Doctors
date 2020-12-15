@@ -196,11 +196,25 @@ class Table extends React.Component {
                       Read More
                     </a>
           </div>*/}
-                  <button className="Table__button">
-                    <a className="Table__a" href="#">
-                      Read More
-                    </a>
-                  </button>
+                  {index % 2 == 0 ? (
+                    <button
+                      className="Table__button"
+                      style={{ border: "2px solid #1B3686" }}
+                    >
+                      <a className="Table__a" href="#">
+                        Read More
+                      </a>
+                    </button>
+                  ) : (
+                    <button
+                      className="Table__button"
+                      style={{ border: "2px solid #01677D" }}
+                    >
+                      <a className="Table__a" href="#">
+                        Read More
+                      </a>
+                    </button>
+                  )}
                 </div>
               </div>
             </div>
