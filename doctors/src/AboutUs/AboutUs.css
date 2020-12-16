@@ -11,6 +11,9 @@
   height: 533.5px;
 }
 
+.AboutUs_doctorPlace {
+  line-height: 2rem;
+}
 .AboutUs_hr {
   background-color: black;
   margin-top: 4rem;
@@ -34,6 +37,7 @@
 }
 .AboutUs_doctorName {
   color: #2541b2;
+  margin-top: 2rem;
   font-weight: bold;
   font-size: 20px;
   font-family: "Poppins";
