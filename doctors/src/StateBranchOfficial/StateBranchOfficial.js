@@ -124,14 +124,7 @@ class StateBranchOfficials extends React.Component {
             </div>
           </Fragment>
           <Fragment>
-            <div
-              className="StateBranchOfficials__nav-container"
-              style={{
-                overflowX: "scroll",
-                overflowY: "hidden",
-                scrollbarColor: "transparent",
-              }}
-            >
+            <div className="StateBranchOfficials__nav-container">
               {this.filterPlace().map((state, index) => (
                 <button
                   type="button"
