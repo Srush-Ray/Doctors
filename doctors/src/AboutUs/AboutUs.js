@@ -191,7 +191,11 @@ class AboutUs extends React.Component {
                 </div>
               </div>
               <div className="col-md-6">
-                <img className="AboutUs_illustration" src={pic} alt="" />
+                <img
+                  className="AboutUs_illustration img-fluid"
+                  src={pic}
+                  alt=""
+                />
               </div>
             </div>
           </div>

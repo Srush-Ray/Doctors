@@ -38,7 +38,7 @@ class Covid extends React.Component {
           </div>
           <div className="col-md-7 col-12">
             <img
-              className="Covid__firstIllustration"
+              className="Covid__firstIllustration img-fluid"
               src={firstIllustration}
             ></img>
           </div>
@@ -73,7 +73,7 @@ class Covid extends React.Component {
                   <img
                     src={pic}
                     alt="SecondIllustration"
-                    className="Covid__secondillustration"
+                    className="Covid__secondillustration img-fluid"
                   ></img>
                 </div>
                 <div className="col-12">
