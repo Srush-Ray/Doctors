@@ -11,6 +11,13 @@
   overflow-y: scroll;
   font-family: "Poppins", sans-serif;
 }
+.Desk__selectedDoctorDescription {
+  overflow-y: scroll;
+  height: 100%;
+}
+.Desk__rowSelected {
+  /* overflow: hidden; */
+}
 .Desk__h1 {
   font-weight: bold;
   font-family: "Poppins", sans-serif;

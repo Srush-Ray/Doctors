@@ -67,7 +67,27 @@ class Covid extends React.Component {
                 <p />
               </p>
             </div>
-            <div className="offset-lg-2 offset-md-1 col-md-2 Covid__CenterDiv">
+            <div className="col-md-6">
+              <div className="row">
+                <div className="col-md-12">
+                  <img
+                    src={pic}
+                    alt="SecondIllustration"
+                    className="Covid__secondillustration"
+                  ></img>
+                </div>
+                <div className="col-12">
+                  <button
+                    type="button"
+                    className="btn btn-outline-primary Covid__button"
+                  >
+                    Training for current outbreak
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/*<div className=" offset-md-1 col-md-6 Covid__CenterDiv">
               <img
                 src={pic}
                 alt="picture"
@@ -79,7 +99,7 @@ class Covid extends React.Component {
               >
                 Training for current outbreak
               </button>
-            </div>
+    </div>*/}
           </div>
           <div className="row">
             <div className="col-12">

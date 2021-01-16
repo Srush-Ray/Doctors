@@ -359,7 +359,7 @@ class Desk extends React.Component {
                   </div>
                 </div>
                 <div
-                  className="col-12"
+                  className="col-12 "
                   style={{ padding: 0, marginLeft: "0.1rem" }}
                 >
                   <p style={{ marginTop: "35px", fontSize: "14px" }}>

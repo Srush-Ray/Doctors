@@ -61,7 +61,10 @@ padding: 50px;
   .Covid__secondillustration {
     width: 252px;
     height: 288px;
-    margin-left: 80%;
+    margin-right: 10%;
+    float: right;
+
+    /* margin-left: 80%; */
   }
   .Covid__para {
     margin-top: 30px;
@@ -107,6 +110,7 @@ padding: 50px;
     border: solid 2px #2541b2;
     color: #2541b2;
     margin-left: 10%;
+    float: right;
   }
   .Covid__text {
     text-align: center;
@@ -181,7 +185,9 @@ padding: 50px;
   .Covid__secondillustration {
     width: 9rem;
     height: 10rem;
-    margin-left: 90%;
+    float: right;
+    margin-right: 10%;
+    /* margin-left: 90%; */
   }
   .Covid__firstIllustration {
     width: 33rem;
@@ -200,6 +206,7 @@ padding: 50px;
     font-weight: 600;
     border: solid 2px #2541b2;
     color: #2541b2;
+    float: right;
   }
   .Covid__para {
     margin-top: 30px;
@@ -281,7 +288,9 @@ padding: 50px;
   .Covid__secondillustration {
     width: 9rem;
     height: 10rem;
-    margin-left: 100%;
+    margin-right: 20%;
+    float: right;
+    /* margin-left: 100%; */
   }
   .Covid__firstIllustration {
     width: 25rem;
@@ -300,6 +309,7 @@ padding: 50px;
     font-weight: 600;
     border: solid 2px #2541b2;
     color: #2541b2;
+    float: right;
   }
   .Covid__para {
     margin-top: 30px;

@@ -60,6 +60,7 @@ class StateBranchOfficials extends React.Component {
     this.setState({
       selectedDoctors: temp,
     });
+    this.Carousel.goToSlide(0, true);
   };
   componentDidMount() {
     this.setState({ doctorDetails: doctors });
@@ -321,6 +322,7 @@ class StateBranchOfficials extends React.Component {
               draggable={false}
               responsive={responsive}
               showArrows={false}
+              ref={(el) => (this.Carousel = el)}
               ssr={false} // means to render carousel on server-side.
               // infinite={true}
               // autoPlay={this.props.deviceType !== "mobile" ? true : false}

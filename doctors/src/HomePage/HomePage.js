@@ -43,7 +43,7 @@ function HomePage() {
               Covid
             </Link>
           </button>
-  </div>*/}
+        </div>
         <div className="col-md-2 col-12">
           <button type="button" className="btn btn-light HomePage__Btn">
             <Link to="/lifeMembershipForm" className="HomePage__link">
@@ -51,6 +51,7 @@ function HomePage() {
             </Link>
           </button>
         </div>
+      */}
         <div className="col-md-3 col-12">
           <button type="button" className="btn btn-light HomePage__Btn">
             <Link to="/covid" className="HomePage__link">
