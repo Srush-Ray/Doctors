@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Doctors/static/css/main.b09173be.chunk.css",
-    "main.js": "/Doctors/static/js/main.300d402b.chunk.js",
-    "main.js.map": "/Doctors/static/js/main.300d402b.chunk.js.map",
+    "main.css": "/Doctors/static/css/main.1202b1ad.chunk.css",
+    "main.js": "/Doctors/static/js/main.eccc2ee8.chunk.js",
+    "main.js.map": "/Doctors/static/js/main.eccc2ee8.chunk.js.map",
     "runtime-main.js": "/Doctors/static/js/runtime-main.d71072b4.js",
     "runtime-main.js.map": "/Doctors/static/js/runtime-main.d71072b4.js.map",
     "static/css/2.715bf72b.chunk.css": "/Doctors/static/css/2.715bf72b.chunk.css",
-    "static/js/2.d09cf4f9.chunk.js": "/Doctors/static/js/2.d09cf4f9.chunk.js",
-    "static/js/2.d09cf4f9.chunk.js.map": "/Doctors/static/js/2.d09cf4f9.chunk.js.map",
+    "static/js/2.426f3599.chunk.js": "/Doctors/static/js/2.426f3599.chunk.js",
+    "static/js/2.426f3599.chunk.js.map": "/Doctors/static/js/2.426f3599.chunk.js.map",
     "index.html": "/Doctors/index.html",
-    "precache-manifest.a528c915a1d29823e5e42af81090454a.js": "/Doctors/precache-manifest.a528c915a1d29823e5e42af81090454a.js",
+    "precache-manifest.6b3e21fcb2db8e72e59821f649643ac3.js": "/Doctors/precache-manifest.6b3e21fcb2db8e72e59821f649643ac3.js",
     "service-worker.js": "/Doctors/service-worker.js",
     "static/css/2.715bf72b.chunk.css.map": "/Doctors/static/css/2.715bf72b.chunk.css.map",
-    "static/css/main.b09173be.chunk.css.map": "/Doctors/static/css/main.b09173be.chunk.css.map",
-    "static/js/2.d09cf4f9.chunk.js.LICENSE.txt": "/Doctors/static/js/2.d09cf4f9.chunk.js.LICENSE.txt",
+    "static/css/main.1202b1ad.chunk.css.map": "/Doctors/static/css/main.1202b1ad.chunk.css.map",
+    "static/js/2.426f3599.chunk.js.LICENSE.txt": "/Doctors/static/js/2.426f3599.chunk.js.LICENSE.txt",
     "static/media/1.jpeg": "/Doctors/static/media/1.120e0e82.jpeg",
     "static/media/2.jpg": "/Doctors/static/media/2.c492031a.jpg",
     "static/media/About us.svg": "/Doctors/static/media/About us.e9369e7b.svg",
@@ -24,6 +24,7 @@
     "static/media/Rectangle 441.png": "/Doctors/static/media/Rectangle 441.27095450.png",
     "static/media/Rectangle 442.png": "/Doctors/static/media/Rectangle 442.4bfc35c4.png",
     "static/media/Rectangle 443.png": "/Doctors/static/media/Rectangle 443.39fb95c3.png",
+    "static/media/Rectangle 634.png": "/Doctors/static/media/Rectangle 634.4918f6c3.png",
     "static/media/State branch official.svg": "/Doctors/static/media/State branch official.a6342cc7.svg",
     "static/media/Vector.svg": "/Doctors/static/media/Vector.2f4576ee.svg",
     "static/media/avatar-placeholder.png": "/Doctors/static/media/avatar-placeholder.018fdbf0.png",
@@ -40,8 +41,8 @@
   "entrypoints": [
     "static/js/runtime-main.d71072b4.js",
     "static/css/2.715bf72b.chunk.css",
-    "static/js/2.d09cf4f9.chunk.js",
-    "static/css/main.b09173be.chunk.css",
-    "static/js/main.300d402b.chunk.js"
+    "static/js/2.426f3599.chunk.js",
+    "static/css/main.1202b1ad.chunk.css",
+    "static/js/main.eccc2ee8.chunk.js"
   ]
 }
