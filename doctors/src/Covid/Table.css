@@ -287,8 +287,8 @@
     display: none;
   }
   /* .Table__cards {
-    display: block;
-  } */
+      display: block;
+    } */
   .Table__aContainer {
     margin-left: 30%;
     margin-right: 30%;
@@ -398,16 +398,16 @@
 }
 @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
   /* @media {
-    select {
-      border: 2px solid rgb(26, 26, 173);
-      border-radius: 20px;
-      padding: 10px;
-      margin-top: 10px;
-      width: 40%;
-      float: right;
-      margin-right: 3%;
-      color: rgb(26, 26, 173);
-      background-color: white;
-    }
-  } */
+      select {
+        border: 2px solid rgb(26, 26, 173);
+        border-radius: 20px;
+        padding: 10px;
+        margin-top: 10px;
+        width: 40%;
+        float: right;
+        margin-right: 3%;
+        color: rgb(26, 26, 173);
+        background-color: white;
+      }
+    } */
 }

@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import "./Table.css";
 import { doctorDetails } from "./DoctorDetails";
+import Modalclass from "./Modalclass";
 class Table extends React.Component {
   constructor(props) {
     super(props);
@@ -36,7 +37,9 @@ class Table extends React.Component {
     });
     console.log(this.state);
   };
+  
   render() {
+ 
     return (
       <div className="Table__Container">
         <div className="Table__header">
@@ -118,18 +121,20 @@ class Table extends React.Component {
                         className="Table__button"
                         style={{ border: "2px solid #1B3686" }}
                       >
-                        <a className="Table__a" href="#">
+                        {/* <a className="Table__a" href="#">
                           Read More
-                        </a>
+                        </a> */}
+                        <Modalclass/>
                       </button>
                     ) : (
                       <button
                         className="Table__button"
                         style={{ border: "2px solid #01677D" }}
                       >
-                        <a className="Table__a" href="#">
+                        {/* <a className="Table__a" href="#">
                           Read More
-                        </a>
+                        </a> */}
+                        <Modalclass/>
                       </button>
                     )}
                   </td>
@@ -201,18 +206,20 @@ class Table extends React.Component {
                       className="Table__button"
                       style={{ border: "2px solid #1B3686" }}
                     >
-                      <a className="Table__a" href="#">
+                      {/* <a className="Table__a" href="#">
                         Read More
-                      </a>
+                      </a> */}
+                      <Modalclass/>
                     </button>
                   ) : (
                     <button
                       className="Table__button"
                       style={{ border: "2px solid #01677D" }}
                     >
-                      <a className="Table__a" href="#">
+                      {/* <a className="Table__a" href="#">
                         Read More
-                      </a>
+                      </a> */}
+                      <Modalclass/>
                     </button>
                   )}
                 </div>
