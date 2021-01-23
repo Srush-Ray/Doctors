@@ -50,7 +50,7 @@ a.hover {
   white-space: nowrap;
 }
 ::-webkit-scrollbar {
-  display: none;
+  visibility: hidden;
 }
 .slide {
   /* margin-right: 30px; */
