@@ -90,6 +90,7 @@ export default function SimpleModal() {
         open={open}
         onClose={handleClose}
         aria-describedby="simple-modal-description"
+        BackdropProps={{ invisible: true }}
       >
         {body}
       </Modal>
