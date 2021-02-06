@@ -146,3 +146,26 @@
     color: #060606;
   }
 }
+@-moz-document url-prefix() {
+  .mod {
+    background-color: rgb(231, 231, 231);
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS */
+  .mod {
+    background-color: rgb(231, 231, 231);
+  }
+}
+@supports (-ms-accelerator: true) {
+  /* Edge 12+ CSS */
+  .mod {
+    background-color: rgb(231, 231, 231);
+  }
+}
+@supports (-ms-ime-align: auto) {
+  /* Edge 16+ CSS */
+  .mod {
+    background-color: rgb(231, 231, 231);
+  }
+}
