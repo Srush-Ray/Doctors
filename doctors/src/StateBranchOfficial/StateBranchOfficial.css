@@ -292,6 +292,16 @@
     padding-right: 0;
     margin-top: 80px;
   }
+  .StateBranchOfficials__h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    margin-top: 50px;
+    /* line-height: 5px; */
+  }
+  .StateBranchOfficials__textPara {
+    font-size: 14px;
+  }
 }
 /*big tablet */
 @media (min-width: 800px) and (max-width: 1200px) {

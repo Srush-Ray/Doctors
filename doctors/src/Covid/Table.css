@@ -1,6 +1,11 @@
 .Table__Container {
   text-align: center;
 }
+.Table__a:hover {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
 .Table__table {
   margin-top: 70px;
   text-align: left;
@@ -146,6 +151,7 @@
 .Table__states {
   -webkit-appearance: none;
   -moz-appearance: none;
+  appearance: none;
   text-indent: 1px;
   text-overflow: "";
 }

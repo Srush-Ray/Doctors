@@ -11,13 +11,24 @@
   overflow-y: scroll;
   font-family: "Poppins", sans-serif;
 }
-.Desk__selectedDoctorDescription {
-  overflow-y: scroll;
-  height: 100%;
-}
-.Desk__rowSelected {
+.Desk__Col {
+  width: 50%;
+  /* overflow-y: scroll; */
   /* overflow: hidden; */
 }
+.Desk__col2 {
+  /* overflow: hidden; */
+}
+
+.Desk__rowSelected {
+  height: 80%;
+  /* overflow: hidden; */
+}
+
+/* .Desk__rowSelected {
+  position: relative;
+  overflow: hidden;
+} */
 .Desk__h1 {
   font-weight: bold;
   font-family: "Poppins", sans-serif;
@@ -54,7 +65,7 @@
   line-height: 30px; */
   line-height: 3rem;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
 .Desk__textPara {
@@ -125,6 +136,18 @@ a .Desk__link:hover {
   /* .Desk__linkDesktop {
     display: block;
   }*/
+  .Desk__selectedDoctorDescription {
+    /* overflow-y: scroll;
+    height: 100%; */
+    /* white-space: nowrap; */
+    background-color: black;
+    color: white;
+    height: 22rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    /* overflow-y: scroll; */
+  }
   .Desk__marginTop {
     margin-top: 15vh;
   }
@@ -152,8 +175,8 @@ a .Desk__link:hover {
   }
   .Desk__selectedDoctorImage {
     position: relative;
-    height: 24rem;
-    width: 18rem;
+    height: 26rem;
+    width: 20rem;
     margin-left: 169px;
     border-radius: 14px;
     margin-top: 25vh;
@@ -212,11 +235,26 @@ a .Desk__link:hover {
   } */
   .Desk__selectedDoctorDescription {
     margin-top: 60px;
+
+    max-height: 100vh;
+    overflow-y: scroll;
     font-size: 17px;
   }
 }
 /*tablet*/
 @media only screen and (min-width: 481px) and (max-width: 800px) {
+  .Desk__selectedDoctorDescription {
+    /* overflow-y: scroll;
+    height: 100%; */
+    /* white-space: nowrap; */
+    background-color: black;
+    color: white;
+    height: 25rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    /* overflow-y: scroll; */
+  }
   .Desk__col {
     height: 20rem;
   }
@@ -340,6 +378,18 @@ a .Desk__link:hover {
 }
 /*bigger tablets*/
 @media (min-width: 800px) and (max-width: 1200px) {
+  .Desk__selectedDoctorDescription {
+    /* overflow-y: scroll;
+    height: 100%; */
+    /* white-space: nowrap; */
+    background-color: black;
+    color: white;
+    height: 25rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    /* overflow-y: scroll; */
+  }
   .Desk__col {
     height: 22rem;
   }

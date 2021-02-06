@@ -19,6 +19,10 @@ import LifeMemberShipForm from "./Forms/LifeMembershipForm";
 import Table from "./Covid/Table";
 import MultiNews from "./News/MultiNews";
 import News from "./News/News";
+import BranchNews from "./BranchNews/BranchNews";
+import CentralNews from "./CentralNews/CentralNews";
+import AllNews from "./CentralNews/AllNews";
+import Folders from "./Gallery/Folders";
 function App() {
   return (
     <div className="App">
@@ -30,7 +34,7 @@ function App() {
     */}
       <BrowserRouter>
         <Switch>
-          <Route path="/" component={News} exact />
+          <Route path="/" component={HomePage} exact />
           <Route path="/Doctors" component={HomePage} exact />
           <Route path="/aboutUs" component={Aboutus} />
           <Route path="/desk" component={Desk} />
@@ -40,6 +44,12 @@ function App() {
           />
           <Route path="/covid" component={Covid} />
           <Route path="/lifeMembershipForm" component={LifeMemberShipForm} />
+          <Route path="/centralnews" component={CentralNews} />
+          <Route path="/allnews" component={AllNews} />
+
+          <Route path="/gallery" component={Folders} />
+
+          <Route path="/branchNews" component={BranchNews} />
         </Switch>
       </BrowserRouter>
     </div>

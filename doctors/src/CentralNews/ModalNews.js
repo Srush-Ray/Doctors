@@ -1,15 +1,14 @@
 import React, { Component } from "react";
 // import "react-responsive-modal/styles.css";
 // import { Modal } from "react-responsive-modal";
-import "./Modalclass.css";
+import "./ModalNews.css";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
-export default class Modalclass extends Component {
+export default class ModalNews extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      doctorDetails: this.props.data,
+      selectedNews: this.props.data,
       open: this.props.open,
-      closeModal: this.props.closeModal,
     };
     console.log(this.state);
   }
@@ -39,39 +38,37 @@ export default class Modalclass extends Component {
             ></ModalHeader>
             <div className="m-3">
               <div className="row">
-                <p className="col-12 p-0 CovidModal_modalTitle">
-                  Doctor Name : {this.state.doctorDetails.names}
+                <p className="col-12 p-0 One_modalTitle">
+                  {this.state.selectedNews.title}
                 </p>
-                <p className="col-12 p-0 CovidModal_modalDate">
-                  Mob No. : {this.state.doctorDetails.mobileNumber}
+                <p className="col-12 p-0 One_modalDate">
+                  {this.state.selectedNews.date}
                 </p>
-                <p className="col-12 p-0 CovidModal_modalAuthor">
-                  <b>{this.state.doctorDetails.location}</b>
+                <p className="col-12 p-0 One_modalAuthor">
+                  {this.state.selectedNews.author}
                 </p>
               </div>
               <div className="row">
-                <div className="CovidModal_images">
-                  {this.state.doctorDetails.images.map((image, index) => (
+                <div className="News_images">
+                  {this.state.selectedNews.image.map((image, index) => (
                     <img
                       src={image}
                       alt=""
-                      className="CovidModal_modalImage"
+                      className="One_modalImage"
                       key={index}
                     />
                   ))}
                 </div>
               </div>
               <div className="row">
-                <div className="col-12 p-0 CovidModal_modalDescription">
-                  {this.state.doctorDetails.description}
+                <div className="col-12 p-0 One_modalDescription">
+                  {this.state.selectedNews.description}
                 </div>
               </div>
               <div className="row">
+                <p className="One_modalDetails">Details:</p>
                 <div className="col-12 p-0">
-                  <p className="CovidModal_modalDetails">Details:</p>
-                  <a href="/" className="CovidModal_Link">
-                    {this.state.doctorDetails.detail}
-                  </a>
+                  <a href="/">{this.state.selectedNews.details}</a>
                 </div>
               </div>
             </div>
@@ -79,7 +76,6 @@ export default class Modalclass extends Component {
         </div>
       );
     } else {
-      // console.log(this.state.closeModal());
       this.props.closeModal();
       return null;
     }

@@ -275,7 +275,7 @@ class Desk extends React.Component {
           <Fragment>
             <div className="Desk__linkDesktop Desk__container container">
               <div className="row h-100 Desk__rowSelected align-items-start">
-                <div className="col-md-6 Desk__marginTop">
+                <div className="col-md-6 Desk__marginTop Desk__Col">
                   <button type="btn" className="Desk__closeButton Desk__button">
                     <img src={cross} alt="close" onClick={this.closeModel} />
                   </button>
@@ -288,11 +288,14 @@ class Desk extends React.Component {
                   >
                     {this.state.selectedDoctor.name}
                   </p>
-                  <p className="Desk__selectedDoctorDescription">
+                  <textarea
+                    disabled
+                    className="Desk__selectedDoctorDescription"
+                  >
                     {this.state.selectedDoctor.description}
-                  </p>
+                  </textarea>
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-6 Desk__col2">
                   <img
                     src={this.state.selectedDoctor.image}
                     alt={this.state.selectedDoctor.name}
