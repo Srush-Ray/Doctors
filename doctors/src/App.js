@@ -22,7 +22,7 @@ import News from "./News/News";
 import BranchNews from "./BranchNews/BranchNews";
 import CentralNews from "./CentralNews/CentralNews";
 import AllNews from "./CentralNews/AllNews";
-import Folders from "./Gallery/Folders";
+// import Folders from "./Gallery/Folders";
 function App() {
   return (
     <div className="App">
@@ -47,7 +47,7 @@ function App() {
           <Route path="/centralnews" component={CentralNews} />
           <Route path="/allnews" component={AllNews} />
 
-          <Route path="/gallery" component={Folders} />
+          {/*   <Route path="/gallery" component={Folders} /> */}
 
           <Route path="/branchNews" component={BranchNews} />
         </Switch>

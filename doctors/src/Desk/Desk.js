@@ -105,89 +105,91 @@ class Desk extends React.Component {
       <div className="Desk__main">
         {!this.state.showDoctors && (
           <Fragment>
-            <div className="Desk__row Desk__linkDesktop h-100 row align-items-center">
-              {/* <div className="col-12">
+            <div className="Desk__linkDesktop">
+              <div className="Desk__row  h-100 mr-0 row align-items-center">
+                {/* <div className="col-12">
                 <hr className="Desk__hr" />
         </div>*/}
-              <div className="col-6 col-md-6 Desk__col">
-                <h1 className="Desk__h1 Desk__margin">Desk</h1>
-                <br />
-                <p className="Desk__textPara Desk__margin ">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.
-                </p>
+                <div className="col-6 col-md-6 Desk__col">
+                  <h1 className="Desk__h1 Desk__margin">Desk</h1>
+                  <br />
+                  <p className="Desk__textPara Desk__margin ">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur.
+                  </p>
 
-                <span className="Desk__margin">
-                  <a href="#">
-                    {" "}
-                    <span className="Desk__link">
+                  <span className="Desk__margin">
+                    <a href="#">
                       {" "}
-                      Click to know more
-                      <img
-                        src={arrow}
-                        alt="Right Arrow"
-                        style={{ marginLeft: "1rem" }}
-                      />
-                    </span>
-                  </a>
-                </span>
-              </div>
-              <div className="col-6 pr-0">
-                <Carousel
-                  swipeable={true}
-                  draggable={false}
-                  responsive={responsive}
-                  showArrows={false}
-                  ssr={false} // means to render carousel on server-side.
-                  // infinite={true}
-                  // autoPlay={this.props.deviceType !== "mobile" ? true : false}
-                  // autoPlaySpeed={1000}
-                  keyBoardControl={true}
-                  // customRightArrow={<CustomDot />}
-                  // customTransition="all .5"
-                  // transitionDuration={500}
-                  // customButtonGroup={
-                  //   <ButtonGroup
-                  //     next={this.props.next}
-                  //     previous={this.props.previous}
-                  //     rest={this.props.rest}
-                  //   />
-                  // }
-                  containerClass="carousel-container"
-                  removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
-                  deviceType={this.props.deviceType}
-                  // customDot={<CustomDot />}
-                  itemClass="carousel-item-padding-40-px"
-                >
-                  {this.state.doctors.map((doctor, index) => (
-                    <div
-                      key={index}
-                      className="Desk__doctorContainer"
-                      onClick={() => this.openModel(doctor)}
-                    >
-                      <div className="Desk__imageContainer">
+                      <span className="Desk__link">
+                        {" "}
+                        Click to know more
                         <img
-                          src={doctor.image}
-                          alt={doctor.name}
-                          className="Desk__doctorImage"
+                          src={arrow}
+                          alt="Right Arrow"
+                          style={{ marginLeft: "1rem" }}
                         />
-                        <p className="Desk__doctorDesignation">
-                          {doctor.designation}
-                        </p>
+                      </span>
+                    </a>
+                  </span>
+                </div>
+                <div className="col-6 pr-0">
+                  <Carousel
+                    swipeable={true}
+                    draggable={false}
+                    responsive={responsive}
+                    showArrows={false}
+                    ssr={false} // means to render carousel on server-side.
+                    // infinite={true}
+                    // autoPlay={this.props.deviceType !== "mobile" ? true : false}
+                    // autoPlaySpeed={1000}
+                    keyBoardControl={true}
+                    // customRightArrow={<CustomDot />}
+                    // customTransition="all .5"
+                    // transitionDuration={500}
+                    // customButtonGroup={
+                    //   <ButtonGroup
+                    //     next={this.props.next}
+                    //     previous={this.props.previous}
+                    //     rest={this.props.rest}
+                    //   />
+                    // }
+                    containerClass="carousel-container"
+                    removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
+                    deviceType={this.props.deviceType}
+                    // customDot={<CustomDot />}
+                    itemClass="carousel-item-padding-40-px"
+                  >
+                    {this.state.doctors.map((doctor, index) => (
+                      <div
+                        key={index}
+                        className="Desk__doctorContainer"
+                        onClick={() => this.openModel(doctor)}
+                      >
+                        <div className="Desk__imageContainer">
+                          <img
+                            src={doctor.image}
+                            alt={doctor.name}
+                            className="Desk__doctorImage"
+                          />
+                          <p className="Desk__doctorDesignation">
+                            {doctor.designation}
+                          </p>
+                        </div>
+                        <p className="Desk__doctorName">{doctor.name}</p>
                       </div>
-                      <p className="Desk__doctorName">{doctor.name}</p>
-                    </div>
-                  ))}
-                </Carousel>
+                    ))}
+                  </Carousel>
+                </div>
               </div>
             </div>
 
             <div className="Desk__linkMobile">
-              <div className="Desk__row h-100 row align-items-center ">
+              <div className="Desk__row h-100 mr-0 row align-items-center ">
                 <div className="mt-3">
                   <MdMenu size={32} className="Desk__buttonNav" />
                 </div>

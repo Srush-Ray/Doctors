@@ -3,6 +3,7 @@
   max-width: 800px !important;
 }
 .modal-content {
+  padding: 25px;
   width: 800px;
   /* background: rgba(213, 213, 213, 0.7); */
   /* backdrop-filter: blur(74px); */
@@ -86,6 +87,9 @@
 }
 /* mobile */
 @media screen and (max-width: 480px) {
+  .modal-content {
+    padding: 10px;
+  }
   .modal-dialog {
     margin: auto !important;
     max-width: 300px !important;

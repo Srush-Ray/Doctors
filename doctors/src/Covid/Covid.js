@@ -12,9 +12,6 @@ class Covid extends React.Component {
   render() {
     return (
       <div className="Covid__div">
-        <div>
-          <hr className="Covid__hr" />
-        </div>
         <div className="row Covid__buttonNav align-items-start">
           <MdMenu size={32} className="" />
         </div>
@@ -42,7 +39,7 @@ class Covid extends React.Component {
               src={firstIllustration}
             ></img>
           </div>
-          <div className="Covid__end row">Latest news (Branches)</div>
+          <div className="Covid__end ">Latest news (Branches)</div>
         </div>
 
         <div className="Covid__div2">

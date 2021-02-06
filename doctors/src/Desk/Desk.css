@@ -11,6 +11,9 @@
   overflow-y: scroll;
   font-family: "Poppins", sans-serif;
 }
+.Desk__linkDesktop {
+  height: 100%;
+}
 .Desk__Col {
   width: 50%;
   /* overflow-y: scroll; */
