@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d9a23794ff8cb39abce5b4200de0389c",
+    "revision": "a32039264a9f60b261238096b4f99a31",
     "url": "/Doctors/index.html"
   },
   {
-    "revision": "7d099c7c906b0a38440c",
+    "revision": "de1ec6a9ce96d97dfbd1",
     "url": "/Doctors/static/css/2.715bf72b.chunk.css"
   },
   {
-    "revision": "151b606a81249bd25be0",
-    "url": "/Doctors/static/css/main.1202b1ad.chunk.css"
+    "revision": "06762de89a4e10f4927c",
+    "url": "/Doctors/static/css/main.f2b6df69.chunk.css"
   },
   {
-    "revision": "7d099c7c906b0a38440c",
-    "url": "/Doctors/static/js/2.426f3599.chunk.js"
+    "revision": "de1ec6a9ce96d97dfbd1",
+    "url": "/Doctors/static/js/2.04d49ee9.chunk.js"
   },
   {
-    "revision": "6397acf4c5cafcd591a770ce33fc3e2f",
-    "url": "/Doctors/static/js/2.426f3599.chunk.js.LICENSE.txt"
+    "revision": "29eb69a08ea4198f7b46e1db8a3d5045",
+    "url": "/Doctors/static/js/2.04d49ee9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "151b606a81249bd25be0",
-    "url": "/Doctors/static/js/main.eccc2ee8.chunk.js"
+    "revision": "06762de89a4e10f4927c",
+    "url": "/Doctors/static/js/main.53fad54f.chunk.js"
   },
   {
     "revision": "da38a016d0c95c366300",
@@ -52,6 +52,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Doctors/static/media/Rectangle 204.2b86399c.png"
   },
   {
+    "revision": "f7cc37ddff524adaf0c9687ecd962dbd",
+    "url": "/Doctors/static/media/Rectangle 337.f7cc37dd.png"
+  },
+  {
+    "revision": "6d6eecb2415c153f7938eaf3c4edced8",
+    "url": "/Doctors/static/media/Rectangle 350.6d6eecb2.png"
+  },
+  {
     "revision": "f43c52bc0f44668237232d8e2236d322",
     "url": "/Doctors/static/media/Rectangle 440.f43c52bc.png"
   },
@@ -66,10 +74,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "39fb95c3b8bdaa712bce1fd95a5b9253",
     "url": "/Doctors/static/media/Rectangle 443.39fb95c3.png"
-  },
-  {
-    "revision": "4918f6c3f69d8f738f9a3a6072205f52",
-    "url": "/Doctors/static/media/Rectangle 634.4918f6c3.png"
   },
   {
     "revision": "a6342cc7978b9044b0db6a118a27993f",
@@ -96,12 +100,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Doctors/static/media/doctor-sitting-in-front-of-his-desk-2182979 (1).302cc9ed.png"
   },
   {
+    "revision": "155f91a400722d26f0d1541b27614375",
+    "url": "/Doctors/static/media/image1.155f91a4.jpg"
+  },
+  {
+    "revision": "be3dd975f1d1bdc27bf73b7b28e3810e",
+    "url": "/Doctors/static/media/image2.be3dd975.jpg"
+  },
+  {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
     "url": "/Doctors/static/media/logo.5d5d9eef.svg"
   },
   {
     "revision": "f1241585aaa9d8e97ab97c835c944ffa",
     "url": "/Doctors/static/media/man-in-blue-scrubs-3934615.f1241585.png"
+  },
+  {
+    "revision": "a623ea4d895adbbaaf83f3c921bce0f3",
+    "url": "/Doctors/static/media/news.a623ea4d.png"
   },
   {
     "revision": "74a4f6d9950a4731c470c02f3156176a",
