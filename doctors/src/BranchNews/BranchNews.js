@@ -354,7 +354,7 @@ export default class BranchNews extends Component {
                       id="state"
                     >
                       <option value="" disabled selected defaultValue>
-                        Select State
+                        State
                       </option>
                       {this.state.states.map((state, index) => (
                         <option value={state} key={index}>
@@ -368,7 +368,7 @@ export default class BranchNews extends Component {
                       id="state"
                     >
                       <option value="" disabled selected defaultValue>
-                        Select District
+                        District
                       </option>
                       {this.state.districts.map((district, index) => (
                         <option value={district} key={index}>
@@ -382,7 +382,7 @@ export default class BranchNews extends Component {
                       id="branch"
                     >
                       <option value="" disabled selected defaultValue>
-                        Select Branch
+                        Branch
                       </option>
                       {this.state.branch.map((branch, index) => (
                         <option value={branch} key={index}>
