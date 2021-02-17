@@ -25,11 +25,11 @@ function HomePage() {
             </Link>
           </button>
         </div>
-        <div className="col-md-2 col-12">
+        {/*   <div className="col-md-2 col-12">
           <button type="button" className="btn btn-light HomePage__Btn">
             <Link to="/aboutUs">About Us</Link>
           </button>
-        </div>
+        </div> */}
         <div className="col-md-3 col-12">
           <button type="button" className="btn btn-light HomePage__Btn">
             <Link to="/statebranchofficials" className="HomePage__link">
@@ -59,20 +59,20 @@ function HomePage() {
             </Link>
           </button>
         </div>
-        <div className="col-md-3 col-12">
+        <div className="col-md-2 col-12">
           <button type="button" className="btn btn-light HomePage__Btn">
             <Link to="/covid" className="HomePage__link">
               Covid
             </Link>
           </button>
         </div>
-        <div className="col-md-3 col-12">
+        {/* <div className="col-md-3 col-12">
           <button type="button" className="btn btn-light HomePage__Btn">
             <Link to="/gallery" className="HomePage__link">
               Gallery
             </Link>
           </button>
-        </div>
+        </div> */}
       </div>
     </nav>
   );

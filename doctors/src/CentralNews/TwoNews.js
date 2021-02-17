@@ -36,7 +36,7 @@ export default class TwoNews extends Component {
       <div className="Two__margins">
         <div className="row ml-3 mb-3 ">
           <div className="col-md-3 col-6 p-0 m-0 Central__Date">
-            {date[0]}, {date[1]}
+            {date[0]}, {date[1].substring(date[1].length - 2)}
           </div>
         </div>
         <div className="row align-items-end ">
