@@ -23,7 +23,7 @@
   /* overflow: hidden; */
 }
 
-.Desk__rowSelected {
+.Desk__row.Desk__selectedDoctorImage {
   height: 80%;
   /* overflow: hidden; */
 }
@@ -105,8 +105,9 @@ a .Desk__link:hover {
 }
 .Desk__doctorImage {
   position: relative;
-  height: 24rem;
   border-radius: 14px;
+  height: 25rem;
+  width: 21rem;
 }
 .Desk__doctorContainer:hover {
   cursor: pointer;
@@ -132,6 +133,7 @@ a .Desk__link:hover {
   font-size: 22px;
   border-bottom-right-radius: 14px;
   border-bottom-left-radius: 14px;
+  text-transform: uppercase;
 }
 
 /*desktop*/
@@ -204,6 +206,7 @@ a .Desk__link:hover {
     font-size: 22px;
     border-bottom-right-radius: 14px;
     border-bottom-left-radius: 14px;
+    text-transform: uppercase;
   }
   .react-multi-carousel-item {
     margin-right: 3rem;
@@ -294,14 +297,16 @@ a .Desk__link:hover {
   }
   .Desk__container {
     height: 100vh;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+
+    /* margin-left: 0 !important;
+    margin-right: 0 !important; */
     padding: 0 !important;
     overflow: hidden;
   }
   .Desk__doctorImage {
     position: relative;
-    height: 20rem;
+    height: 19rem;
+    width: 15rem;
     border-radius: 14px;
   }
 
@@ -326,6 +331,7 @@ a .Desk__link:hover {
     font-size: 22px;
     border-bottom-right-radius: 14px;
     border-bottom-left-radius: 14px;
+    text-transform: uppercase;
   }
   .Desk__selectedDoctorDescription {
     margin-top: 60px;
@@ -335,7 +341,7 @@ a .Desk__link:hover {
   .Desk__selectedDoctorImage {
     position: relative;
     height: 23rem;
-    /* width: 12rem; */
+    width: 18rem;
     border-radius: 7px;
     /* margin-top: 40px; */
     margin-left: 50px;
@@ -357,6 +363,7 @@ a .Desk__link:hover {
     border-bottom-right-radius: 7px;
     border-bottom-left-radius: 7px;
     margin-left: 50px;
+    text-transform: uppercase;
   }
 
   .Desk__closeButton {
@@ -397,7 +404,7 @@ a .Desk__link:hover {
     height: 22rem;
   }
   .Desk__rowSelected {
-    margin-left: 5% !important;
+    /* margin-left: 5% !important; */
     position: relative;
   }
 
@@ -421,13 +428,15 @@ a .Desk__link:hover {
   }
   .Desk__container {
     height: 100vh;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    /* margin-left: 0 !important;
+    margin-right: 0 !important; */
+    width: 750px;
     padding: 0 !important;
   }
   .Desk__doctorImage {
     position: relative;
     height: 20rem;
+    width: 17rem;
     border-radius: 14px;
   }
 
@@ -439,6 +448,7 @@ a .Desk__link:hover {
   .Desk__doctorDesignation {
     position: absolute;
     bottom: 0;
+    text-transform: uppercase;
     /* background: rgb(0, 0, 0); */
     background-color: rgba(0, 0, 0, 0.25);
     color: white;
@@ -461,7 +471,7 @@ a .Desk__link:hover {
   .Desk__selectedDoctorImage {
     position: relative;
     height: 25rem;
-    /* width: 12rem; */
+    width: 20rem;
     border-radius: 7px;
     margin-top: 15vh;
     margin-left: 60px;
@@ -485,6 +495,7 @@ a .Desk__link:hover {
     border-bottom-right-radius: 7px;
     border-bottom-left-radius: 7px;
     margin-left: 60px;
+    text-transform: uppercase;
   }
 }
 /*mobile*/
@@ -556,6 +567,7 @@ a .Desk__link:hover {
     font-weight: bold;
     font-size: 16px;
     border-bottom-right-radius: 7px;
+    text-transform: uppercase;
     border-bottom-left-radius: 7px;
   }
 
@@ -564,6 +576,7 @@ a .Desk__link:hover {
     padding-left: 10px;
     padding-bottom: 7px;
     border-bottom-right-radius: 7px;
+    text-transform: uppercase;
     border-bottom-left-radius: 7px;
   }
   .Desk__h1 {
