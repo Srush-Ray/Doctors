@@ -6,7 +6,15 @@
   color: #000000;
   border-bottom: 5px solid #2541b2;
 }
-
+.Central_footer_upcloud {
+  color: gray;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 20px;
+  padding-bottom: 0;
+  /* margin-left: 5%; */
+  margin-bottom: 0;
+}
 /* Tablet */
 @media only screen and (min-width: 481px) and (max-width: 800px) {
   .Central__Date {
@@ -38,5 +46,14 @@
     font-size: 19px;
     color: #000000;
     border-bottom: 5px solid #2541b2;
+  }
+  .Central_footer_upcloud {
+    color: gray;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 20px;
+    padding-bottom: 0;
+    /* margin-left: 5%; */
+    margin-bottom: 0;
   }
 }

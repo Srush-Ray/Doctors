@@ -2,6 +2,15 @@
   cursor: pointer;
 }
 @media (min-width: 1200px) {
+  .Branch_footer_upcloud {
+    color: gray;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 20px;
+    padding-bottom: 0;
+    margin-left: 5%;
+    margin-top: 40px;
+  }
   .BranchNews__mobileView {
     display: none;
   }
@@ -117,6 +126,15 @@
 }
 /*tablet*/
 @media only screen and (min-width: 481px) and (max-width: 800px) {
+  .Branch_footer_upcloud {
+    color: gray;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 20px;
+    padding-bottom: 0;
+    margin-left: 5%;
+    margin-top: 40px;
+  }
   .BranchNews__mobileView {
     display: none;
   }
@@ -227,6 +245,15 @@
 }
 /*bigtablet*/
 @media (min-width: 800px) and (max-width: 1200px) {
+  .Branch_footer_upcloud {
+    color: gray;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 20px;
+    padding-bottom: 0;
+    margin-left: 5%;
+    margin-top: 40px;
+  }
   .BranchNews__mobileView {
     display: none;
   }
@@ -442,5 +469,14 @@
   }
   .BranchNews__mobileView {
     display: block;
+  }
+  .Branch_footer_upcloud {
+    color: gray;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 20px;
+    padding-bottom: 0;
+    margin-left: 1%;
+    margin-top: 40px;
   }
 }

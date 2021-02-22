@@ -117,6 +117,7 @@ a .Desk__link:hover {
   max-width: 100%;
   /* margin: 0 auto; */
 }
+
 .Desk__doctorDesignation {
   position: absolute;
   bottom: 0;
@@ -138,6 +139,21 @@ a .Desk__link:hover {
 
 /*desktop*/
 @media screen and (min-width: 1200px) {
+  .Desk_footer_upcloud {
+    /* display: flex;
+    justify-content: flex-start; */
+    color: gray;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 20px;
+    padding-left: 70px;
+
+    padding-bottom: 0;
+    /* margin-left: 5%; */
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+  }
   /* .Desk__linkDesktop {
     display: block;
   }*/
@@ -249,6 +265,19 @@ a .Desk__link:hover {
 }
 /*tablet*/
 @media only screen and (min-width: 481px) and (max-width: 800px) {
+  .Desk_footer_upcloud {
+    /* display: flex;
+    justify-content: flex-start; */
+    color: gray;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 20px;
+    padding-bottom: 0;
+    /* margin-left: 5%; */
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+  }
   .Desk__selectedDoctorDescription {
     /* overflow-y: scroll;
     height: 100%; */
@@ -388,6 +417,20 @@ a .Desk__link:hover {
 }
 /*bigger tablets*/
 @media (min-width: 800px) and (max-width: 1200px) {
+  .Desk_footer_upcloud {
+    /* display: flex;
+    justify-content: flex-start; */
+    color: gray;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 20px;
+    padding-bottom: 0;
+    padding-left: 50px;
+    /* margin-left: 5%; */
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+  }
   .Desk__selectedDoctorDescription {
     /* overflow-y: scroll;
     height: 100%; */
@@ -594,5 +637,18 @@ a .Desk__link:hover {
   ::-webkit-scrollbar {
     width: 0px; /* Remove scrollbar space */
     background: transparent; /* Optional: just make scrollbar invisible */
+  }
+  .Desk_footer_upcloud {
+    /* display: flex;
+    justify-content: flex-start; */
+    color: gray;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 20px;
+    padding-left: 0;
+    padding-bottom: 0;
+    /* margin-left: 5%; */
+
+    margin-bottom: 0;
   }
 }

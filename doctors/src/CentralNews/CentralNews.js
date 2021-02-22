@@ -349,7 +349,7 @@ export default class CentralNews extends Component {
       }
     }
     return (
-      <div className="m-md-5 m-2">
+      <div className="mt-md-5 ml-md-5 mr-md-5 m-2">
         {!this.state.loading && (
           <div>
             <div>
@@ -359,6 +359,9 @@ export default class CentralNews extends Component {
               components
               // this.renderNews
             }
+            <div className="Central_footer_upcloud row">
+              <p>Powered by Upcloud Technology Pvt Ltd</p>
+            </div>
           </div>
         )}
       </div>

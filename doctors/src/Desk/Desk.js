@@ -56,7 +56,7 @@ class Desk extends React.Component {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis autLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis autLorem ",
         },
       ],
-      loading: true,
+      loading: false,
       selectedDoctor: {
         image: null,
         designation: "",
@@ -68,21 +68,21 @@ class Desk extends React.Component {
   }
   async componentDidMount() {
     window.scrollTo(0, 0);
-    const response = await getDeskData();
-    if (response === null) {
-      console.log("null");
-    } else {
-      if (response.data.status === "success") {
-        console.log(response.data.data);
+    // const response = await getDeskData();
+    // if (response === null) {
+    //   console.log("null");
+    // } else {
+    //   if (response.data.status === "success") {
+    //     console.log(response.data.data);
 
-        this.setState({
-          doctors: response.data.data,
-          loading: false,
-        });
-        // this.loadData(response.data.data);
-      } else {
-      }
-    }
+    //     this.setState({
+    //       doctors: response.data.data,
+    //       loading: false,
+    //     });
+    //     // this.loadData(response.data.data);
+    //   } else {
+    //   }
+    // }
   }
 
   openModel = (doctor) => {
@@ -210,6 +210,9 @@ class Desk extends React.Component {
                       </Carousel>
                     </div>
                   </div>
+                  <div className="Desk_footer_upcloud row">
+                    <p>Powered by Upcloud Technology Pvt Ltd</p>
+                  </div>
                 </div>
 
                 <div className="Desk__linkMobile">
@@ -296,6 +299,9 @@ class Desk extends React.Component {
                           alt="Right Arrow"
                           style={{ marginLeft: "1rem" }}
                         />
+                      </div>
+                      <div className="Desk_footer_upcloud row">
+                        <p>Powered by Upcloud Technology Pvt Ltd</p>
                       </div>
                     </div>
                   </div>
