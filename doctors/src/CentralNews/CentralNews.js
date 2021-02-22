@@ -364,6 +364,15 @@ export default class CentralNews extends Component {
             </div>
           </div>
         )}
+        {this.state.loading && (
+          <h1
+            style={{
+              textAlign: "center",
+            }}
+          >
+            Loading....
+          </h1>
+        )}
       </div>
     );
   }
